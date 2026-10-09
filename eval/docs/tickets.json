@@ -1,0 +1,8816 @@
+[
+ {
+  "id": "T-0001",
+  "created": "2026-05-18",
+  "customer": {
+   "name": "Lim Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 18.3,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0002",
+  "created": "2026-01-18",
+  "customer": {
+   "name": "Fischer Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 35.6,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0003",
+  "created": "2026-02-15",
+  "customer": {
+   "name": "Singh Foods",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 6.8,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0004",
+  "created": "2026-02-01",
+  "customer": {
+   "name": "Chen Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 12.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0005",
+  "created": "2026-05-15",
+  "customer": {
+   "name": "Tanaka Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 9.8,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0006",
+  "created": "2026-04-24",
+  "customer": {
+   "name": "Novak Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 40.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0007",
+  "created": "2026-06-04",
+  "customer": {
+   "name": "Ibrahim Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 21.6,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0008",
+  "created": "2026-06-16",
+  "customer": {
+   "name": "Tanaka Trading",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 5.1,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0009",
+  "created": "2026-02-16",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 41.4,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0010",
+  "created": "2026-05-31",
+  "customer": {
+   "name": "Shah Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 9.5,
+  "satisfied": false,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0011",
+  "created": "2026-05-22",
+  "customer": {
+   "name": "Rossi Trading",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 44.9,
+  "satisfied": false,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0012",
+  "created": "2026-06-15",
+  "customer": {
+   "name": "Ng Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 4.1,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0013",
+  "created": "2026-06-18",
+  "customer": {
+   "name": "Mensah Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "High",
+  "resolution_hours": 10.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0014",
+  "created": "2026-02-08",
+  "customer": {
+   "name": "Chen Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 3.0,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0015",
+  "created": "2026-04-14",
+  "customer": {
+   "name": "Lim Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 8.8,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0016",
+  "created": "2026-06-22",
+  "customer": {
+   "name": "Santos Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 7.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0017",
+  "created": "2026-03-01",
+  "customer": {
+   "name": "Mensah Foods",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 18.2,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0018",
+  "created": "2026-01-29",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 25.4,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0019",
+  "created": "2026-02-15",
+  "customer": {
+   "name": "Santos Trading",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 25.6,
+  "satisfied": false,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0020",
+  "created": "2026-02-13",
+  "customer": {
+   "name": "Shah Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 6.5,
+  "satisfied": false,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0021",
+  "created": "2026-05-08",
+  "customer": {
+   "name": "Fischer Foods",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 16.4,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0022",
+  "created": "2026-01-01",
+  "customer": {
+   "name": "Rossi Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 39.1,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0023",
+  "created": "2026-04-08",
+  "customer": {
+   "name": "Ng Home",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 37.2,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0024",
+  "created": "2026-02-10",
+  "customer": {
+   "name": "Fischer Home",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 5.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0025",
+  "created": "2026-02-18",
+  "customer": {
+   "name": "Singh Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 8.1,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0026",
+  "created": "2026-04-24",
+  "customer": {
+   "name": "Reyes Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 2.7,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0027",
+  "created": "2026-06-03",
+  "customer": {
+   "name": "Wong Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 64.7,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0028",
+  "created": "2026-05-05",
+  "customer": {
+   "name": "Lee Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 38.5,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0029",
+  "created": "2026-03-25",
+  "customer": {
+   "name": "Reyes Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 26.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0030",
+  "created": "2026-03-06",
+  "customer": {
+   "name": "Park Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 25.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0031",
+  "created": "2026-04-16",
+  "customer": {
+   "name": "Rossi Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 16.2,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0032",
+  "created": "2026-05-06",
+  "customer": {
+   "name": "Rossi Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "High",
+  "resolution_hours": 9.9,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0033",
+  "created": "2026-05-01",
+  "customer": {
+   "name": "Lee Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 31.9,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0034",
+  "created": "2026-04-09",
+  "customer": {
+   "name": "Tanaka Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 8.7,
+  "satisfied": false,
+  "tags": [
+   "refund",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0035",
+  "created": "2026-02-07",
+  "customer": {
+   "name": "Mensah Retail",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 10.5,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0036",
+  "created": "2026-04-18",
+  "customer": {
+   "name": "Ng Retail",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 3.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0037",
+  "created": "2026-02-04",
+  "customer": {
+   "name": "Fischer Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "High",
+  "resolution_hours": 5.7,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0038",
+  "created": "2026-03-29",
+  "customer": {
+   "name": "Fischer Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 10.2,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0039",
+  "created": "2026-05-28",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 1.5,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0040",
+  "created": "2026-06-06",
+  "customer": {
+   "name": "Lee Retail",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 44.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0041",
+  "created": "2026-03-07",
+  "customer": {
+   "name": "Reyes Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 18.8,
+  "satisfied": false,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0042",
+  "created": "2026-02-06",
+  "customer": {
+   "name": "Reyes Trading",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 17.9,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0043",
+  "created": "2026-05-26",
+  "customer": {
+   "name": "Singh Foods",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 13.1,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0044",
+  "created": "2026-06-02",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 8.2,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0045",
+  "created": "2026-02-24",
+  "customer": {
+   "name": "Novak Retail",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 9.2,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0046",
+  "created": "2026-05-06",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 26.7,
+  "satisfied": false,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0047",
+  "created": "2026-04-20",
+  "customer": {
+   "name": "Lim Trading",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 20.0,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0048",
+  "created": "2026-04-17",
+  "customer": {
+   "name": "Park Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 35.3,
+  "satisfied": false,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0049",
+  "created": "2026-03-20",
+  "customer": {
+   "name": "Fischer Home",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 5.9,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0050",
+  "created": "2026-02-14",
+  "customer": {
+   "name": "Lee Retail",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 44.3,
+  "satisfied": false,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0051",
+  "created": "2026-02-22",
+  "customer": {
+   "name": "Novak Retail",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 4.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0052",
+  "created": "2026-02-09",
+  "customer": {
+   "name": "Lim Online",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 3.4,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0053",
+  "created": "2026-04-07",
+  "customer": {
+   "name": "Lim Retail",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 16.2,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0054",
+  "created": "2026-05-28",
+  "customer": {
+   "name": "Lee Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 10.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0055",
+  "created": "2026-04-01",
+  "customer": {
+   "name": "Singh Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 9.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0056",
+  "created": "2026-04-05",
+  "customer": {
+   "name": "Shah Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.5,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0057",
+  "created": "2026-06-22",
+  "customer": {
+   "name": "Goh Trading",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 0.8,
+  "satisfied": false,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0058",
+  "created": "2026-03-22",
+  "customer": {
+   "name": "Santos Online",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 2.2,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0059",
+  "created": "2026-04-25",
+  "customer": {
+   "name": "Shah Retail",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 3.7,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0060",
+  "created": "2026-01-05",
+  "customer": {
+   "name": "Hassan Foods",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 57.4,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0061",
+  "created": "2026-05-07",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 58.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0062",
+  "created": "2026-04-19",
+  "customer": {
+   "name": "Tanaka Foods",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 68.0,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0063",
+  "created": "2026-01-02",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 9.2,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0064",
+  "created": "2026-05-05",
+  "customer": {
+   "name": "Santos Foods",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 5.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0065",
+  "created": "2026-05-07",
+  "customer": {
+   "name": "Singh Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 5.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0066",
+  "created": "2026-01-01",
+  "customer": {
+   "name": "Goh Foods",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 16.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0067",
+  "created": "2026-01-31",
+  "customer": {
+   "name": "Dubois Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 10.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0068",
+  "created": "2026-06-26",
+  "customer": {
+   "name": "Rossi Foods",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 3.5,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0069",
+  "created": "2026-01-18",
+  "customer": {
+   "name": "Shah Trading",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 33.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0070",
+  "created": "2026-05-01",
+  "customer": {
+   "name": "Lee Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 64.2,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0071",
+  "created": "2026-03-02",
+  "customer": {
+   "name": "Novak Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 10.5,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0072",
+  "created": "2026-01-27",
+  "customer": {
+   "name": "Mensah Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 3.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0073",
+  "created": "2026-05-21",
+  "customer": {
+   "name": "Santos Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 57.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0074",
+  "created": "2026-04-11",
+  "customer": {
+   "name": "Ng Retail",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 2.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0075",
+  "created": "2026-04-29",
+  "customer": {
+   "name": "Hassan Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 32.1,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0076",
+  "created": "2026-04-04",
+  "customer": {
+   "name": "Novak Trading",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 21.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0077",
+  "created": "2026-06-25",
+  "customer": {
+   "name": "Dubois Retail",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 4.8,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0078",
+  "created": "2026-01-25",
+  "customer": {
+   "name": "Ng Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 3.7,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0079",
+  "created": "2026-06-10",
+  "customer": {
+   "name": "Reyes Foods",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 1.6,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0080",
+  "created": "2026-01-17",
+  "customer": {
+   "name": "Mensah Home",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 19.3,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0081",
+  "created": "2026-05-06",
+  "customer": {
+   "name": "Chen Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 30.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0082",
+  "created": "2026-05-07",
+  "customer": {
+   "name": "Hassan Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 24.6,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0083",
+  "created": "2026-03-26",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 9.3,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0084",
+  "created": "2026-04-23",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 12.2,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0085",
+  "created": "2026-02-22",
+  "customer": {
+   "name": "Rossi Trading",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 14.4,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0086",
+  "created": "2026-06-21",
+  "customer": {
+   "name": "Rossi Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 7.5,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0087",
+  "created": "2026-06-26",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 8.3,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0088",
+  "created": "2026-06-03",
+  "customer": {
+   "name": "Dubois Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 7.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0089",
+  "created": "2026-06-25",
+  "customer": {
+   "name": "Goh Foods",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 21.0,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0090",
+  "created": "2026-06-18",
+  "customer": {
+   "name": "Fischer Trading",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 1.9,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0091",
+  "created": "2026-03-24",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 9.8,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0092",
+  "created": "2026-05-21",
+  "customer": {
+   "name": "Ibrahim Home",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 5.3,
+  "satisfied": false,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0093",
+  "created": "2026-03-17",
+  "customer": {
+   "name": "Lim Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 19.9,
+  "satisfied": false,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0094",
+  "created": "2026-03-11",
+  "customer": {
+   "name": "Wong Trading",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0095",
+  "created": "2026-04-24",
+  "customer": {
+   "name": "Park Home",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 54.3,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0096",
+  "created": "2026-06-25",
+  "customer": {
+   "name": "Lim Foods",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 2.9,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0097",
+  "created": "2026-04-17",
+  "customer": {
+   "name": "Lee Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 27.3,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0098",
+  "created": "2026-03-16",
+  "customer": {
+   "name": "Santos Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 23.2,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0099",
+  "created": "2026-04-13",
+  "customer": {
+   "name": "Ibrahim Online",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 39.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0100",
+  "created": "2026-03-12",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 42.7,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0101",
+  "created": "2026-02-01",
+  "customer": {
+   "name": "Rossi Online",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 19.3,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0102",
+  "created": "2026-05-02",
+  "customer": {
+   "name": "Wong Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 54.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0103",
+  "created": "2026-02-23",
+  "customer": {
+   "name": "Tanaka Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 14.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0104",
+  "created": "2026-02-22",
+  "customer": {
+   "name": "Fischer Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 33.5,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0105",
+  "created": "2026-05-05",
+  "customer": {
+   "name": "Santos Foods",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 2.3,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0106",
+  "created": "2026-05-17",
+  "customer": {
+   "name": "Ng Foods",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 23.5,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0107",
+  "created": "2026-04-26",
+  "customer": {
+   "name": "Ng Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 17.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0108",
+  "created": "2026-02-28",
+  "customer": {
+   "name": "Kumar Retail",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 4.1,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0109",
+  "created": "2026-01-28",
+  "customer": {
+   "name": "Tanaka Trading",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 8.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0110",
+  "created": "2026-04-24",
+  "customer": {
+   "name": "Dubois Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 2.1,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0111",
+  "created": "2026-02-04",
+  "customer": {
+   "name": "Shah Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 33.5,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0112",
+  "created": "2026-03-10",
+  "customer": {
+   "name": "Lim Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 5.5,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0113",
+  "created": "2026-04-09",
+  "customer": {
+   "name": "Singh Trading",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 1.1,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0114",
+  "created": "2026-03-10",
+  "customer": {
+   "name": "Fischer Trading",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 22.0,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0115",
+  "created": "2026-05-17",
+  "customer": {
+   "name": "Santos Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 38.7,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0116",
+  "created": "2026-04-20",
+  "customer": {
+   "name": "Tanaka Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 35.6,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0117",
+  "created": "2026-02-05",
+  "customer": {
+   "name": "Hassan Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 41.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0118",
+  "created": "2026-02-24",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 25.8,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0119",
+  "created": "2026-03-10",
+  "customer": {
+   "name": "Novak Trading",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 15.3,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0120",
+  "created": "2026-06-05",
+  "customer": {
+   "name": "Ng Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 4.0,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0121",
+  "created": "2026-03-20",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 14.5,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0122",
+  "created": "2026-04-16",
+  "customer": {
+   "name": "Novak Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 16.7,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0123",
+  "created": "2026-01-25",
+  "customer": {
+   "name": "Tanaka Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 3.8,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0124",
+  "created": "2026-03-25",
+  "customer": {
+   "name": "Rossi Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 3.0,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0125",
+  "created": "2026-05-31",
+  "customer": {
+   "name": "Mensah Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 17.9,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0126",
+  "created": "2026-03-15",
+  "customer": {
+   "name": "Mensah Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 1.8,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0127",
+  "created": "2026-03-04",
+  "customer": {
+   "name": "Rossi Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 20.7,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0128",
+  "created": "2026-01-18",
+  "customer": {
+   "name": "Hassan Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 5.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0129",
+  "created": "2026-04-02",
+  "customer": {
+   "name": "Singh Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 25.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0130",
+  "created": "2026-05-06",
+  "customer": {
+   "name": "Rossi Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 3.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0131",
+  "created": "2026-03-12",
+  "customer": {
+   "name": "Shah Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 17.3,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0132",
+  "created": "2026-04-28",
+  "customer": {
+   "name": "Ibrahim Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 1.5,
+  "satisfied": false,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0133",
+  "created": "2026-05-08",
+  "customer": {
+   "name": "Tanaka Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 30.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0134",
+  "created": "2026-03-11",
+  "customer": {
+   "name": "Chen Foods",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 29.6,
+  "satisfied": false,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0135",
+  "created": "2026-02-11",
+  "customer": {
+   "name": "Lee Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 11.9,
+  "satisfied": false,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0136",
+  "created": "2026-01-20",
+  "customer": {
+   "name": "Wong Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 19.9,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0137",
+  "created": "2026-06-13",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 27.0,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0138",
+  "created": "2026-06-19",
+  "customer": {
+   "name": "Ng Foods",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 7.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0139",
+  "created": "2026-05-27",
+  "customer": {
+   "name": "Lim Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 6.4,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0140",
+  "created": "2026-06-08",
+  "customer": {
+   "name": "Lee Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 14.1,
+  "satisfied": false,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0141",
+  "created": "2026-03-20",
+  "customer": {
+   "name": "Santos Foods",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 30.5,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0142",
+  "created": "2026-05-12",
+  "customer": {
+   "name": "Reyes Trading",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 2.8,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0143",
+  "created": "2026-06-29",
+  "customer": {
+   "name": "Rossi Online",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 10.0,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0144",
+  "created": "2026-05-16",
+  "customer": {
+   "name": "Chen Trading",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 10.3,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0145",
+  "created": "2026-06-02",
+  "customer": {
+   "name": "Ibrahim Trading",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 17.2,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0146",
+  "created": "2026-06-27",
+  "customer": {
+   "name": "Shah Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 12.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0147",
+  "created": "2026-06-20",
+  "customer": {
+   "name": "Fischer Trading",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 5.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0148",
+  "created": "2026-02-11",
+  "customer": {
+   "name": "Tanaka Home",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 6.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0149",
+  "created": "2026-03-09",
+  "customer": {
+   "name": "Novak Retail",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 63.0,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0150",
+  "created": "2026-03-04",
+  "customer": {
+   "name": "Reyes Foods",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 35.2,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0151",
+  "created": "2026-03-04",
+  "customer": {
+   "name": "Chen Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 23.7,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0152",
+  "created": "2026-04-10",
+  "customer": {
+   "name": "Fischer Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 23.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0153",
+  "created": "2026-01-06",
+  "customer": {
+   "name": "Tanaka Trading",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 29.0,
+  "satisfied": false,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0154",
+  "created": "2026-04-07",
+  "customer": {
+   "name": "Fischer Retail",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 7.7,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0155",
+  "created": "2026-01-19",
+  "customer": {
+   "name": "Ibrahim Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 30.6,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0156",
+  "created": "2026-01-15",
+  "customer": {
+   "name": "Kumar Trading",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 17.0,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0157",
+  "created": "2026-01-26",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 28.4,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0158",
+  "created": "2026-04-06",
+  "customer": {
+   "name": "Hassan Foods",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 2.5,
+  "satisfied": false,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0159",
+  "created": "2026-04-30",
+  "customer": {
+   "name": "Wong Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 24.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0160",
+  "created": "2026-02-13",
+  "customer": {
+   "name": "Fischer Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 14.4,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0161",
+  "created": "2026-02-04",
+  "customer": {
+   "name": "Hassan Retail",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 11.6,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0162",
+  "created": "2026-02-16",
+  "customer": {
+   "name": "Mensah Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 38.2,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0163",
+  "created": "2026-05-12",
+  "customer": {
+   "name": "Mensah Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 34.9,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0164",
+  "created": "2026-06-08",
+  "customer": {
+   "name": "Kumar Retail",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "High",
+  "resolution_hours": 2.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0165",
+  "created": "2026-03-25",
+  "customer": {
+   "name": "Santos Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 16.4,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0166",
+  "created": "2026-04-08",
+  "customer": {
+   "name": "Chen Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 2.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0167",
+  "created": "2026-06-08",
+  "customer": {
+   "name": "Reyes Trading",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 4.5,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0168",
+  "created": "2026-04-11",
+  "customer": {
+   "name": "Lee Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 35.3,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0169",
+  "created": "2026-03-27",
+  "customer": {
+   "name": "Wong Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 37.4,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0170",
+  "created": "2026-01-16",
+  "customer": {
+   "name": "Fischer Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 32.8,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0171",
+  "created": "2026-01-06",
+  "customer": {
+   "name": "Reyes Online",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 32.2,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0172",
+  "created": "2026-02-01",
+  "customer": {
+   "name": "Chen Online",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 9.2,
+  "satisfied": false,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0173",
+  "created": "2026-01-27",
+  "customer": {
+   "name": "Ibrahim Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 24.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0174",
+  "created": "2026-06-20",
+  "customer": {
+   "name": "Lee Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 57.6,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0175",
+  "created": "2026-02-27",
+  "customer": {
+   "name": "Santos Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 16.9,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0176",
+  "created": "2026-05-29",
+  "customer": {
+   "name": "Goh Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 17.9,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0177",
+  "created": "2026-04-24",
+  "customer": {
+   "name": "Rossi Trading",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 10.1,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0178",
+  "created": "2026-06-02",
+  "customer": {
+   "name": "Chen Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 9.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0179",
+  "created": "2026-03-22",
+  "customer": {
+   "name": "Reyes Online",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 22.7,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0180",
+  "created": "2026-03-10",
+  "customer": {
+   "name": "Dubois Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 13.3,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0181",
+  "created": "2026-01-15",
+  "customer": {
+   "name": "Wong Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 4.4,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0182",
+  "created": "2026-05-05",
+  "customer": {
+   "name": "Mensah Online",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 9.1,
+  "satisfied": false,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0183",
+  "created": "2026-01-02",
+  "customer": {
+   "name": "Fischer Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 33.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0184",
+  "created": "2026-06-17",
+  "customer": {
+   "name": "Tanaka Online",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 18.2,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0185",
+  "created": "2026-05-25",
+  "customer": {
+   "name": "Shah Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 1.9,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0186",
+  "created": "2026-03-16",
+  "customer": {
+   "name": "Rossi Online",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0187",
+  "created": "2026-04-25",
+  "customer": {
+   "name": "Fischer Home",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 33.8,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0188",
+  "created": "2026-04-06",
+  "customer": {
+   "name": "Chen Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 3.0,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0189",
+  "created": "2026-06-21",
+  "customer": {
+   "name": "Ng Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 24.0,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0190",
+  "created": "2026-06-19",
+  "customer": {
+   "name": "Goh Foods",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 17.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0191",
+  "created": "2026-02-24",
+  "customer": {
+   "name": "Fischer Foods",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 49.0,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0192",
+  "created": "2026-05-09",
+  "customer": {
+   "name": "Singh Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 22.1,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0193",
+  "created": "2026-02-21",
+  "customer": {
+   "name": "Dubois Retail",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 9.1,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0194",
+  "created": "2026-02-27",
+  "customer": {
+   "name": "Goh Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 22.7,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0195",
+  "created": "2026-04-10",
+  "customer": {
+   "name": "Lee Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 13.7,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0196",
+  "created": "2026-06-28",
+  "customer": {
+   "name": "Chen Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 5.5,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0197",
+  "created": "2026-02-26",
+  "customer": {
+   "name": "Novak Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 11.7,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0198",
+  "created": "2026-05-08",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 9.9,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0199",
+  "created": "2026-06-18",
+  "customer": {
+   "name": "Chen Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 15.6,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0200",
+  "created": "2026-06-18",
+  "customer": {
+   "name": "Wong Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 17.4,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0201",
+  "created": "2026-05-23",
+  "customer": {
+   "name": "Lim Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 37.2,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0202",
+  "created": "2026-04-11",
+  "customer": {
+   "name": "Reyes Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 12.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0203",
+  "created": "2026-06-01",
+  "customer": {
+   "name": "Novak Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 6.5,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0204",
+  "created": "2026-02-27",
+  "customer": {
+   "name": "Santos Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 15.0,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0205",
+  "created": "2026-03-17",
+  "customer": {
+   "name": "Ibrahim Home",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 53.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0206",
+  "created": "2026-05-26",
+  "customer": {
+   "name": "Singh Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 1.6,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0207",
+  "created": "2026-04-05",
+  "customer": {
+   "name": "Shah Trading",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 15.9,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0208",
+  "created": "2026-05-05",
+  "customer": {
+   "name": "Hassan Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 18.6,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0209",
+  "created": "2026-01-04",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 19.7,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0210",
+  "created": "2026-04-18",
+  "customer": {
+   "name": "Fischer Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 1.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0211",
+  "created": "2026-04-17",
+  "customer": {
+   "name": "Mensah Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 5.7,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0212",
+  "created": "2026-02-23",
+  "customer": {
+   "name": "Wong Home",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 33.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0213",
+  "created": "2026-04-15",
+  "customer": {
+   "name": "Lim Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 9.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0214",
+  "created": "2026-06-20",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 8.1,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0215",
+  "created": "2026-06-23",
+  "customer": {
+   "name": "Fischer Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 5.8,
+  "satisfied": false,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0216",
+  "created": "2026-01-23",
+  "customer": {
+   "name": "Wong Home",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 13.0,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0217",
+  "created": "2026-01-06",
+  "customer": {
+   "name": "Ibrahim Foods",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 31.8,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0218",
+  "created": "2026-01-22",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 36.1,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0219",
+  "created": "2026-06-27",
+  "customer": {
+   "name": "Park Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 26.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0220",
+  "created": "2026-05-30",
+  "customer": {
+   "name": "Hassan Retail",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 2.0,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0221",
+  "created": "2026-06-13",
+  "customer": {
+   "name": "Singh Online",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 55.2,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0222",
+  "created": "2026-04-21",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 11.8,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0223",
+  "created": "2026-01-24",
+  "customer": {
+   "name": "Ibrahim Retail",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 10.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0224",
+  "created": "2026-06-20",
+  "customer": {
+   "name": "Lee Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 22.5,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0225",
+  "created": "2026-04-30",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 4.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0226",
+  "created": "2026-04-15",
+  "customer": {
+   "name": "Kumar Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 3.8,
+  "satisfied": false,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0227",
+  "created": "2026-03-26",
+  "customer": {
+   "name": "Reyes Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 30.0,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0228",
+  "created": "2026-05-13",
+  "customer": {
+   "name": "Rossi Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 24.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0229",
+  "created": "2026-02-04",
+  "customer": {
+   "name": "Park Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 32.2,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0230",
+  "created": "2026-05-30",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 6.7,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0231",
+  "created": "2026-05-06",
+  "customer": {
+   "name": "Santos Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 4.3,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0232",
+  "created": "2026-02-09",
+  "customer": {
+   "name": "Ng Foods",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 22.8,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0233",
+  "created": "2026-03-17",
+  "customer": {
+   "name": "Santos Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 9.8,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0234",
+  "created": "2026-03-24",
+  "customer": {
+   "name": "Shah Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 18.3,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0235",
+  "created": "2026-04-27",
+  "customer": {
+   "name": "Hassan Home",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 17.7,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0236",
+  "created": "2026-02-08",
+  "customer": {
+   "name": "Mensah Retail",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 4.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0237",
+  "created": "2026-06-15",
+  "customer": {
+   "name": "Lee Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 4.8,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0238",
+  "created": "2026-05-09",
+  "customer": {
+   "name": "Mensah Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 6.9,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0239",
+  "created": "2026-05-26",
+  "customer": {
+   "name": "Singh Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 30.9,
+  "satisfied": false,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0240",
+  "created": "2026-04-27",
+  "customer": {
+   "name": "Lee Online",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 5.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0241",
+  "created": "2026-05-26",
+  "customer": {
+   "name": "Reyes Home",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 14.9,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0242",
+  "created": "2026-04-03",
+  "customer": {
+   "name": "Shah Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 26.9,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0243",
+  "created": "2026-05-25",
+  "customer": {
+   "name": "Fischer Home",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 9.9,
+  "satisfied": false,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0244",
+  "created": "2026-06-26",
+  "customer": {
+   "name": "Ibrahim Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 8.9,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0245",
+  "created": "2026-01-05",
+  "customer": {
+   "name": "Wong Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 31.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0246",
+  "created": "2026-02-23",
+  "customer": {
+   "name": "Park Home",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 8.9,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0247",
+  "created": "2026-05-18",
+  "customer": {
+   "name": "Ibrahim Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 16.2,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0248",
+  "created": "2026-01-27",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 24.9,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0249",
+  "created": "2026-03-16",
+  "customer": {
+   "name": "Fischer Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 9.0,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0250",
+  "created": "2026-06-28",
+  "customer": {
+   "name": "Santos Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 21.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0251",
+  "created": "2026-01-11",
+  "customer": {
+   "name": "Rossi Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 5.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0252",
+  "created": "2026-01-18",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 71.4,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0253",
+  "created": "2026-06-20",
+  "customer": {
+   "name": "Hassan Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 22.8,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0254",
+  "created": "2026-02-18",
+  "customer": {
+   "name": "Chen Online",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 56.2,
+  "satisfied": false,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0255",
+  "created": "2026-06-08",
+  "customer": {
+   "name": "Santos Home",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 6.4,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0256",
+  "created": "2026-05-09",
+  "customer": {
+   "name": "Rossi Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 5.9,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0257",
+  "created": "2026-04-10",
+  "customer": {
+   "name": "Shah Trading",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 12.4,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0258",
+  "created": "2026-03-16",
+  "customer": {
+   "name": "Ng Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 4.3,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0259",
+  "created": "2026-06-23",
+  "customer": {
+   "name": "Singh Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 15.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0260",
+  "created": "2026-04-17",
+  "customer": {
+   "name": "Wong Retail",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 4.5,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0261",
+  "created": "2026-04-10",
+  "customer": {
+   "name": "Chen Home",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 5.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0262",
+  "created": "2026-03-17",
+  "customer": {
+   "name": "Ng Retail",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 2.4,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0263",
+  "created": "2026-05-18",
+  "customer": {
+   "name": "Dubois Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 23.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0264",
+  "created": "2026-02-13",
+  "customer": {
+   "name": "Santos Foods",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 26.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0265",
+  "created": "2026-03-20",
+  "customer": {
+   "name": "Rossi Foods",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 3.7,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0266",
+  "created": "2026-06-26",
+  "customer": {
+   "name": "Hassan Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 4.8,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0267",
+  "created": "2026-02-16",
+  "customer": {
+   "name": "Lee Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 9.8,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0268",
+  "created": "2026-03-06",
+  "customer": {
+   "name": "Kumar Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 25.4,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0269",
+  "created": "2026-03-23",
+  "customer": {
+   "name": "Reyes Foods",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 64.2,
+  "satisfied": false,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0270",
+  "created": "2026-05-04",
+  "customer": {
+   "name": "Chen Trading",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 5.2,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0271",
+  "created": "2026-02-23",
+  "customer": {
+   "name": "Wong Retail",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 13.8,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0272",
+  "created": "2026-01-07",
+  "customer": {
+   "name": "Lim Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 21.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0273",
+  "created": "2026-06-01",
+  "customer": {
+   "name": "Singh Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 9.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0274",
+  "created": "2026-05-26",
+  "customer": {
+   "name": "Singh Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 39.0,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0275",
+  "created": "2026-03-09",
+  "customer": {
+   "name": "Santos Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 4.9,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0276",
+  "created": "2026-06-02",
+  "customer": {
+   "name": "Fischer Trading",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 2.1,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0277",
+  "created": "2026-01-27",
+  "customer": {
+   "name": "Rossi Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 31.5,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0278",
+  "created": "2026-01-14",
+  "customer": {
+   "name": "Ibrahim Trading",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 43.3,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0279",
+  "created": "2026-02-07",
+  "customer": {
+   "name": "Mensah Home",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 7.3,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0280",
+  "created": "2026-02-20",
+  "customer": {
+   "name": "Park Online",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 2.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0281",
+  "created": "2026-03-03",
+  "customer": {
+   "name": "Fischer Retail",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 5.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0282",
+  "created": "2026-06-21",
+  "customer": {
+   "name": "Santos Trading",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 2.7,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0283",
+  "created": "2026-03-16",
+  "customer": {
+   "name": "Lim Home",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 10.9,
+  "satisfied": false,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0284",
+  "created": "2026-03-03",
+  "customer": {
+   "name": "Goh Trading",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 8.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0285",
+  "created": "2026-01-13",
+  "customer": {
+   "name": "Singh Online",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 1.4,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0286",
+  "created": "2026-01-03",
+  "customer": {
+   "name": "Novak Online",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 4.7,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0287",
+  "created": "2026-05-24",
+  "customer": {
+   "name": "Lim Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 41.1,
+  "satisfied": false,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0288",
+  "created": "2026-05-26",
+  "customer": {
+   "name": "Chen Retail",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 4.0,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0289",
+  "created": "2026-05-28",
+  "customer": {
+   "name": "Park Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 21.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0290",
+  "created": "2026-03-29",
+  "customer": {
+   "name": "Chen Home",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 35.4,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0291",
+  "created": "2026-02-25",
+  "customer": {
+   "name": "Dubois Trading",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 10.3,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0292",
+  "created": "2026-01-07",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "High",
+  "resolution_hours": 11.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0293",
+  "created": "2026-04-24",
+  "customer": {
+   "name": "Tanaka Online",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 4.4,
+  "satisfied": false,
+  "tags": [
+   "vip",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0294",
+  "created": "2026-02-26",
+  "customer": {
+   "name": "Tanaka Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 15.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0295",
+  "created": "2026-03-31",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 71.2,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0296",
+  "created": "2026-01-14",
+  "customer": {
+   "name": "Ibrahim Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 18.6,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0297",
+  "created": "2026-04-07",
+  "customer": {
+   "name": "Rossi Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 23.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0298",
+  "created": "2026-04-05",
+  "customer": {
+   "name": "Singh Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 8.7,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0299",
+  "created": "2026-01-20",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 4.2,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0300",
+  "created": "2026-03-14",
+  "customer": {
+   "name": "Wong Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 14.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0301",
+  "created": "2026-05-01",
+  "customer": {
+   "name": "Ng Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 39.8,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0302",
+  "created": "2026-05-09",
+  "customer": {
+   "name": "Wong Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 21.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0303",
+  "created": "2026-01-14",
+  "customer": {
+   "name": "Santos Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 29.3,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0304",
+  "created": "2026-01-25",
+  "customer": {
+   "name": "Fischer Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 20.1,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0305",
+  "created": "2026-04-08",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 21.9,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0306",
+  "created": "2026-05-03",
+  "customer": {
+   "name": "Ng Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 2.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0307",
+  "created": "2026-03-04",
+  "customer": {
+   "name": "Ng Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 6.2,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0308",
+  "created": "2026-04-16",
+  "customer": {
+   "name": "Mensah Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 16.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0309",
+  "created": "2026-05-21",
+  "customer": {
+   "name": "Kumar Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 11.0,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0310",
+  "created": "2026-05-24",
+  "customer": {
+   "name": "Rossi Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 28.9,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0311",
+  "created": "2026-05-05",
+  "customer": {
+   "name": "Park Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 33.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0312",
+  "created": "2026-01-13",
+  "customer": {
+   "name": "Tanaka Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 5.3,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0313",
+  "created": "2026-02-01",
+  "customer": {
+   "name": "Ibrahim Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.6,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0314",
+  "created": "2026-05-25",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 2.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0315",
+  "created": "2026-03-16",
+  "customer": {
+   "name": "Park Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 10.2,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0316",
+  "created": "2026-01-23",
+  "customer": {
+   "name": "Lim Home",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 19.8,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0317",
+  "created": "2026-05-05",
+  "customer": {
+   "name": "Wong Retail",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 18.8,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0318",
+  "created": "2026-06-06",
+  "customer": {
+   "name": "Kumar Trading",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 15.6,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0319",
+  "created": "2026-06-27",
+  "customer": {
+   "name": "Goh Foods",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 0.8,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0320",
+  "created": "2026-04-06",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 2.0,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0321",
+  "created": "2026-04-12",
+  "customer": {
+   "name": "Ng Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 9.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0322",
+  "created": "2026-05-08",
+  "customer": {
+   "name": "Singh Home",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 18.3,
+  "satisfied": false,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0323",
+  "created": "2026-04-01",
+  "customer": {
+   "name": "Reyes Foods",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 9.4,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0324",
+  "created": "2026-02-20",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 37.2,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0325",
+  "created": "2026-04-07",
+  "customer": {
+   "name": "Chen Retail",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 45.2,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0326",
+  "created": "2026-04-25",
+  "customer": {
+   "name": "Lee Online",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 10.6,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0327",
+  "created": "2026-06-20",
+  "customer": {
+   "name": "Mensah Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.8,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0328",
+  "created": "2026-02-27",
+  "customer": {
+   "name": "Chen Home",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 1.7,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0329",
+  "created": "2026-06-10",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 30.9,
+  "satisfied": false,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0330",
+  "created": "2026-02-16",
+  "customer": {
+   "name": "Fischer Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 38.4,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0331",
+  "created": "2026-01-30",
+  "customer": {
+   "name": "Park Home",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 34.6,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0332",
+  "created": "2026-04-20",
+  "customer": {
+   "name": "Rossi Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 42.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0333",
+  "created": "2026-03-19",
+  "customer": {
+   "name": "Dubois Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 39.7,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0334",
+  "created": "2026-06-23",
+  "customer": {
+   "name": "Lim Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 31.7,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0335",
+  "created": "2026-04-18",
+  "customer": {
+   "name": "Reyes Trading",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 2.0,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0336",
+  "created": "2026-01-20",
+  "customer": {
+   "name": "Shah Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 7.5,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0337",
+  "created": "2026-01-16",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 21.9,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0338",
+  "created": "2026-01-17",
+  "customer": {
+   "name": "Park Online",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 31.6,
+  "satisfied": false,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0339",
+  "created": "2026-05-02",
+  "customer": {
+   "name": "Hassan Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 19.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0340",
+  "created": "2026-03-19",
+  "customer": {
+   "name": "Novak Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 11.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0341",
+  "created": "2026-05-03",
+  "customer": {
+   "name": "Santos Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 13.6,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0342",
+  "created": "2026-03-12",
+  "customer": {
+   "name": "Shah Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 20.3,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0343",
+  "created": "2026-05-03",
+  "customer": {
+   "name": "Goh Retail",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 1.2,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0344",
+  "created": "2026-06-27",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "High",
+  "resolution_hours": 11.8,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0345",
+  "created": "2026-05-15",
+  "customer": {
+   "name": "Shah Trading",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 4.1,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0346",
+  "created": "2026-05-08",
+  "customer": {
+   "name": "Singh Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 16.2,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0347",
+  "created": "2026-04-09",
+  "customer": {
+   "name": "Singh Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 71.2,
+  "satisfied": false,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0348",
+  "created": "2026-05-31",
+  "customer": {
+   "name": "Fischer Online",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 63.9,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0349",
+  "created": "2026-01-16",
+  "customer": {
+   "name": "Lee Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 4.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0350",
+  "created": "2026-03-03",
+  "customer": {
+   "name": "Shah Foods",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 7.9,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0351",
+  "created": "2026-03-29",
+  "customer": {
+   "name": "Lee Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 14.0,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0352",
+  "created": "2026-01-11",
+  "customer": {
+   "name": "Ng Home",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 6.0,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0353",
+  "created": "2026-05-07",
+  "customer": {
+   "name": "Kumar Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 13.8,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0354",
+  "created": "2026-03-07",
+  "customer": {
+   "name": "Mensah Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 16.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0355",
+  "created": "2026-04-15",
+  "customer": {
+   "name": "Shah Trading",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 35.3,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0356",
+  "created": "2026-01-03",
+  "customer": {
+   "name": "Lee Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.1,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0357",
+  "created": "2026-06-03",
+  "customer": {
+   "name": "Santos Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 11.8,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0358",
+  "created": "2026-05-28",
+  "customer": {
+   "name": "Dubois Trading",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 25.5,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0359",
+  "created": "2026-03-05",
+  "customer": {
+   "name": "Lim Trading",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 17.4,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0360",
+  "created": "2026-04-29",
+  "customer": {
+   "name": "Chen Retail",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 1.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0361",
+  "created": "2026-01-04",
+  "customer": {
+   "name": "Dubois Retail",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 5.8,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0362",
+  "created": "2026-02-28",
+  "customer": {
+   "name": "Shah Home",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 7.7,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0363",
+  "created": "2026-04-01",
+  "customer": {
+   "name": "Hassan Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 7.8,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0364",
+  "created": "2026-05-19",
+  "customer": {
+   "name": "Rossi Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 22.5,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0365",
+  "created": "2026-02-03",
+  "customer": {
+   "name": "Fischer Online",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 9.8,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0366",
+  "created": "2026-02-13",
+  "customer": {
+   "name": "Hassan Home",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 30.9,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0367",
+  "created": "2026-06-23",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 1.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0368",
+  "created": "2026-04-27",
+  "customer": {
+   "name": "Tanaka Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 10.3,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0369",
+  "created": "2026-03-16",
+  "customer": {
+   "name": "Rossi Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 11.3,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0370",
+  "created": "2026-04-10",
+  "customer": {
+   "name": "Goh Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 18.8,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0371",
+  "created": "2026-01-19",
+  "customer": {
+   "name": "Ibrahim Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 1.9,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0372",
+  "created": "2026-04-26",
+  "customer": {
+   "name": "Shah Online",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 24.0,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0373",
+  "created": "2026-04-13",
+  "customer": {
+   "name": "Mensah Home",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 14.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0374",
+  "created": "2026-03-13",
+  "customer": {
+   "name": "Lim Online",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 20.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0375",
+  "created": "2026-01-15",
+  "customer": {
+   "name": "Ng Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 10.5,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0376",
+  "created": "2026-03-17",
+  "customer": {
+   "name": "Reyes Online",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 13.1,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0377",
+  "created": "2026-01-15",
+  "customer": {
+   "name": "Chen Online",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 73.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0378",
+  "created": "2026-02-14",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 3.3,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0379",
+  "created": "2026-04-14",
+  "customer": {
+   "name": "Mensah Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 10.1,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0380",
+  "created": "2026-05-02",
+  "customer": {
+   "name": "Hassan Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 1.7,
+  "satisfied": false,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0381",
+  "created": "2026-02-18",
+  "customer": {
+   "name": "Dubois Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 16.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0382",
+  "created": "2026-04-03",
+  "customer": {
+   "name": "Goh Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 9.1,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0383",
+  "created": "2026-02-12",
+  "customer": {
+   "name": "Chen Home",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 12.6,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0384",
+  "created": "2026-01-07",
+  "customer": {
+   "name": "Ng Home",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 5.9,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0385",
+  "created": "2026-02-15",
+  "customer": {
+   "name": "Singh Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 30.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0386",
+  "created": "2026-01-26",
+  "customer": {
+   "name": "Hassan Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 10.8,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0387",
+  "created": "2026-01-07",
+  "customer": {
+   "name": "Goh Trading",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 1.9,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0388",
+  "created": "2026-05-08",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 5.8,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0389",
+  "created": "2026-04-20",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 20.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0390",
+  "created": "2026-03-02",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 4.1,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0391",
+  "created": "2026-05-16",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 35.9,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0392",
+  "created": "2026-05-23",
+  "customer": {
+   "name": "Lim Retail",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 5.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0393",
+  "created": "2026-01-22",
+  "customer": {
+   "name": "Hassan Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 31.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0394",
+  "created": "2026-03-03",
+  "customer": {
+   "name": "Singh Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 13.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0395",
+  "created": "2026-03-07",
+  "customer": {
+   "name": "Rossi Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 8.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0396",
+  "created": "2026-04-16",
+  "customer": {
+   "name": "Ibrahim Foods",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 4.2,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0397",
+  "created": "2026-03-10",
+  "customer": {
+   "name": "Lim Trading",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 4.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0398",
+  "created": "2026-02-26",
+  "customer": {
+   "name": "Lee Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 14.9,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0399",
+  "created": "2026-02-24",
+  "customer": {
+   "name": "Park Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 4.9,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0400",
+  "created": "2026-01-16",
+  "customer": {
+   "name": "Park Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 29.8,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0401",
+  "created": "2026-02-04",
+  "customer": {
+   "name": "Santos Home",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 2.0,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0402",
+  "created": "2026-03-26",
+  "customer": {
+   "name": "Novak Online",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 2.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0403",
+  "created": "2026-05-13",
+  "customer": {
+   "name": "Santos Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 7.2,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0404",
+  "created": "2026-02-24",
+  "customer": {
+   "name": "Shah Online",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 4.0,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0405",
+  "created": "2026-01-02",
+  "customer": {
+   "name": "Santos Online",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 19.1,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0406",
+  "created": "2026-04-25",
+  "customer": {
+   "name": "Rossi Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 19.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0407",
+  "created": "2026-05-14",
+  "customer": {
+   "name": "Lim Trading",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 20.6,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0408",
+  "created": "2026-03-11",
+  "customer": {
+   "name": "Goh Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 61.1,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0409",
+  "created": "2026-05-28",
+  "customer": {
+   "name": "Wong Trading",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 38.5,
+  "satisfied": false,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0410",
+  "created": "2026-03-02",
+  "customer": {
+   "name": "Dubois Home",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 7.4,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0411",
+  "created": "2026-03-18",
+  "customer": {
+   "name": "Shah Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 23.2,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0412",
+  "created": "2026-06-19",
+  "customer": {
+   "name": "Park Trading",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 12.2,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0413",
+  "created": "2026-06-06",
+  "customer": {
+   "name": "Wong Home",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 6.5,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0414",
+  "created": "2026-05-28",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 3.8,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0415",
+  "created": "2026-06-09",
+  "customer": {
+   "name": "Chen Online",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 1.6,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0416",
+  "created": "2026-04-24",
+  "customer": {
+   "name": "Wong Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 14.3,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0417",
+  "created": "2026-02-26",
+  "customer": {
+   "name": "Lee Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 5.8,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0418",
+  "created": "2026-04-03",
+  "customer": {
+   "name": "Hassan Foods",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 10.3,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0419",
+  "created": "2026-06-19",
+  "customer": {
+   "name": "Santos Online",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 2.6,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0420",
+  "created": "2026-05-31",
+  "customer": {
+   "name": "Shah Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 8.8,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0421",
+  "created": "2026-01-24",
+  "customer": {
+   "name": "Santos Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 4.4,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0422",
+  "created": "2026-04-21",
+  "customer": {
+   "name": "Kumar Home",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 14.1,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0423",
+  "created": "2026-03-03",
+  "customer": {
+   "name": "Ibrahim Retail",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 11.3,
+  "satisfied": false,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0424",
+  "created": "2026-01-16",
+  "customer": {
+   "name": "Shah Foods",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 9.5,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0425",
+  "created": "2026-02-25",
+  "customer": {
+   "name": "Kumar Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 9.2,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0426",
+  "created": "2026-03-10",
+  "customer": {
+   "name": "Shah Online",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 4.2,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0427",
+  "created": "2026-01-03",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 48.3,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0428",
+  "created": "2026-04-16",
+  "customer": {
+   "name": "Ng Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 1.0,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0429",
+  "created": "2026-06-23",
+  "customer": {
+   "name": "Chen Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "High",
+  "resolution_hours": 12.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0430",
+  "created": "2026-06-23",
+  "customer": {
+   "name": "Kumar Online",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.0,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0431",
+  "created": "2026-03-26",
+  "customer": {
+   "name": "Ibrahim Foods",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 9.4,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0432",
+  "created": "2026-06-14",
+  "customer": {
+   "name": "Mensah Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 30.1,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0433",
+  "created": "2026-02-06",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 5.6,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0434",
+  "created": "2026-06-18",
+  "customer": {
+   "name": "Fischer Online",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0435",
+  "created": "2026-04-22",
+  "customer": {
+   "name": "Hassan Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 32.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0436",
+  "created": "2026-04-28",
+  "customer": {
+   "name": "Lee Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 17.8,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0437",
+  "created": "2026-03-22",
+  "customer": {
+   "name": "Lim Retail",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 2.6,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0438",
+  "created": "2026-05-27",
+  "customer": {
+   "name": "Ibrahim Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 17.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0439",
+  "created": "2026-05-20",
+  "customer": {
+   "name": "Santos Trading",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 21.0,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0440",
+  "created": "2026-01-24",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 19.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0441",
+  "created": "2026-03-21",
+  "customer": {
+   "name": "Hassan Retail",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 8.7,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0442",
+  "created": "2026-05-04",
+  "customer": {
+   "name": "Hassan Foods",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 7.1,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0443",
+  "created": "2026-03-21",
+  "customer": {
+   "name": "Mensah Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 19.9,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0444",
+  "created": "2026-04-13",
+  "customer": {
+   "name": "Fischer Retail",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 20.2,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0445",
+  "created": "2026-06-16",
+  "customer": {
+   "name": "Tanaka Online",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 6.2,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0446",
+  "created": "2026-05-20",
+  "customer": {
+   "name": "Wong Foods",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 10.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0447",
+  "created": "2026-02-01",
+  "customer": {
+   "name": "Ibrahim Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 24.6,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0448",
+  "created": "2026-05-22",
+  "customer": {
+   "name": "Lee Foods",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 3.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0449",
+  "created": "2026-01-11",
+  "customer": {
+   "name": "Santos Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 6.9,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0450",
+  "created": "2026-02-03",
+  "customer": {
+   "name": "Hassan Home",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 8.7,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0451",
+  "created": "2026-04-14",
+  "customer": {
+   "name": "Wong Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 12.3,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0452",
+  "created": "2026-01-02",
+  "customer": {
+   "name": "Park Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 23.0,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0453",
+  "created": "2026-05-29",
+  "customer": {
+   "name": "Mensah Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 7.9,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0454",
+  "created": "2026-01-25",
+  "customer": {
+   "name": "Goh Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "High",
+  "resolution_hours": 9.3,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0455",
+  "created": "2026-04-26",
+  "customer": {
+   "name": "Mensah Online",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 14.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0456",
+  "created": "2026-06-02",
+  "customer": {
+   "name": "Shah Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 27.8,
+  "satisfied": false,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0457",
+  "created": "2026-05-07",
+  "customer": {
+   "name": "Santos Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 26.2,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0458",
+  "created": "2026-06-29",
+  "customer": {
+   "name": "Fischer Online",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 7.9,
+  "satisfied": false,
+  "tags": [
+   "refund",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0459",
+  "created": "2026-01-05",
+  "customer": {
+   "name": "Singh Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 7.5,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0460",
+  "created": "2026-06-13",
+  "customer": {
+   "name": "Ibrahim Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 11.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0461",
+  "created": "2026-01-10",
+  "customer": {
+   "name": "Tanaka Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 2.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0462",
+  "created": "2026-04-20",
+  "customer": {
+   "name": "Santos Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 18.3,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0463",
+  "created": "2026-01-11",
+  "customer": {
+   "name": "Dubois Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 4.2,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0464",
+  "created": "2026-02-03",
+  "customer": {
+   "name": "Reyes Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 17.7,
+  "satisfied": false,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0465",
+  "created": "2026-04-03",
+  "customer": {
+   "name": "Lee Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 5.5,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0466",
+  "created": "2026-06-16",
+  "customer": {
+   "name": "Fischer Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 11.7,
+  "satisfied": false,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0467",
+  "created": "2026-02-15",
+  "customer": {
+   "name": "Chen Retail",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 30.7,
+  "satisfied": false,
+  "tags": [
+   "vip",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0468",
+  "created": "2026-03-17",
+  "customer": {
+   "name": "Shah Retail",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 5.9,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0469",
+  "created": "2026-01-19",
+  "customer": {
+   "name": "Lee Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 10.3,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0470",
+  "created": "2026-05-18",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 21.3,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0471",
+  "created": "2026-03-13",
+  "customer": {
+   "name": "Lim Home",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 47.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0472",
+  "created": "2026-04-04",
+  "customer": {
+   "name": "Lim Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 5.6,
+  "satisfied": false,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0473",
+  "created": "2026-02-17",
+  "customer": {
+   "name": "Reyes Home",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 9.4,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0474",
+  "created": "2026-03-01",
+  "customer": {
+   "name": "Chen Trading",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0475",
+  "created": "2026-03-28",
+  "customer": {
+   "name": "Shah Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 8.7,
+  "satisfied": false,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0476",
+  "created": "2026-02-24",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.2,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0477",
+  "created": "2026-04-06",
+  "customer": {
+   "name": "Santos Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 21.6,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0478",
+  "created": "2026-03-02",
+  "customer": {
+   "name": "Singh Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 12.4,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0479",
+  "created": "2026-06-16",
+  "customer": {
+   "name": "Santos Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 35.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0480",
+  "created": "2026-02-14",
+  "customer": {
+   "name": "Park Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 30.6,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0481",
+  "created": "2026-01-14",
+  "customer": {
+   "name": "Hassan Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 30.9,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0482",
+  "created": "2026-01-23",
+  "customer": {
+   "name": "Chen Trading",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 44.9,
+  "satisfied": false,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0483",
+  "created": "2026-02-07",
+  "customer": {
+   "name": "Lee Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 49.8,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0484",
+  "created": "2026-02-13",
+  "customer": {
+   "name": "Goh Online",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 4.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0485",
+  "created": "2026-06-07",
+  "customer": {
+   "name": "Ibrahim Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 8.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0486",
+  "created": "2026-06-14",
+  "customer": {
+   "name": "Shah Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 5.3,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0487",
+  "created": "2026-03-31",
+  "customer": {
+   "name": "Novak Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 21.6,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0488",
+  "created": "2026-01-13",
+  "customer": {
+   "name": "Reyes Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 4.6,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0489",
+  "created": "2026-04-10",
+  "customer": {
+   "name": "Park Online",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 38.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0490",
+  "created": "2026-01-18",
+  "customer": {
+   "name": "Wong Home",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 17.4,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0491",
+  "created": "2026-03-03",
+  "customer": {
+   "name": "Dubois Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 15.0,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0492",
+  "created": "2026-05-22",
+  "customer": {
+   "name": "Mensah Trading",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 2.8,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0493",
+  "created": "2026-05-07",
+  "customer": {
+   "name": "Wong Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 14.7,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0494",
+  "created": "2026-02-24",
+  "customer": {
+   "name": "Rossi Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 20.9,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0495",
+  "created": "2026-05-30",
+  "customer": {
+   "name": "Fischer Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 26.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0496",
+  "created": "2026-03-30",
+  "customer": {
+   "name": "Ng Home",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 3.2,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0497",
+  "created": "2026-06-24",
+  "customer": {
+   "name": "Dubois Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 22.1,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0498",
+  "created": "2026-03-01",
+  "customer": {
+   "name": "Singh Foods",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 7.6,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0499",
+  "created": "2026-03-21",
+  "customer": {
+   "name": "Santos Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 24.0,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0500",
+  "created": "2026-05-31",
+  "customer": {
+   "name": "Ng Foods",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 12.5,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0501",
+  "created": "2026-05-21",
+  "customer": {
+   "name": "Kumar Trading",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 26.4,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0502",
+  "created": "2026-06-04",
+  "customer": {
+   "name": "Park Online",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 25.9,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0503",
+  "created": "2026-05-24",
+  "customer": {
+   "name": "Hassan Online",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 21.9,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0504",
+  "created": "2026-03-23",
+  "customer": {
+   "name": "Hassan Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 13.0,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0505",
+  "created": "2026-03-05",
+  "customer": {
+   "name": "Hassan Trading",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 28.4,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0506",
+  "created": "2026-04-06",
+  "customer": {
+   "name": "Park Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 10.2,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0507",
+  "created": "2026-06-04",
+  "customer": {
+   "name": "Lim Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 3.9,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0508",
+  "created": "2026-05-21",
+  "customer": {
+   "name": "Kumar Trading",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 61.1,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0509",
+  "created": "2026-04-02",
+  "customer": {
+   "name": "Chen Retail",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 10.8,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0510",
+  "created": "2026-01-28",
+  "customer": {
+   "name": "Novak Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 31.4,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0511",
+  "created": "2026-01-06",
+  "customer": {
+   "name": "Rossi Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 3.4,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0512",
+  "created": "2026-06-12",
+  "customer": {
+   "name": "Rossi Foods",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 15.4,
+  "satisfied": false,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0513",
+  "created": "2026-05-30",
+  "customer": {
+   "name": "Ibrahim Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 10.5,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0514",
+  "created": "2026-06-29",
+  "customer": {
+   "name": "Shah Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 51.5,
+  "satisfied": false,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0515",
+  "created": "2026-01-10",
+  "customer": {
+   "name": "Shah Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 3.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0516",
+  "created": "2026-02-13",
+  "customer": {
+   "name": "Singh Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 14.0,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0517",
+  "created": "2026-03-30",
+  "customer": {
+   "name": "Chen Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 4.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0518",
+  "created": "2026-05-27",
+  "customer": {
+   "name": "Dubois Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 34.8,
+  "satisfied": false,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0519",
+  "created": "2026-02-25",
+  "customer": {
+   "name": "Hassan Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 2.7,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0520",
+  "created": "2026-01-09",
+  "customer": {
+   "name": "Lee Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 12.7,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0521",
+  "created": "2026-02-12",
+  "customer": {
+   "name": "Hassan Online",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 5.5,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0522",
+  "created": "2026-06-15",
+  "customer": {
+   "name": "Park Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 8.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0523",
+  "created": "2026-05-20",
+  "customer": {
+   "name": "Fischer Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 36.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0524",
+  "created": "2026-06-25",
+  "customer": {
+   "name": "Ibrahim Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 43.0,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0525",
+  "created": "2026-03-05",
+  "customer": {
+   "name": "Dubois Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 41.2,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0526",
+  "created": "2026-02-22",
+  "customer": {
+   "name": "Ng Retail",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 13.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0527",
+  "created": "2026-02-04",
+  "customer": {
+   "name": "Dubois Retail",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 10.7,
+  "satisfied": true,
+  "tags": [
+   "vip",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0528",
+  "created": "2026-01-28",
+  "customer": {
+   "name": "Singh Home",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 25.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0529",
+  "created": "2026-03-04",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 7.8,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0530",
+  "created": "2026-04-11",
+  "customer": {
+   "name": "Kumar Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 11.0,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0531",
+  "created": "2026-03-18",
+  "customer": {
+   "name": "Shah Home",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 30.2,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0532",
+  "created": "2026-04-28",
+  "customer": {
+   "name": "Lim Online",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 24.1,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0533",
+  "created": "2026-03-03",
+  "customer": {
+   "name": "Novak Home",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 4.0,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0534",
+  "created": "2026-06-10",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 19.4,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0535",
+  "created": "2026-05-14",
+  "customer": {
+   "name": "Reyes Home",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 43.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0536",
+  "created": "2026-03-20",
+  "customer": {
+   "name": "Tanaka Trading",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 7.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0537",
+  "created": "2026-04-07",
+  "customer": {
+   "name": "Fischer Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 20.9,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0538",
+  "created": "2026-01-31",
+  "customer": {
+   "name": "Tanaka Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 20.5,
+  "satisfied": false,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0539",
+  "created": "2026-04-10",
+  "customer": {
+   "name": "Santos Online",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Medium",
+  "resolution_hours": 19.2,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0540",
+  "created": "2026-05-22",
+  "customer": {
+   "name": "Novak Foods",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "High",
+  "resolution_hours": 9.3,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0541",
+  "created": "2026-05-12",
+  "customer": {
+   "name": "Singh Home",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 19.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0542",
+  "created": "2026-02-13",
+  "customer": {
+   "name": "Singh Retail",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "High",
+  "resolution_hours": 20.6,
+  "satisfied": false,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0543",
+  "created": "2026-04-25",
+  "customer": {
+   "name": "Shah Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 6.4,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0544",
+  "created": "2026-04-05",
+  "customer": {
+   "name": "Santos Online",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 56.5,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0545",
+  "created": "2026-05-02",
+  "customer": {
+   "name": "Fischer Online",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 5.6,
+  "satisfied": false,
+  "tags": [
+   "urgent",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0546",
+  "created": "2026-03-02",
+  "customer": {
+   "name": "Santos Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 8.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0547",
+  "created": "2026-03-17",
+  "customer": {
+   "name": "Wong Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 22.2,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0548",
+  "created": "2026-01-15",
+  "customer": {
+   "name": "Novak Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 2.8,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0549",
+  "created": "2026-01-23",
+  "customer": {
+   "name": "Wong Foods",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 5.8,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0550",
+  "created": "2026-01-20",
+  "customer": {
+   "name": "Santos Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 3.8,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0551",
+  "created": "2026-02-09",
+  "customer": {
+   "name": "Wong Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 35.9,
+  "satisfied": false,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0552",
+  "created": "2026-02-08",
+  "customer": {
+   "name": "Mensah Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 6.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0553",
+  "created": "2026-02-15",
+  "customer": {
+   "name": "Fischer Trading",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 54.6,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0554",
+  "created": "2026-02-15",
+  "customer": {
+   "name": "Novak Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 6.3,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0555",
+  "created": "2026-04-07",
+  "customer": {
+   "name": "Tanaka Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 36.1,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0556",
+  "created": "2026-02-17",
+  "customer": {
+   "name": "Lee Foods",
+   "tier": "Bronze"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 22.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0557",
+  "created": "2026-04-22",
+  "customer": {
+   "name": "Ng Online",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 12.7,
+  "satisfied": false,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0558",
+  "created": "2026-03-10",
+  "customer": {
+   "name": "Reyes Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 28.3,
+  "satisfied": false,
+  "tags": [
+   "repeat",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0559",
+  "created": "2026-03-17",
+  "customer": {
+   "name": "Tanaka Retail",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 6.1,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0560",
+  "created": "2026-01-14",
+  "customer": {
+   "name": "Park Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 22.7,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0561",
+  "created": "2026-03-19",
+  "customer": {
+   "name": "Novak Home",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 5.0,
+  "satisfied": false,
+  "tags": [
+   "escalated",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0562",
+  "created": "2026-03-17",
+  "customer": {
+   "name": "Shah Home",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 13.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0563",
+  "created": "2026-06-10",
+  "customer": {
+   "name": "Tanaka Home",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 34.9,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0564",
+  "created": "2026-02-22",
+  "customer": {
+   "name": "Chen Online",
+   "tier": "Gold"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 3.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0565",
+  "created": "2026-03-10",
+  "customer": {
+   "name": "Kumar Trading",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 8.1,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0566",
+  "created": "2026-02-17",
+  "customer": {
+   "name": "Lim Trading",
+   "tier": "Gold"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 16.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0567",
+  "created": "2026-03-18",
+  "customer": {
+   "name": "Ibrahim Online",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 5.0,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0568",
+  "created": "2026-03-16",
+  "customer": {
+   "name": "Goh Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 19.3,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0569",
+  "created": "2026-04-01",
+  "customer": {
+   "name": "Santos Home",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 69.6,
+  "satisfied": true,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0570",
+  "created": "2026-03-31",
+  "customer": {
+   "name": "Lee Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 6.1,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0571",
+  "created": "2026-05-20",
+  "customer": {
+   "name": "Fischer Online",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 35.1,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0572",
+  "created": "2026-03-30",
+  "customer": {
+   "name": "Novak Online",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 2.3,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0573",
+  "created": "2026-03-18",
+  "customer": {
+   "name": "Wong Retail",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 24.2,
+  "satisfied": true,
+  "tags": [
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0574",
+  "created": "2026-03-12",
+  "customer": {
+   "name": "Kumar Foods",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 58.9,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0575",
+  "created": "2026-06-24",
+  "customer": {
+   "name": "Goh Home",
+   "tier": "Silver"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 6.1,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0576",
+  "created": "2026-03-18",
+  "customer": {
+   "name": "Dubois Online",
+   "tier": "Bronze"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 22.9,
+  "satisfied": false,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0577",
+  "created": "2026-04-30",
+  "customer": {
+   "name": "Goh Foods",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 12.2,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0578",
+  "created": "2026-03-09",
+  "customer": {
+   "name": "Ibrahim Trading",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 42.1,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0579",
+  "created": "2026-03-24",
+  "customer": {
+   "name": "Rossi Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 30.6,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0580",
+  "created": "2026-02-14",
+  "customer": {
+   "name": "Goh Online",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 35.7,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0581",
+  "created": "2026-01-28",
+  "customer": {
+   "name": "Santos Foods",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 42.6,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0582",
+  "created": "2026-01-13",
+  "customer": {
+   "name": "Shah Online",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Low",
+  "resolution_hours": 12.9,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0583",
+  "created": "2026-06-01",
+  "customer": {
+   "name": "Fischer Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 11.6,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0584",
+  "created": "2026-06-03",
+  "customer": {
+   "name": "Tanaka Online",
+   "tier": "Gold"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 57.2,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0585",
+  "created": "2026-01-31",
+  "customer": {
+   "name": "Novak Foods",
+   "tier": "Bronze"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 10.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0586",
+  "created": "2026-01-27",
+  "customer": {
+   "name": "Kumar Trading",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 22.6,
+  "satisfied": true,
+  "tags": [
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0587",
+  "created": "2026-05-19",
+  "customer": {
+   "name": "Dubois Retail",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 22.7,
+  "satisfied": true,
+  "tags": [
+   "escalated",
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0588",
+  "created": "2026-02-22",
+  "customer": {
+   "name": "Chen Home",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "High",
+  "resolution_hours": 3.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0589",
+  "created": "2026-01-20",
+  "customer": {
+   "name": "Wong Foods",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "High",
+  "resolution_hours": 2.5,
+  "satisfied": false,
+  "tags": [
+   "urgent"
+  ]
+ },
+ {
+  "id": "T-0590",
+  "created": "2026-03-04",
+  "customer": {
+   "name": "Mensah Retail",
+   "tier": "Bronze"
+  },
+  "category": "Account access",
+  "priority": "Medium",
+  "resolution_hours": 1.2,
+  "satisfied": true,
+  "tags": [
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0591",
+  "created": "2026-05-20",
+  "customer": {
+   "name": "Lim Online",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 25.7,
+  "satisfied": true,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0592",
+  "created": "2026-06-19",
+  "customer": {
+   "name": "Kumar Trading",
+   "tier": "Gold"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 38.5,
+  "satisfied": false,
+  "tags": [
+   "urgent",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0593",
+  "created": "2026-03-20",
+  "customer": {
+   "name": "Wong Foods",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Low",
+  "resolution_hours": 22.0,
+  "satisfied": false,
+  "tags": [
+   "urgent",
+   "refund"
+  ]
+ },
+ {
+  "id": "T-0594",
+  "created": "2026-03-31",
+  "customer": {
+   "name": "Reyes Retail",
+   "tier": "Gold"
+  },
+  "category": "Billing",
+  "priority": "Medium",
+  "resolution_hours": 9.5,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0595",
+  "created": "2026-04-27",
+  "customer": {
+   "name": "Goh Retail",
+   "tier": "Silver"
+  },
+  "category": "Damaged goods",
+  "priority": "Medium",
+  "resolution_hours": 36.6,
+  "satisfied": true,
+  "tags": []
+ },
+ {
+  "id": "T-0596",
+  "created": "2026-06-17",
+  "customer": {
+   "name": "Lim Foods",
+   "tier": "Silver"
+  },
+  "category": "Account access",
+  "priority": "Low",
+  "resolution_hours": 5.2,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "repeat"
+  ]
+ },
+ {
+  "id": "T-0597",
+  "created": "2026-03-25",
+  "customer": {
+   "name": "Shah Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Low",
+  "resolution_hours": 34.0,
+  "satisfied": false,
+  "tags": []
+ },
+ {
+  "id": "T-0598",
+  "created": "2026-06-04",
+  "customer": {
+   "name": "Park Home",
+   "tier": "Bronze"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 29.0,
+  "satisfied": true,
+  "tags": [
+   "escalated"
+  ]
+ },
+ {
+  "id": "T-0599",
+  "created": "2026-01-15",
+  "customer": {
+   "name": "Ibrahim Foods",
+   "tier": "Silver"
+  },
+  "category": "API",
+  "priority": "Low",
+  "resolution_hours": 10.5,
+  "satisfied": true,
+  "tags": [
+   "repeat",
+   "vip"
+  ]
+ },
+ {
+  "id": "T-0600",
+  "created": "2026-03-11",
+  "customer": {
+   "name": "Park Foods",
+   "tier": "Silver"
+  },
+  "category": "Delivery delay",
+  "priority": "Medium",
+  "resolution_hours": 33.4,
+  "satisfied": true,
+  "tags": [
+   "refund",
+   "vip"
+  ]
+ }
+]

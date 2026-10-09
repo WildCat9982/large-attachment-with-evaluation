@@ -1,0 +1,394 @@
+{
+  "note": "Professional golden dataset for evaluating long-document QA over AWSCertifiedGenerativeAIDeveloper.pdf. The cases intentionally mix direct factual retrieval, architectural distinction, comparison, scenario-based reasoning, multi-hop synthesis, follow-up context, and unanswerable questions. Expected answers are paraphrased from the source rather than copied verbatim.",
+  "dataset_design": {
+    "primary_objectives": [
+      "Measure grounded answer correctness rather than keyword matching",
+      "Test retrieval across a 682-page document",
+      "Exercise architecture and trade-off reasoning in addition to simple factual recall",
+      "Test conversational follow-up resolution",
+      "Verify appropriate refusal when the document does not support an answer"
+    ],
+    "recommended_scoring_dimensions": [
+      "answer_correctness",
+      "faithfulness_to_source",
+      "completeness",
+      "citation_or_page_grounding",
+      "instruction_following",
+      "abstention_accuracy"
+    ]
+  },
+  "documents": [
+    {
+      "file": "AWSCertifiedGenerativeAIDeveloper.pdf",
+      "size": "large",
+      "summary_points": [
+        "The course covers Amazon Bedrock fundamentals, foundation models, fine-tuning, RAG, vector stores, prompt engineering and guardrails.",
+        "It covers data preparation and storage services used in Generative AI solutions, including OpenSearch, relational databases, DynamoDB and S3.",
+        "It covers agentic AI, operational efficiency, token optimization, model routing, caching and capacity planning.",
+        "It covers model and RAG evaluation, responsible AI, governance, observability and deployment validation.",
+        "It covers AWS security, identity and compliance topics, plus supporting AWS services relevant to production AI systems."
+      ],
+      "cases": [
+        {
+          "id": "awspro-01",
+          "type": "answerable",
+          "difficulty": "medium",
+          "skill": "architecture_distinction",
+          "question": "A developer needs to run inference against a foundation model and later invoke an agent backed by a knowledge base. Which Bedrock API endpoint families should be used for these two operations?",
+          "expected": "Use bedrock-runtime for foundation-model inference, such as Converse or InvokeModel. Use bedrock-agent-runtime for inference against agents and knowledge bases, such as InvokeAgent, Retrieve, or RetrieveAndGenerate.",
+          "expected_facts": [
+            "bedrock-runtime performs inference against models",
+            "bedrock-agent-runtime performs inference against agents and knowledge bases"
+          ],
+          "page": 20
+        },
+        {
+          "id": "awspro-02",
+          "type": "answerable",
+          "difficulty": "medium",
+          "skill": "tradeoff_reasoning",
+          "question": "Why can RAG be preferable to fine-tuning for frequently changing proprietary information, and what two limitations still remain?",
+          "expected": "RAG can be faster and cheaper for adding proprietary or changing information because the data can be updated in an external database rather than retraining the model. However, it remains sensitive to prompt design and retrieval relevance, and it can still hallucinate.",
+          "expected_facts": [
+            "RAG can be faster and cheaper than fine-tuning for new or proprietary information",
+            "updates can be made by updating the database",
+            "RAG is sensitive to prompt templates and retrieval relevance",
+            "RAG can still hallucinate"
+          ],
+          "page": 30
+        },
+        {
+          "id": "awspro-03",
+          "type": "answerable",
+          "difficulty": "medium",
+          "skill": "concept_explanation",
+          "question": "What is the objective of semantic chunking, and what implementation approaches does the document list?",
+          "expected": "The objective is to make each chunk contain semantically independent information while respecting context limits. The document lists embedding-based, model-based, and LLM-based approaches.",
+          "expected_facts": [
+            "chunks should contain semantically independent information",
+            "embedding-based approach",
+            "model-based approach",
+            "LLM-based approach"
+          ],
+          "page": 41
+        },
+        {
+          "id": "awspro-04",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "architecture_reasoning",
+          "question": "How does hierarchical chunking try to improve both retrieval precision and answer completeness?",
+          "expected": "It retrieves against smaller child chunks to improve precision, then replaces or expands them with their parent chunks when more context is needed, recovering broader context and completeness.",
+          "expected_facts": [
+            "search starts with child chunks",
+            "smaller child chunks improve precision",
+            "parent chunks are used to restore broader context or comprehensiveness"
+          ],
+          "page": 43
+        },
+        {
+          "id": "awspro-05",
+          "type": "answerable",
+          "difficulty": "medium",
+          "skill": "comparison",
+          "question": "Compare sparse and dense embeddings in terms of representation and efficiency.",
+          "expected": "Sparse embeddings are large vectors that are mostly empty, such as one-hot representations. Dense embeddings are smaller and contain more semantic information. The document says sparse vectors can provide greater similarity factors, while dense vectors are generally more memory-efficient and are more commonly used.",
+          "expected_facts": [
+            "sparse vectors are large and mostly empty",
+            "dense vectors are smaller and semantically richer",
+            "dense vectors are more efficient in memory",
+            "sparse vectors may provide greater similarity factors"
+          ],
+          "page": 46
+        },
+        {
+          "id": "awspro-06",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "evaluation_design",
+          "question": "A RAG system returns fluent answers but sometimes invents details not present in the retrieved context. Which evaluation metric from the document is most directly relevant, and what does it measure?",
+          "expected": "Faithfulness is the most directly relevant metric because it measures how well the generated response aligns with the retrieved text or context.",
+          "expected_facts": [
+            "metric is faithfulness",
+            "faithfulness measures alignment of the response with retrieved text"
+          ],
+          "page": 49
+        },
+        {
+          "id": "awspro-07",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "evaluation_dataset_design",
+          "question": "For a Bedrock RAG evaluation, what should a high-quality prompt dataset contain if you want to assess both generated answers and retrieval quality?",
+          "expected": "It should contain prompts and reference responses, and it can additionally include reference contexts representing the ideal information that should have been retrieved. The evaluator can then compare generated responses and retrieved contexts against those references.",
+          "expected_facts": [
+            "prompts",
+            "reference responses",
+            "optional reference contexts for ideal retrieval"
+          ],
+          "page": 50
+        },
+        {
+          "id": "awspro-08",
+          "type": "answerable",
+          "difficulty": "medium",
+          "skill": "workflow_reconstruction",
+          "question": "What are the main steps described for using Amazon S3 Vectors after creating a vector bucket?",
+          "expected": "Create a vector index, define its dimensions and distance metric, store embeddings with put_vectors together with metadata, and retrieve similar vectors using query_vectors.",
+          "expected_facts": [
+            "create a vector index",
+            "specify dimensions",
+            "specify distance metric",
+            "store embeddings with put_vectors",
+            "query using query_vectors"
+          ],
+          "page": 145
+        },
+        {
+          "id": "awspro-09",
+          "type": "answerable",
+          "difficulty": "medium",
+          "skill": "operational_optimization",
+          "question": "How can Bedrock's CountTokens API be used before inference, and which CloudWatch token metrics complement it after requests run?",
+          "expected": "CountTokens can estimate the token count of a request without executing inference, which helps estimate cost and keep prompts within model limits. CloudWatch can then track InputTokenCount and outputTokenCount for actual usage.",
+          "expected_facts": [
+            "CountTokens estimates request tokens without running inference",
+            "can help estimate cost",
+            "can help optimize prompts for token limits",
+            "CloudWatch tracks input and output token counts"
+          ],
+          "page": 285
+        },
+        {
+          "id": "awspro-10",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "solution_design",
+          "question": "A long-running chat is exceeding the context window. Give three document-supported techniques to reduce token usage without simply switching to a larger-context model.",
+          "expected": "Suitable techniques include limiting the number of RAG chunks retrieved, filtering chunks by metadata, summarizing or discarding older conversation history, limiting response size with maxTokens or explicit instructions, compressing prompts with a smaller model, and using a knowledge base instead of inserting entire documents. Any three are sufficient.",
+          "expected_facts": [
+            "at least three techniques from page 287",
+            "techniques must be token-efficiency measures rather than unsupported alternatives"
+          ],
+          "page": 287
+        },
+        {
+          "id": "awspro-11",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "architecture_tradeoff",
+          "question": "Why might an enterprise route simple requests to a smaller model and complex requests to a larger model, and what is this pattern called in the document?",
+          "expected": "The purpose is to balance cost and capability instead of using the largest model for every request. The document calls this Dynamic Routing or Intelligent Prompt Routing, where requests are routed based on query complexity.",
+          "expected_facts": [
+            "balance cost and capability",
+            "route based on query complexity",
+            "Dynamic Routing or Intelligent Prompt Routing"
+          ],
+          "page": 288
+        },
+        {
+          "id": "awspro-12",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "capacity_planning",
+          "question": "When planning Bedrock capacity for a high-volume workload, which two workload-rate measures does the document recommend starting from, and what are two options if capacity is insufficient?",
+          "expected": "Start from desired tokens per minute (TPM) and requests per minute (RPM). If capacity is insufficient, request a service-quota increase or use provisioned throughput.",
+          "expected_facts": [
+            "TPM",
+            "RPM",
+            "service quota increase",
+            "provisioned throughput"
+          ],
+          "page": 290
+        },
+        {
+          "id": "awspro-13",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "architecture_reasoning",
+          "question": "Describe the semantic caching flow in the document and identify the key tuning risk.",
+          "expected": "Cache embeddings of prompts and responses in a vector-capable in-memory store. For a new prompt, generate its embedding, search for nearest cached embeddings, and return a cached response when similarity exceeds a threshold. The threshold must be tuned carefully so higher cache-hit rates do not return semantically inappropriate responses, and cache overhead should not outweigh the benefit.",
+          "expected_facts": [
+            "cache embeddings rather than only exact prompt text",
+            "nearest-neighbor lookup for new prompt embeddings",
+            "return cached response above a similarity threshold",
+            "threshold must balance hit rate and relevance"
+          ],
+          "page": 292
+        },
+        {
+          "id": "awspro-14",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "evaluation_architecture",
+          "question": "What is the difference between a Bedrock RAG 'retrieve only' evaluation and a 'retrieve and generate' evaluation?",
+          "expected": "Retrieve-only evaluates the retrieval stage, including relevance and coverage of retrieved information. Retrieve-and-generate evaluates the generated response as well, using measures such as correctness, completeness, helpfulness, and logical coherence.",
+          "expected_facts": [
+            "retrieve-only evaluates retrieval",
+            "retrieve-only includes relevance and coverage",
+            "retrieve-and-generate also evaluates the response",
+            "response metrics include correctness, completeness, helpfulness, or logical coherence"
+          ],
+          "page": 430
+        },
+        {
+          "id": "awspro-15",
+          "type": "answerable",
+          "difficulty": "medium",
+          "skill": "governance",
+          "question": "Name four Responsible AI dimensions listed in the document.",
+          "expected": "Any four of: fairness, explainability, privacy and security, safety, controllability, veracity and robustness, governance, and transparency.",
+          "expected_facts": [
+            "answer must contain four dimensions listed on page 432"
+          ],
+          "page": 432
+        },
+        {
+          "id": "awspro-16",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "security_scenario",
+          "question": "A partner outside AWS must encrypt data using a public key but must never receive the private key. Which KMS key type fits this requirement, and why?",
+          "expected": "Use an asymmetric KMS key using an RSA or ECC key pair. The public key can be downloaded for use outside AWS, while the private key cannot be accessed unencrypted.",
+          "expected_facts": [
+            "asymmetric KMS key",
+            "RSA or ECC",
+            "public key is downloadable",
+            "private key remains protected"
+          ],
+          "page": 496
+        },
+        {
+          "id": "awspro-17",
+          "type": "answerable",
+          "difficulty": "medium",
+          "skill": "document_qa",
+          "question": "What performance problem is SPICE intended to address in QuickSight, and what storage allowance does the document state per user?",
+          "expected": "SPICE is an in-memory engine intended to accelerate interactive queries on large datasets, including queries that may time out in direct-query mode. The document states 10 GB of SPICE capacity per user.",
+          "expected_facts": [
+            "accelerates interactive queries",
+            "in-memory processing",
+            "10 GB per user"
+          ],
+          "page": 532
+        },
+        {
+          "id": "awspro-18",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "scenario_selection",
+          "question": "An enterprise RAG solution must search SharePoint and Confluence content while respecting existing document-level permissions. Which vector/search option does the document favor?",
+          "expected": "Amazon Kendra, because the document positions it for enterprise document search where existing document-level ACLs and permissions must be respected.",
+          "expected_facts": [
+            "Amazon Kendra",
+            "document-level ACL or permissions support is the deciding factor"
+          ],
+          "page": [
+            657,
+            658,
+            659
+          ]
+        },
+        {
+          "id": "awspro-19",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "scenario_selection",
+          "question": "A team already stores business data in PostgreSQL and requires SQL joins, transactions, metadata filtering, and vector similarity in the same system. Which option does the document recommend?",
+          "expected": "Aurora PostgreSQL with pgvector, because it combines relational capabilities such as joins and transactions with vector similarity in the same database.",
+          "expected_facts": [
+            "Aurora PostgreSQL with pgvector",
+            "fits workloads combining relational operations and vector search"
+          ],
+          "page": [
+            657,
+            658,
+            659
+          ]
+        },
+        {
+          "id": "awspro-20",
+          "type": "answerable",
+          "difficulty": "hard",
+          "skill": "comparison",
+          "question": "For OpenSearch, when should the managed service be preferred over OpenSearch Serverless, and when is Serverless the better fit?",
+          "expected": "Managed OpenSearch is the better fit when fine-grained tuning, predictable latency, and control over shards or performance settings matter. OpenSearch Serverless is better for unpredictable or spiky traffic when automatic scaling and lower operational effort are more important than tuning control.",
+          "expected_facts": [
+            "managed OpenSearch offers fuller tuning control and more predictable latency",
+            "Serverless offers automatic scaling",
+            "Serverless fits unpredictable or spiky traffic",
+            "Serverless has less tuning control"
+          ],
+          "page": [
+            657,
+            660
+          ]
+        },
+        {
+          "id": "awspro-21",
+          "type": "followup",
+          "difficulty": "hard",
+          "skill": "conversational_context",
+          "previous": {
+            "question": "We have unpredictable traffic and want to minimize operations. Which OpenSearch deployment model should we choose?",
+            "answer": "OpenSearch Serverless."
+          },
+          "question": "What trade-off are we accepting compared with the managed cluster option?",
+          "expected": "You accept less tuning control and less predictable or more variable latency in exchange for automatic scaling and lower operational burden.",
+          "expected_facts": [
+            "less tuning control",
+            "more variable latency",
+            "automatic scaling or lower ops burden is the corresponding benefit"
+          ],
+          "page": [
+            657,
+            660
+          ]
+        },
+        {
+          "id": "awspro-22",
+          "type": "answerable",
+          "difficulty": "expert",
+          "skill": "multi_hop_synthesis",
+          "question": "Using only the document, propose a cost-conscious pattern for a RAG application with variable query complexity and very large prompt inputs. Mention one technique for token reduction and one technique for model-cost optimization.",
+          "expected": "A supported pattern is to reduce prompt size by limiting or filtering retrieved chunks, summarizing older or large content, or using a knowledge base instead of inserting full documents; then use Dynamic/Intelligent Prompt Routing so simple requests go to smaller models and complex ones go to larger models. CountTokens can also be used before inference to estimate request size and cost.",
+          "expected_facts": [
+            "at least one token-reduction technique from pages 285 or 287",
+            "Dynamic Routing or Intelligent Prompt Routing from page 288",
+            "answer must remain within techniques supported by the source"
+          ],
+          "page": [
+            285,
+            287,
+            288
+          ]
+        },
+        {
+          "id": "awspro-23",
+          "type": "unanswerable",
+          "difficulty": "medium",
+          "skill": "abstention",
+          "question": "What exact percentage score is required to pass the AWS Certified Generative AI Developer – Professional exam?",
+          "expected": "The document does not provide an exact passing percentage in the cited course material, so the answer should state that it cannot be determined from this document.",
+          "expected_facts": [
+            "must not invent or infer a passing percentage",
+            "should explicitly state that the document does not provide the answer"
+          ]
+        },
+        {
+          "id": "awspro-24",
+          "type": "unanswerable",
+          "difficulty": "hard",
+          "skill": "abstention",
+          "question": "According to the document, what is the guaranteed p99 latency in milliseconds for OpenSearch Serverless vector search?",
+          "expected": "The document does not state a guaranteed p99 latency for OpenSearch Serverless. It only characterizes latency as variable, so a numeric value should not be invented.",
+          "expected_facts": [
+            "must abstain from providing a numeric p99 latency",
+            "may state that the document describes latency as variable"
+          ],
+          "page": 660
+        }
+      ]
+    }
+  ]
+}

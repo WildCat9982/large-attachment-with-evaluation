@@ -1,0 +1,90 @@
+{
+  "note": "Real documents to test alongside the generated ones. Copy each file into eval/sizes/docs/ and rerun the generator. For PDFs, 'page' is the page that holds the answer (a list is allowed).",
+  "documents": [
+    {
+      "file": "AWSCertifiedGenerativeAIDeveloper.pdf",
+      "size": "large",
+      "summary_points": [
+        "The document is course material for the AWS Certified Generative AI Developer Professional exam",
+        "It covers Amazon Bedrock and generative AI fundamentals",
+        "It covers agentic AI",
+        "It covers Amazon SageMaker",
+        "It covers security, identity and compliance"
+      ],
+      "cases": [
+        {
+          "id": "awsdeck-01",
+          "type": "answerable",
+          "question": "How much SPICE capacity does each QuickSight user get?",
+          "expected": "10 GB per user.",
+          "page": 532
+        },
+        {
+          "id": "awsdeck-02",
+          "type": "answerable",
+          "question": "What does SPICE stand for?",
+          "expected": "Super-fast, Parallel, In-memory Calculation Engine.",
+          "page": 532
+        },
+        {
+          "id": "awsdeck-03",
+          "type": "answerable",
+          "question": "How much cheaper can Amazon S3 Vectors be?",
+          "expected": "Up to 90% cheaper.",
+          "page": 145
+        },
+        {
+          "id": "awsdeck-04",
+          "type": "answerable",
+          "question": "With LoRA fine-tuning, is the base model itself changed?",
+          "expected": "No. Low-rank matrices are added to the attention weights and only those are trained; the base model stays unchanged.",
+          "page": 28
+        },
+        {
+          "id": "awsdeck-05",
+          "type": "answerable",
+          "question": "What kinds of key pairs do asymmetric KMS keys use?",
+          "expected": "RSA and ECC key pairs.",
+          "page": 496
+        },
+        {
+          "id": "awsdeck-06",
+          "type": "answerable",
+          "question": "Is the Strands Agents SDK tied to AWS?",
+          "expected": "No. It is open source from Amazon and has tight AWS integration, but it can be used with OpenAI and other providers.",
+          "page": 235
+        },
+        {
+          "id": "awsdeck-07",
+          "type": "answerable",
+          "question": "Which API is used to create an Automated Reasoning policy for Bedrock Guardrails?",
+          "expected": "CreateAutomatedReasoningPolicy.",
+          "page": 55
+        },
+        {
+          "id": "awsdeck-08",
+          "type": "answerable",
+          "question": "How long does a standard SQS queue keep messages by default, and what is the maximum?",
+          "expected": "4 days by default, up to a maximum of 14 days.",
+          "page": 398
+        },
+        {
+          "id": "awsdeck-09",
+          "type": "followup",
+          "previous": {
+            "question": "What is a dense embedding?",
+            "answer": "A smaller vector that carries more semantic information; it is what is generally used."
+          },
+          "question": "What is the trade-off compared with sparse ones?",
+          "expected": "Sparse vectors give greater similarity factors, while dense vectors are more efficient, including in memory.",
+          "page": 46
+        },
+        {
+          "id": "awsdeck-10",
+          "type": "unanswerable",
+          "question": "What is the passing score for the exam?"
+        }
+      ]
+    }
+  ]
+}

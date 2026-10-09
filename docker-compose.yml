@@ -1,0 +1,66 @@
+services:
+  redis:
+    image: redis:8.0
+    # Context only: no persistence. Chunks and chat history are rebuilt from SQLite.
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  app:
+    build: .
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      DATA_DIR: /data
+    ports:
+      - "8501:8501"
+    volumes:
+      - data:/data
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  worker:
+    build: .
+    command: ["python", "app/worker.py"]
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      DATA_DIR: /data
+    volumes:
+      - data:/data
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  # Evaluation run. Not started by `docker compose up`; run it with:
+  #   docker compose run --rm eval --label "baseline"
+  eval:
+    build: .
+    profiles: ["eval"]
+    entrypoint: ["python", "app/evaluate.py"]
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      DATA_DIR: /data
+    volumes:
+      - data:/data
+      - ./eval:/srv/eval:ro   # edit the test set without rebuilding the image
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  # Generates the size-tiered test files into ./eval/sizes (about 400 MB):
+  #   docker compose run --rm testdata
+  testdata:
+    build: .
+    profiles: ["testdata"]
+    entrypoint: ["python", "app/make_testdata.py"]
+    volumes:
+      - ./eval:/srv/eval
+
+volumes:
+  data:   # SQLite database, uploaded files, per-document table databases

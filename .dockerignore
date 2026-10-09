@@ -1,0 +1,4 @@
+.env
+.git
+__pycache__
+eval/sizes/docs

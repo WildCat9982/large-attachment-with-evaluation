@@ -1,0 +1,1424 @@
+POST-INCIDENT REVIEW
+Warehouse management system outage, 14 July 2026
+Prepared by the Site Reliability team. Status: final.
+
+SUMMARY
+On 14 July 2026 the warehouse management system (WMS) was unavailable for 1 hour 55 minutes in the early morning. During the outage three distribution centres (Tuas, Johor and Batam) could not process outbound shipments. In total 1,240 shipments were delayed. No data was lost.
+
+TIMELINE (Singapore time)
+02:10  Monitoring raised the first alerts for failed order messages between the WMS and the carrier gateway.
+02:25  The on-call engineer, Priya Raman, was paged and began investigating.
+02:50  The application servers were restarted. This did not help.
+03:40  The root cause was identified.
+04:05  A new certificate was installed and service was restored.
+04:30  The backlog of queued orders had been processed and the incident was closed.
+
+ROOT CAUSE
+The outage was caused by an expired TLS certificate on the internal message broker. Once the certificate expired, the WMS and the carrier gateway refused to connect to the broker, so no order messages could be exchanged.
+
+CONTRIBUTING FACTORS
+The renewal reminder for the certificate had been sent to the mailbox of an employee who left the company in May, so nobody saw it. Our monitoring checked that the broker was running but did not check certificate expiry dates. The on-call runbook had no section on certificate problems, which slowed diagnosis by roughly forty minutes.
+
+IMPACT
+Outbound processing stopped at Tuas, Johor and Batam for the duration of the outage. 1,240 shipments missed their planned collection and were sent on the next available collection. Eleven customers with guaranteed delivery times were affected. Customer credits totalling SGD 18,500 have been issued.
+
+ACTIONS
+1. Automate certificate renewal for all internal services. Owner: Platform team. Due: 31 August 2026.
+2. Add certificate expiry monitoring with a warning 30 days before expiry. Owner: Site Reliability team. Due: 31 July 2026.
+3. Move all renewal reminders from personal mailboxes to the shared platform mailbox. Owner: Platform team. Due: 21 July 2026.
+4. Add a certificate troubleshooting section to the on-call runbook. Owner: Site Reliability team. Due: 28 July 2026.
+
+LESSONS
+Checks that a service is running are not enough; we also need checks on the things a service depends on. Reminders that depend on one person's mailbox will eventually fail.
+
+
+APPENDIX A: LOG EXTRACT (broker, WMS application servers and carrier gateway)
+01:30:00 wms-app-1 INFO order batch B26020 accepted, 157 lines
+01:30:09 carrier-gw-1 INFO manifest B38979 acknowledged
+01:30:22 carrier-gw-1 INFO label request B88319 sent to carrier
+01:30:25 carrier-gw-1 INFO manifest B52492 acknowledged
+01:30:29 broker-1 INFO queue depth orders.outbound=470
+01:30:40 wms-app-4 INFO order batch B80323 accepted, 431 lines
+01:30:46 monitor INFO heartbeat ok broker-1 up
+01:30:51 carrier-gw-1 INFO label request B72545 sent to carrier
+01:30:55 wms-app-4 INFO order batch B33350 accepted, 195 lines
+01:31:01 broker-1 INFO queue depth orders.outbound=314
+01:31:09 carrier-gw-2 INFO manifest B44614 acknowledged
+01:31:16 wms-app-1 INFO pick list B21711 released to floor
+01:31:29 carrier-gw-2 INFO manifest B12651 acknowledged
+01:31:34 wms-app-1 INFO order batch B83074 accepted, 106 lines
+01:31:47 wms-app-1 INFO order batch B32043 accepted, 293 lines
+01:31:50 monitor INFO heartbeat ok broker-1 up
+01:31:56 carrier-gw-1 INFO label request B65771 sent to carrier
+01:32:02 broker-1 INFO queue depth orders.outbound=100
+01:32:14 wms-app-3 INFO pick list B84549 released to floor
+01:32:17 wms-app-3 INFO order batch B79695 accepted, 413 lines
+01:32:28 carrier-gw-1 INFO label request B99023 sent to carrier
+01:32:38 carrier-gw-2 INFO manifest B52306 acknowledged
+01:32:48 carrier-gw-2 INFO label request B54397 sent to carrier
+01:32:57 broker-1 INFO queue depth orders.outbound=134
+01:33:02 broker-1 INFO queue depth orders.outbound=432
+01:33:06 carrier-gw-2 INFO manifest B52482 acknowledged
+01:33:10 wms-app-1 INFO order batch B88491 accepted, 221 lines
+01:33:23 carrier-gw-2 INFO manifest B41199 acknowledged
+01:33:35 carrier-gw-2 INFO manifest B13381 acknowledged
+01:33:45 broker-1 INFO queue depth orders.outbound=107
+01:33:58 monitor INFO heartbeat ok broker-1 up
+01:34:02 broker-1 INFO queue depth orders.outbound=325
+01:34:09 carrier-gw-2 INFO label request B47186 sent to carrier
+01:34:12 monitor INFO heartbeat ok broker-1 up
+01:34:21 wms-app-2 INFO pick list B97842 released to floor
+01:34:31 monitor INFO heartbeat ok broker-1 up
+01:34:39 broker-1 INFO queue depth orders.outbound=423
+01:34:49 monitor INFO heartbeat ok broker-1 up
+01:34:56 carrier-gw-2 INFO label request B22954 sent to carrier
+01:35:09 wms-app-2 INFO order batch B30336 accepted, 89 lines
+01:35:16 wms-app-3 INFO order batch B94408 accepted, 78 lines
+01:35:21 carrier-gw-1 INFO manifest B44748 acknowledged
+01:35:28 monitor INFO heartbeat ok broker-1 up
+01:35:35 wms-app-2 INFO order batch B15283 accepted, 449 lines
+01:35:44 carrier-gw-1 INFO label request B55224 sent to carrier
+01:35:49 carrier-gw-2 INFO label request B66072 sent to carrier
+01:35:56 monitor INFO heartbeat ok broker-1 up
+01:35:59 carrier-gw-2 INFO manifest B57326 acknowledged
+01:36:06 carrier-gw-1 INFO manifest B40028 acknowledged
+01:36:11 wms-app-2 INFO pick list B74441 released to floor
+01:36:24 broker-1 INFO queue depth orders.outbound=464
+01:36:35 carrier-gw-2 INFO manifest B48322 acknowledged
+01:36:43 wms-app-3 INFO order batch B43481 accepted, 214 lines
+01:36:54 carrier-gw-2 INFO manifest B78398 acknowledged
+01:37:01 wms-app-1 INFO pick list B30473 released to floor
+01:37:07 broker-1 INFO queue depth orders.outbound=399
+01:37:11 monitor INFO heartbeat ok broker-1 up
+01:37:20 wms-app-1 INFO order batch B20548 accepted, 68 lines
+01:37:25 wms-app-1 INFO pick list B87440 released to floor
+01:37:38 carrier-gw-2 INFO label request B28714 sent to carrier
+01:37:51 wms-app-2 INFO pick list B30693 released to floor
+01:38:03 carrier-gw-1 INFO label request B92036 sent to carrier
+01:38:15 carrier-gw-1 INFO manifest B30997 acknowledged
+01:38:25 wms-app-2 INFO order batch B24841 accepted, 42 lines
+01:38:30 carrier-gw-2 INFO manifest B76695 acknowledged
+01:38:43 wms-app-3 INFO order batch B39483 accepted, 428 lines
+01:38:48 carrier-gw-1 INFO manifest B72329 acknowledged
+01:39:01 carrier-gw-2 INFO manifest B20735 acknowledged
+01:39:09 carrier-gw-2 INFO manifest B28638 acknowledged
+01:39:18 wms-app-3 INFO pick list B34756 released to floor
+01:39:25 broker-1 INFO queue depth orders.outbound=197
+01:39:37 wms-app-4 INFO pick list B59941 released to floor
+01:39:46 wms-app-1 INFO order batch B29273 accepted, 220 lines
+01:39:55 wms-app-1 INFO pick list B41247 released to floor
+01:40:04 wms-app-4 INFO order batch B66856 accepted, 337 lines
+01:40:10 carrier-gw-1 INFO manifest B85182 acknowledged
+01:40:18 carrier-gw-1 INFO label request B15481 sent to carrier
+01:40:23 carrier-gw-1 INFO label request B66322 sent to carrier
+01:40:34 monitor INFO heartbeat ok broker-1 up
+01:40:47 carrier-gw-2 INFO manifest B30276 acknowledged
+01:40:55 wms-app-2 INFO order batch B55370 accepted, 304 lines
+01:41:00 monitor INFO heartbeat ok broker-1 up
+01:41:08 carrier-gw-1 INFO label request B31961 sent to carrier
+01:41:18 carrier-gw-1 INFO label request B76087 sent to carrier
+01:41:31 carrier-gw-1 INFO label request B76417 sent to carrier
+01:41:34 wms-app-1 INFO order batch B95147 accepted, 36 lines
+01:41:47 monitor INFO heartbeat ok broker-1 up
+01:41:53 wms-app-4 INFO order batch B63172 accepted, 394 lines
+01:41:58 carrier-gw-1 INFO manifest B12951 acknowledged
+01:42:03 wms-app-1 INFO pick list B75459 released to floor
+01:42:15 wms-app-1 INFO order batch B98527 accepted, 79 lines
+01:42:18 wms-app-3 INFO order batch B60838 accepted, 119 lines
+01:42:25 wms-app-4 INFO order batch B81478 accepted, 414 lines
+01:42:28 wms-app-1 INFO order batch B71679 accepted, 479 lines
+01:42:31 wms-app-1 INFO pick list B41599 released to floor
+01:42:39 wms-app-1 INFO order batch B21194 accepted, 70 lines
+01:42:52 carrier-gw-1 INFO manifest B98473 acknowledged
+01:42:56 broker-1 INFO queue depth orders.outbound=475
+01:43:03 wms-app-2 INFO pick list B42479 released to floor
+01:43:13 broker-1 INFO queue depth orders.outbound=20
+01:43:22 wms-app-1 INFO pick list B37557 released to floor
+01:43:27 monitor INFO heartbeat ok broker-1 up
+01:43:32 monitor INFO heartbeat ok broker-1 up
+01:43:39 wms-app-2 INFO pick list B84062 released to floor
+01:43:44 wms-app-1 INFO order batch B99385 accepted, 282 lines
+01:43:48 carrier-gw-1 INFO manifest B64142 acknowledged
+01:44:01 monitor INFO heartbeat ok broker-1 up
+01:44:14 broker-1 INFO queue depth orders.outbound=184
+01:44:27 carrier-gw-2 INFO manifest B68990 acknowledged
+01:44:31 wms-app-2 INFO order batch B53042 accepted, 89 lines
+01:44:41 monitor INFO heartbeat ok broker-1 up
+01:44:47 carrier-gw-2 INFO label request B28484 sent to carrier
+01:44:57 carrier-gw-1 INFO manifest B34801 acknowledged
+01:45:05 monitor INFO heartbeat ok broker-1 up
+01:45:10 carrier-gw-2 INFO manifest B49303 acknowledged
+01:45:19 wms-app-2 INFO pick list B13040 released to floor
+01:45:29 wms-app-1 INFO order batch B77881 accepted, 459 lines
+01:45:41 monitor INFO heartbeat ok broker-1 up
+01:45:49 carrier-gw-1 INFO label request B80841 sent to carrier
+01:45:52 monitor INFO heartbeat ok broker-1 up
+01:46:01 carrier-gw-2 INFO label request B28698 sent to carrier
+01:46:07 carrier-gw-2 INFO manifest B75986 acknowledged
+01:46:16 wms-app-4 INFO order batch B20579 accepted, 379 lines
+01:46:21 carrier-gw-2 INFO manifest B47405 acknowledged
+01:46:24 wms-app-2 INFO pick list B16360 released to floor
+01:46:37 carrier-gw-1 INFO label request B40735 sent to carrier
+01:46:47 wms-app-1 INFO pick list B16068 released to floor
+01:46:55 carrier-gw-2 INFO label request B52933 sent to carrier
+01:47:06 wms-app-1 INFO pick list B44222 released to floor
+01:47:10 broker-1 INFO queue depth orders.outbound=405
+01:47:16 carrier-gw-2 INFO manifest B13649 acknowledged
+01:47:20 wms-app-2 INFO pick list B55584 released to floor
+01:47:25 wms-app-4 INFO pick list B14520 released to floor
+01:47:32 carrier-gw-2 INFO manifest B98809 acknowledged
+01:47:38 carrier-gw-1 INFO manifest B30462 acknowledged
+01:47:45 wms-app-3 INFO order batch B65294 accepted, 222 lines
+01:47:50 monitor INFO heartbeat ok broker-1 up
+01:48:02 carrier-gw-2 INFO label request B15283 sent to carrier
+01:48:14 carrier-gw-1 INFO label request B23771 sent to carrier
+01:48:17 monitor INFO heartbeat ok broker-1 up
+01:48:27 carrier-gw-2 INFO label request B15171 sent to carrier
+01:48:39 wms-app-4 INFO order batch B25762 accepted, 355 lines
+01:48:43 carrier-gw-2 INFO manifest B37096 acknowledged
+01:48:51 carrier-gw-1 INFO manifest B23238 acknowledged
+01:48:57 wms-app-3 INFO order batch B11420 accepted, 230 lines
+01:49:07 carrier-gw-2 INFO label request B21075 sent to carrier
+01:49:17 carrier-gw-1 INFO manifest B15092 acknowledged
+01:49:20 carrier-gw-2 INFO manifest B64333 acknowledged
+01:49:32 broker-1 INFO queue depth orders.outbound=396
+01:49:43 monitor INFO heartbeat ok broker-1 up
+01:49:47 broker-1 INFO queue depth orders.outbound=365
+01:50:00 wms-app-4 INFO order batch B43757 accepted, 159 lines
+01:50:10 carrier-gw-2 INFO label request B90583 sent to carrier
+01:50:16 wms-app-4 INFO pick list B50669 released to floor
+01:50:23 monitor INFO heartbeat ok broker-1 up
+01:50:36 broker-1 INFO queue depth orders.outbound=102
+01:50:39 broker-1 INFO queue depth orders.outbound=46
+01:50:51 monitor INFO heartbeat ok broker-1 up
+01:50:56 monitor INFO heartbeat ok broker-1 up
+01:51:01 broker-1 INFO queue depth orders.outbound=120
+01:51:11 wms-app-2 INFO pick list B66272 released to floor
+01:51:17 broker-1 INFO queue depth orders.outbound=135
+01:51:24 carrier-gw-1 INFO manifest B67441 acknowledged
+01:51:36 carrier-gw-1 INFO label request B26902 sent to carrier
+01:51:41 monitor INFO heartbeat ok broker-1 up
+01:51:50 carrier-gw-1 INFO manifest B64937 acknowledged
+01:52:01 wms-app-4 INFO pick list B41002 released to floor
+01:52:09 carrier-gw-1 INFO label request B81165 sent to carrier
+01:52:17 carrier-gw-1 INFO label request B30117 sent to carrier
+01:52:30 broker-1 INFO queue depth orders.outbound=92
+01:52:33 broker-1 INFO queue depth orders.outbound=373
+01:52:43 carrier-gw-2 INFO label request B60483 sent to carrier
+01:52:47 carrier-gw-1 INFO manifest B99669 acknowledged
+01:52:50 carrier-gw-2 INFO manifest B32511 acknowledged
+01:53:01 carrier-gw-2 INFO label request B86150 sent to carrier
+01:53:13 wms-app-3 INFO order batch B70181 accepted, 326 lines
+01:53:17 wms-app-1 INFO pick list B79637 released to floor
+01:53:24 broker-1 INFO queue depth orders.outbound=223
+01:53:27 wms-app-2 INFO pick list B77279 released to floor
+01:53:33 wms-app-1 INFO pick list B98506 released to floor
+01:53:41 wms-app-2 INFO pick list B92414 released to floor
+01:53:44 carrier-gw-1 INFO manifest B58314 acknowledged
+01:53:50 wms-app-4 INFO order batch B14244 accepted, 437 lines
+01:53:55 monitor INFO heartbeat ok broker-1 up
+01:54:06 monitor INFO heartbeat ok broker-1 up
+01:54:19 carrier-gw-1 INFO manifest B37363 acknowledged
+01:54:29 wms-app-2 INFO order batch B62573 accepted, 319 lines
+01:54:38 monitor INFO heartbeat ok broker-1 up
+01:54:47 broker-1 INFO queue depth orders.outbound=51
+01:54:55 broker-1 INFO queue depth orders.outbound=438
+01:54:58 monitor INFO heartbeat ok broker-1 up
+01:55:03 carrier-gw-2 INFO label request B55532 sent to carrier
+01:55:15 broker-1 INFO queue depth orders.outbound=204
+01:55:26 carrier-gw-2 INFO manifest B53924 acknowledged
+01:55:33 monitor INFO heartbeat ok broker-1 up
+01:55:37 broker-1 INFO queue depth orders.outbound=363
+01:55:43 wms-app-4 INFO order batch B64156 accepted, 441 lines
+01:55:55 carrier-gw-1 INFO label request B22802 sent to carrier
+01:56:00 wms-app-1 INFO order batch B65423 accepted, 444 lines
+01:56:12 monitor INFO heartbeat ok broker-1 up
+01:56:18 broker-1 INFO queue depth orders.outbound=28
+01:56:24 wms-app-4 INFO order batch B27333 accepted, 287 lines
+01:56:28 broker-1 INFO queue depth orders.outbound=411
+01:56:33 carrier-gw-1 INFO label request B66612 sent to carrier
+01:56:40 wms-app-3 INFO order batch B51849 accepted, 181 lines
+01:56:44 carrier-gw-1 INFO label request B50584 sent to carrier
+01:56:56 broker-1 INFO queue depth orders.outbound=445
+01:57:07 monitor INFO heartbeat ok broker-1 up
+01:57:18 wms-app-1 INFO order batch B67655 accepted, 399 lines
+01:57:26 carrier-gw-2 INFO label request B86027 sent to carrier
+01:57:34 broker-1 INFO queue depth orders.outbound=359
+01:57:45 wms-app-1 INFO order batch B41066 accepted, 165 lines
+01:57:53 broker-1 INFO queue depth orders.outbound=21
+01:57:56 wms-app-1 INFO order batch B69986 accepted, 83 lines
+01:58:08 broker-1 INFO queue depth orders.outbound=361
+01:58:19 broker-1 INFO queue depth orders.outbound=42
+01:58:23 carrier-gw-1 INFO manifest B47963 acknowledged
+01:58:30 monitor INFO heartbeat ok broker-1 up
+01:58:33 wms-app-4 INFO pick list B50495 released to floor
+01:58:38 monitor INFO heartbeat ok broker-1 up
+01:58:48 carrier-gw-2 INFO label request B44542 sent to carrier
+01:58:53 carrier-gw-2 INFO manifest B20662 acknowledged
+01:58:57 carrier-gw-2 INFO manifest B64830 acknowledged
+01:59:06 monitor INFO heartbeat ok broker-1 up
+01:59:09 wms-app-1 INFO pick list B42247 released to floor
+01:59:17 carrier-gw-1 INFO label request B54919 sent to carrier
+01:59:23 carrier-gw-2 INFO label request B95411 sent to carrier
+01:59:35 carrier-gw-2 INFO manifest B57387 acknowledged
+01:59:40 carrier-gw-2 INFO manifest B71398 acknowledged
+01:59:50 monitor INFO heartbeat ok broker-1 up
+01:59:57 wms-app-2 INFO pick list B33537 released to floor
+02:00:00 monitor INFO heartbeat ok broker-1 up
+02:00:04 monitor INFO heartbeat ok broker-1 up
+02:00:10 carrier-gw-1 INFO label request B84480 sent to carrier
+02:00:18 monitor INFO heartbeat ok broker-1 up
+02:00:21 carrier-gw-2 INFO manifest B48435 acknowledged
+02:00:30 carrier-gw-2 INFO manifest B92725 acknowledged
+02:00:43 wms-app-4 INFO order batch B69717 accepted, 2 lines
+02:00:47 carrier-gw-1 INFO manifest B64394 acknowledged
+02:00:50 monitor INFO heartbeat ok broker-1 up
+02:00:54 carrier-gw-1 INFO manifest B92625 acknowledged
+02:01:06 carrier-gw-1 INFO label request B11732 sent to carrier
+02:01:16 broker-1 INFO queue depth orders.outbound=413
+02:01:28 carrier-gw-1 INFO label request B88380 sent to carrier
+02:01:34 carrier-gw-1 INFO label request B20290 sent to carrier
+02:01:47 wms-app-1 INFO pick list B56060 released to floor
+02:01:58 wms-app-3 INFO order batch B94108 accepted, 28 lines
+02:02:11 monitor INFO heartbeat ok broker-1 up
+02:02:21 monitor INFO heartbeat ok broker-1 up
+02:02:31 broker-1 INFO queue depth orders.outbound=268
+02:02:41 broker-1 INFO queue depth orders.outbound=80
+02:02:54 wms-app-3 INFO pick list B29386 released to floor
+02:03:07 carrier-gw-1 INFO manifest B73153 acknowledged
+02:03:11 carrier-gw-2 INFO label request B58772 sent to carrier
+02:03:14 monitor INFO heartbeat ok broker-1 up
+02:03:24 carrier-gw-1 INFO label request B96128 sent to carrier
+02:03:34 monitor INFO heartbeat ok broker-1 up
+02:03:43 broker-1 INFO queue depth orders.outbound=159
+02:03:49 monitor INFO heartbeat ok broker-1 up
+02:03:58 broker-1 INFO queue depth orders.outbound=469
+02:04:05 monitor INFO heartbeat ok broker-1 up
+02:04:10 broker-1 INFO queue depth orders.outbound=104
+02:04:22 wms-app-2 INFO order batch B91540 accepted, 49 lines
+02:04:34 carrier-gw-1 INFO manifest B91100 acknowledged
+02:04:45 wms-app-4 INFO order batch B86582 accepted, 425 lines
+02:04:57 wms-app-2 INFO order batch B39802 accepted, 264 lines
+02:05:09 wms-app-1 INFO order batch B28175 accepted, 254 lines
+02:05:19 carrier-gw-1 INFO label request B68293 sent to carrier
+02:05:31 wms-app-4 INFO order batch B18556 accepted, 41 lines
+02:05:35 carrier-gw-2 INFO manifest B69413 acknowledged
+02:05:42 wms-app-3 INFO order batch B56287 accepted, 86 lines
+02:05:52 monitor INFO heartbeat ok broker-1 up
+02:06:03 wms-app-3 INFO order batch B91959 accepted, 192 lines
+02:06:07 monitor INFO heartbeat ok broker-1 up
+02:06:15 carrier-gw-2 INFO manifest B89328 acknowledged
+02:06:19 wms-app-3 INFO pick list B51478 released to floor
+02:06:24 carrier-gw-2 INFO label request B67528 sent to carrier
+02:06:37 monitor INFO heartbeat ok broker-1 up
+02:06:42 monitor INFO heartbeat ok broker-1 up
+02:06:54 wms-app-4 INFO order batch B83974 accepted, 465 lines
+02:07:02 broker-1 INFO queue depth orders.outbound=310
+02:07:12 wms-app-1 INFO pick list B22225 released to floor
+02:07:23 carrier-gw-1 INFO manifest B42744 acknowledged
+02:07:26 monitor INFO heartbeat ok broker-1 up
+02:07:29 broker-1 INFO queue depth orders.outbound=385
+02:07:31 broker-1 WARN server certificate CN=broker.int.harbourline serial 4F:2A:9C:11 notAfter=2026-07-14T02:07:31+08:00 has expired
+02:07:35 monitor INFO heartbeat ok broker-1 up
+02:07:40 wms-app-3 WARN outbound queue backlog 8 messages held locally
+02:07:53 wms-app-2 ERROR publish failed for batch B94368: TLS handshake failed
+02:07:59 monitor INFO heartbeat ok broker-1 up
+02:08:04 wms-app-2 WARN outbound queue backlog 102 messages held locally
+02:08:12 monitor INFO heartbeat ok broker-1 up
+02:08:24 broker-1 WARN rejected client connection: handshake error
+02:08:37 wms-app-2 ERROR publish failed for batch B11724: TLS handshake failed
+02:08:45 broker-1 WARN rejected client connection: handshake error
+02:08:54 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:09:04 broker-1 WARN rejected client connection: handshake error
+02:09:09 wms-app-4 WARN outbound queue backlog 383 messages held locally
+02:09:16 wms-app-1 WARN outbound queue backlog 477 messages held locally
+02:09:24 wms-app-4 WARN retrying connection to broker-1, attempt 273
+02:09:36 broker-1 WARN rejected client connection: handshake error
+02:09:40 wms-app-3 ERROR publish failed for batch B69825: TLS handshake failed
+02:09:44 wms-app-2 ERROR publish failed for batch B59976: TLS handshake failed
+02:09:55 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:10:05 monitor INFO heartbeat ok broker-1 up
+02:10:12 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:10:23 monitor INFO heartbeat ok broker-1 up
+02:10:35 monitor INFO heartbeat ok broker-1 up
+02:10:42 broker-1 WARN rejected client connection: handshake error
+02:10:52 broker-1 WARN rejected client connection: handshake error
+02:10:55 wms-app-1 ERROR publish failed for batch B47382: TLS handshake failed
+02:11:04 wms-app-4 WARN retrying connection to broker-1, attempt 226
+02:11:10 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:11:21 broker-1 WARN rejected client connection: handshake error
+02:11:31 wms-app-3 ERROR publish failed for batch B12443: TLS handshake failed
+02:11:35 wms-app-2 WARN outbound queue backlog 430 messages held locally
+02:11:42 wms-app-4 WARN retrying connection to broker-1, attempt 212
+02:11:48 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:11:52 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:12:02 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:12:06 broker-1 WARN rejected client connection: handshake error
+02:12:16 wms-app-4 WARN retrying connection to broker-1, attempt 62
+02:12:22 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:12:35 monitor INFO heartbeat ok broker-1 up
+02:12:48 wms-app-3 ERROR publish failed for batch B90995: TLS handshake failed
+02:13:00 monitor INFO heartbeat ok broker-1 up
+02:13:04 wms-app-4 WARN retrying connection to broker-1, attempt 331
+02:13:16 broker-1 WARN rejected client connection: handshake error
+02:13:21 wms-app-2 WARN outbound queue backlog 23 messages held locally
+02:13:27 broker-1 WARN rejected client connection: handshake error
+02:13:34 monitor INFO heartbeat ok broker-1 up
+02:13:44 monitor INFO heartbeat ok broker-1 up
+02:13:53 monitor INFO heartbeat ok broker-1 up
+02:14:05 wms-app-2 ERROR publish failed for batch B11521: TLS handshake failed
+02:14:08 wms-app-2 WARN outbound queue backlog 476 messages held locally
+02:14:16 wms-app-4 ERROR publish failed for batch B36706: TLS handshake failed
+02:14:28 wms-app-1 WARN retrying connection to broker-1, attempt 275
+02:14:37 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:14:48 broker-1 WARN rejected client connection: handshake error
+02:14:52 broker-1 WARN rejected client connection: handshake error
+02:14:59 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:15:09 wms-app-1 WARN retrying connection to broker-1, attempt 386
+02:15:21 wms-app-2 WARN retrying connection to broker-1, attempt 361
+02:15:26 monitor INFO heartbeat ok broker-1 up
+02:15:33 wms-app-3 WARN retrying connection to broker-1, attempt 316
+02:15:41 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:15:50 wms-app-3 WARN retrying connection to broker-1, attempt 170
+02:16:03 monitor INFO heartbeat ok broker-1 up
+02:16:09 wms-app-2 WARN retrying connection to broker-1, attempt 469
+02:16:19 broker-1 WARN rejected client connection: handshake error
+02:16:32 broker-1 WARN rejected client connection: handshake error
+02:16:44 wms-app-1 ERROR publish failed for batch B28757: TLS handshake failed
+02:16:53 wms-app-3 WARN retrying connection to broker-1, attempt 23
+02:17:02 wms-app-4 WARN outbound queue backlog 320 messages held locally
+02:17:13 wms-app-4 ERROR publish failed for batch B39765: TLS handshake failed
+02:17:19 wms-app-4 ERROR publish failed for batch B36084: TLS handshake failed
+02:17:30 wms-app-3 ERROR publish failed for batch B64723: TLS handshake failed
+02:17:38 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:17:51 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:18:02 monitor INFO heartbeat ok broker-1 up
+02:18:13 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:18:23 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:18:27 wms-app-4 WARN retrying connection to broker-1, attempt 280
+02:18:36 wms-app-2 WARN outbound queue backlog 185 messages held locally
+02:18:49 wms-app-2 WARN outbound queue backlog 335 messages held locally
+02:18:58 wms-app-2 WARN retrying connection to broker-1, attempt 286
+02:19:11 wms-app-4 WARN retrying connection to broker-1, attempt 231
+02:19:17 wms-app-3 ERROR publish failed for batch B76892: TLS handshake failed
+02:19:25 wms-app-4 WARN outbound queue backlog 350 messages held locally
+02:19:37 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:19:46 monitor INFO heartbeat ok broker-1 up
+02:19:50 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:20:02 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:20:13 broker-1 WARN rejected client connection: handshake error
+02:20:25 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:20:34 wms-app-2 WARN retrying connection to broker-1, attempt 427
+02:20:40 monitor INFO heartbeat ok broker-1 up
+02:20:53 wms-app-1 ERROR publish failed for batch B45513: TLS handshake failed
+02:21:06 wms-app-1 ERROR publish failed for batch B13055: TLS handshake failed
+02:21:17 wms-app-2 WARN outbound queue backlog 422 messages held locally
+02:21:23 wms-app-2 WARN retrying connection to broker-1, attempt 259
+02:21:30 broker-1 WARN rejected client connection: handshake error
+02:21:41 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:21:51 wms-app-3 ERROR publish failed for batch B92582: TLS handshake failed
+02:22:00 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:22:13 wms-app-3 ERROR publish failed for batch B80866: TLS handshake failed
+02:22:23 wms-app-1 WARN outbound queue backlog 133 messages held locally
+02:22:27 wms-app-3 WARN outbound queue backlog 451 messages held locally
+02:22:32 wms-app-3 ERROR publish failed for batch B76686: TLS handshake failed
+02:22:39 wms-app-4 WARN retrying connection to broker-1, attempt 454
+02:22:43 wms-app-2 WARN retrying connection to broker-1, attempt 480
+02:22:46 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:22:57 monitor INFO heartbeat ok broker-1 up
+02:23:08 wms-app-2 WARN retrying connection to broker-1, attempt 188
+02:23:13 wms-app-1 ERROR publish failed for batch B78382: TLS handshake failed
+02:23:22 wms-app-1 WARN retrying connection to broker-1, attempt 220
+02:23:30 monitor INFO heartbeat ok broker-1 up
+02:23:40 monitor INFO heartbeat ok broker-1 up
+02:23:44 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:23:53 wms-app-2 WARN retrying connection to broker-1, attempt 166
+02:24:02 wms-app-1 WARN outbound queue backlog 320 messages held locally
+02:24:06 wms-app-1 ERROR publish failed for batch B64914: TLS handshake failed
+02:24:10 wms-app-4 ERROR publish failed for batch B88564: TLS handshake failed
+02:24:18 wms-app-3 ERROR publish failed for batch B40999: TLS handshake failed
+02:24:28 wms-app-2 WARN retrying connection to broker-1, attempt 198
+02:24:33 wms-app-4 ERROR publish failed for batch B27017: TLS handshake failed
+02:24:44 wms-app-3 ERROR publish failed for batch B92278: TLS handshake failed
+02:24:53 broker-1 WARN rejected client connection: handshake error
+02:25:05 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:25:18 broker-1 WARN rejected client connection: handshake error
+02:25:26 broker-1 WARN rejected client connection: handshake error
+02:25:33 wms-app-2 WARN outbound queue backlog 192 messages held locally
+02:25:39 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:25:47 wms-app-4 WARN retrying connection to broker-1, attempt 324
+02:25:52 monitor INFO heartbeat ok broker-1 up
+02:26:02 wms-app-2 WARN outbound queue backlog 137 messages held locally
+02:26:15 wms-app-1 WARN outbound queue backlog 87 messages held locally
+02:26:22 wms-app-1 ERROR publish failed for batch B70568: TLS handshake failed
+02:26:31 broker-1 WARN rejected client connection: handshake error
+02:26:40 monitor INFO heartbeat ok broker-1 up
+02:26:50 monitor INFO heartbeat ok broker-1 up
+02:27:03 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:27:07 broker-1 WARN rejected client connection: handshake error
+02:27:12 wms-app-1 WARN outbound queue backlog 286 messages held locally
+02:27:15 monitor INFO heartbeat ok broker-1 up
+02:27:27 broker-1 WARN rejected client connection: handshake error
+02:27:33 wms-app-1 WARN retrying connection to broker-1, attempt 358
+02:27:44 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:27:52 wms-app-3 ERROR publish failed for batch B67850: TLS handshake failed
+02:27:55 wms-app-2 WARN outbound queue backlog 208 messages held locally
+02:28:04 monitor INFO heartbeat ok broker-1 up
+02:28:10 wms-app-2 WARN retrying connection to broker-1, attempt 344
+02:28:14 wms-app-2 ERROR publish failed for batch B44415: TLS handshake failed
+02:28:25 broker-1 WARN rejected client connection: handshake error
+02:28:37 wms-app-4 ERROR publish failed for batch B88148: TLS handshake failed
+02:28:44 wms-app-3 WARN outbound queue backlog 260 messages held locally
+02:28:51 wms-app-4 WARN outbound queue backlog 218 messages held locally
+02:29:02 wms-app-1 WARN outbound queue backlog 193 messages held locally
+02:29:09 wms-app-4 ERROR publish failed for batch B60916: TLS handshake failed
+02:29:18 wms-app-3 WARN outbound queue backlog 73 messages held locally
+02:29:25 wms-app-2 WARN outbound queue backlog 304 messages held locally
+02:29:36 monitor INFO heartbeat ok broker-1 up
+02:29:48 wms-app-3 ERROR publish failed for batch B28522: TLS handshake failed
+02:29:52 wms-app-3 WARN retrying connection to broker-1, attempt 305
+02:30:05 wms-app-3 ERROR publish failed for batch B34408: TLS handshake failed
+02:30:16 monitor INFO heartbeat ok broker-1 up
+02:30:25 monitor INFO heartbeat ok broker-1 up
+02:30:36 wms-app-4 WARN outbound queue backlog 22 messages held locally
+02:30:45 wms-app-1 WARN outbound queue backlog 237 messages held locally
+02:30:52 wms-app-3 WARN retrying connection to broker-1, attempt 377
+02:30:59 wms-app-2 ERROR publish failed for batch B51822: TLS handshake failed
+02:31:11 wms-app-4 WARN outbound queue backlog 286 messages held locally
+02:31:21 monitor INFO heartbeat ok broker-1 up
+02:31:26 wms-app-4 WARN retrying connection to broker-1, attempt 459
+02:31:39 monitor INFO heartbeat ok broker-1 up
+02:31:48 wms-app-4 WARN retrying connection to broker-1, attempt 316
+02:31:53 wms-app-2 WARN retrying connection to broker-1, attempt 204
+02:31:56 broker-1 WARN rejected client connection: handshake error
+02:32:06 wms-app-4 ERROR publish failed for batch B56438: TLS handshake failed
+02:32:19 wms-app-2 WARN outbound queue backlog 207 messages held locally
+02:32:30 broker-1 WARN rejected client connection: handshake error
+02:32:34 wms-app-2 WARN retrying connection to broker-1, attempt 335
+02:32:46 wms-app-4 WARN outbound queue backlog 102 messages held locally
+02:32:53 wms-app-4 ERROR publish failed for batch B89391: TLS handshake failed
+02:33:03 monitor INFO heartbeat ok broker-1 up
+02:33:12 broker-1 WARN rejected client connection: handshake error
+02:33:15 wms-app-3 ERROR publish failed for batch B24271: TLS handshake failed
+02:33:23 wms-app-4 ERROR publish failed for batch B31058: TLS handshake failed
+02:33:32 broker-1 WARN rejected client connection: handshake error
+02:33:37 monitor INFO heartbeat ok broker-1 up
+02:33:42 wms-app-2 ERROR publish failed for batch B20666: TLS handshake failed
+02:33:50 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:34:02 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:34:05 broker-1 WARN rejected client connection: handshake error
+02:34:16 broker-1 WARN rejected client connection: handshake error
+02:34:26 wms-app-3 WARN retrying connection to broker-1, attempt 173
+02:34:30 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:34:35 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:34:39 wms-app-1 WARN retrying connection to broker-1, attempt 175
+02:34:48 broker-1 WARN rejected client connection: handshake error
+02:34:58 wms-app-1 ERROR publish failed for batch B34441: TLS handshake failed
+02:35:03 wms-app-3 WARN outbound queue backlog 78 messages held locally
+02:35:11 broker-1 WARN rejected client connection: handshake error
+02:35:17 wms-app-2 WARN retrying connection to broker-1, attempt 327
+02:35:24 wms-app-3 WARN outbound queue backlog 397 messages held locally
+02:35:34 wms-app-4 ERROR publish failed for batch B19981: TLS handshake failed
+02:35:44 monitor INFO heartbeat ok broker-1 up
+02:35:54 wms-app-4 ERROR publish failed for batch B83027: TLS handshake failed
+02:36:00 monitor INFO heartbeat ok broker-1 up
+02:36:08 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:36:20 broker-1 WARN rejected client connection: handshake error
+02:36:32 monitor INFO heartbeat ok broker-1 up
+02:36:35 wms-app-4 WARN outbound queue backlog 325 messages held locally
+02:36:46 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:36:54 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:37:05 broker-1 WARN rejected client connection: handshake error
+02:37:11 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:37:17 monitor INFO heartbeat ok broker-1 up
+02:37:29 broker-1 WARN rejected client connection: handshake error
+02:37:38 monitor INFO heartbeat ok broker-1 up
+02:37:44 broker-1 WARN rejected client connection: handshake error
+02:37:53 broker-1 WARN rejected client connection: handshake error
+02:38:00 broker-1 WARN rejected client connection: handshake error
+02:38:04 wms-app-2 ERROR publish failed for batch B19461: TLS handshake failed
+02:38:11 broker-1 WARN rejected client connection: handshake error
+02:38:24 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:38:29 wms-app-4 WARN retrying connection to broker-1, attempt 298
+02:38:37 wms-app-4 ERROR publish failed for batch B68017: TLS handshake failed
+02:38:46 wms-app-2 WARN outbound queue backlog 338 messages held locally
+02:38:58 broker-1 WARN rejected client connection: handshake error
+02:39:10 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:39:21 monitor INFO heartbeat ok broker-1 up
+02:39:34 wms-app-1 WARN outbound queue backlog 320 messages held locally
+02:39:41 monitor INFO heartbeat ok broker-1 up
+02:39:51 wms-app-3 WARN outbound queue backlog 390 messages held locally
+02:40:01 wms-app-2 ERROR publish failed for batch B95561: TLS handshake failed
+02:40:05 wms-app-3 WARN retrying connection to broker-1, attempt 71
+02:40:16 wms-app-4 WARN retrying connection to broker-1, attempt 197
+02:40:22 wms-app-1 WARN outbound queue backlog 22 messages held locally
+02:40:32 wms-app-4 WARN outbound queue backlog 81 messages held locally
+02:40:36 wms-app-4 ERROR publish failed for batch B44634: TLS handshake failed
+02:40:43 wms-app-4 WARN retrying connection to broker-1, attempt 194
+02:40:49 broker-1 WARN rejected client connection: handshake error
+02:40:54 wms-app-4 WARN retrying connection to broker-1, attempt 224
+02:41:03 wms-app-3 WARN retrying connection to broker-1, attempt 209
+02:41:12 broker-1 WARN rejected client connection: handshake error
+02:41:20 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:41:33 monitor INFO heartbeat ok broker-1 up
+02:41:40 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:41:43 monitor INFO heartbeat ok broker-1 up
+02:41:53 broker-1 WARN rejected client connection: handshake error
+02:41:58 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:42:05 monitor INFO heartbeat ok broker-1 up
+02:42:17 wms-app-1 WARN retrying connection to broker-1, attempt 329
+02:42:23 wms-app-2 WARN outbound queue backlog 148 messages held locally
+02:42:35 monitor INFO heartbeat ok broker-1 up
+02:42:45 wms-app-3 ERROR publish failed for batch B32340: TLS handshake failed
+02:42:58 monitor INFO heartbeat ok broker-1 up
+02:43:11 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:43:22 wms-app-1 ERROR publish failed for batch B91191: TLS handshake failed
+02:43:25 wms-app-3 ERROR publish failed for batch B18668: TLS handshake failed
+02:43:34 broker-1 WARN rejected client connection: handshake error
+02:43:46 wms-app-2 WARN retrying connection to broker-1, attempt 308
+02:43:57 wms-app-2 WARN outbound queue backlog 120 messages held locally
+02:44:08 wms-app-3 WARN outbound queue backlog 77 messages held locally
+02:44:15 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:44:28 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:44:34 wms-app-4 ERROR publish failed for batch B48833: TLS handshake failed
+02:44:46 wms-app-2 WARN retrying connection to broker-1, attempt 73
+02:44:49 monitor INFO heartbeat ok broker-1 up
+02:44:55 broker-1 WARN rejected client connection: handshake error
+02:44:58 monitor INFO heartbeat ok broker-1 up
+02:45:03 wms-app-3 ERROR publish failed for batch B45505: TLS handshake failed
+02:45:08 wms-app-3 ERROR publish failed for batch B60150: TLS handshake failed
+02:45:15 wms-app-3 WARN retrying connection to broker-1, attempt 330
+02:45:22 wms-app-1 WARN retrying connection to broker-1, attempt 376
+02:45:34 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:45:38 broker-1 WARN rejected client connection: handshake error
+02:45:45 monitor INFO heartbeat ok broker-1 up
+02:45:51 wms-app-1 ERROR publish failed for batch B18885: TLS handshake failed
+02:46:00 broker-1 WARN rejected client connection: handshake error
+02:46:11 wms-app-4 WARN outbound queue backlog 194 messages held locally
+02:46:21 wms-app-3 ERROR publish failed for batch B95455: TLS handshake failed
+02:46:29 wms-app-3 WARN retrying connection to broker-1, attempt 367
+02:46:42 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:46:52 wms-app-4 WARN retrying connection to broker-1, attempt 424
+02:47:05 wms-app-4 WARN outbound queue backlog 390 messages held locally
+02:47:09 wms-app-1 ERROR publish failed for batch B95468: TLS handshake failed
+02:47:16 wms-app-3 ERROR publish failed for batch B44193: TLS handshake failed
+02:47:20 broker-1 WARN rejected client connection: handshake error
+02:47:25 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:47:33 wms-app-4 WARN outbound queue backlog 144 messages held locally
+02:47:44 wms-app-4 ERROR publish failed for batch B92386: TLS handshake failed
+02:47:49 wms-app-3 WARN retrying connection to broker-1, attempt 411
+02:47:58 broker-1 WARN rejected client connection: handshake error
+02:48:09 wms-app-4 ERROR publish failed for batch B23786: TLS handshake failed
+02:48:15 wms-app-2 WARN retrying connection to broker-1, attempt 301
+02:48:22 monitor INFO heartbeat ok broker-1 up
+02:48:34 monitor INFO heartbeat ok broker-1 up
+02:48:37 wms-app-4 WARN retrying connection to broker-1, attempt 209
+02:48:43 broker-1 WARN rejected client connection: handshake error
+02:48:50 wms-app-4 WARN outbound queue backlog 169 messages held locally
+02:48:53 wms-app-3 WARN outbound queue backlog 369 messages held locally
+02:49:00 wms-app-4 WARN outbound queue backlog 468 messages held locally
+02:49:09 wms-app-2 ERROR publish failed for batch B97752: TLS handshake failed
+02:49:15 wms-app-1 WARN outbound queue backlog 178 messages held locally
+02:49:26 wms-app-3 WARN outbound queue backlog 180 messages held locally
+02:49:39 wms-app-2 WARN retrying connection to broker-1, attempt 131
+02:49:42 broker-1 WARN rejected client connection: handshake error
+02:49:53 wms-app-1 ERROR publish failed for batch B69789: TLS handshake failed
+02:50:05 broker-1 WARN rejected client connection: handshake error
+02:50:17 wms-app-4 ERROR publish failed for batch B27249: TLS handshake failed
+02:50:24 wms-app-3 ERROR publish failed for batch B72867: TLS handshake failed
+02:50:33 broker-1 WARN rejected client connection: handshake error
+02:50:37 wms-app-2 WARN outbound queue backlog 191 messages held locally
+02:50:44 wms-app-4 WARN outbound queue backlog 369 messages held locally
+02:50:54 wms-app-2 WARN outbound queue backlog 219 messages held locally
+02:51:00 wms-app-3 WARN outbound queue backlog 140 messages held locally
+02:51:04 wms-app-1 ERROR publish failed for batch B59804: TLS handshake failed
+02:51:09 wms-app-1 WARN outbound queue backlog 247 messages held locally
+02:51:17 wms-app-3 WARN retrying connection to broker-1, attempt 14
+02:51:24 broker-1 WARN rejected client connection: handshake error
+02:51:33 broker-1 WARN rejected client connection: handshake error
+02:51:38 wms-app-2 ERROR publish failed for batch B98005: TLS handshake failed
+02:51:42 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:51:45 broker-1 WARN rejected client connection: handshake error
+02:51:58 wms-app-3 ERROR publish failed for batch B44975: TLS handshake failed
+02:52:10 monitor INFO heartbeat ok broker-1 up
+02:52:14 monitor INFO heartbeat ok broker-1 up
+02:52:17 monitor INFO heartbeat ok broker-1 up
+02:52:27 wms-app-3 ERROR publish failed for batch B28389: TLS handshake failed
+02:52:32 wms-app-4 WARN outbound queue backlog 276 messages held locally
+02:52:40 monitor INFO heartbeat ok broker-1 up
+02:52:46 wms-app-2 WARN retrying connection to broker-1, attempt 425
+02:52:52 wms-app-3 WARN outbound queue backlog 180 messages held locally
+02:53:02 broker-1 WARN rejected client connection: handshake error
+02:53:08 wms-app-4 WARN outbound queue backlog 14 messages held locally
+02:53:18 wms-app-3 WARN outbound queue backlog 301 messages held locally
+02:53:27 wms-app-4 WARN retrying connection to broker-1, attempt 130
+02:53:39 monitor INFO heartbeat ok broker-1 up
+02:53:50 monitor INFO heartbeat ok broker-1 up
+02:54:03 wms-app-1 ERROR publish failed for batch B99040: TLS handshake failed
+02:54:09 wms-app-3 WARN outbound queue backlog 88 messages held locally
+02:54:16 wms-app-3 WARN retrying connection to broker-1, attempt 276
+02:54:21 wms-app-4 WARN retrying connection to broker-1, attempt 166
+02:54:28 monitor INFO heartbeat ok broker-1 up
+02:54:38 wms-app-3 WARN outbound queue backlog 33 messages held locally
+02:54:49 wms-app-1 WARN outbound queue backlog 226 messages held locally
+02:54:57 wms-app-3 ERROR publish failed for batch B88101: TLS handshake failed
+02:55:06 wms-app-4 WARN outbound queue backlog 333 messages held locally
+02:55:18 wms-app-1 ERROR publish failed for batch B69843: TLS handshake failed
+02:55:23 broker-1 WARN rejected client connection: handshake error
+02:55:31 wms-app-2 WARN outbound queue backlog 342 messages held locally
+02:55:44 monitor INFO heartbeat ok broker-1 up
+02:55:52 wms-app-2 ERROR publish failed for batch B87802: TLS handshake failed
+02:56:03 wms-app-2 WARN outbound queue backlog 410 messages held locally
+02:56:06 wms-app-4 WARN retrying connection to broker-1, attempt 96
+02:56:16 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:56:29 broker-1 WARN rejected client connection: handshake error
+02:56:33 broker-1 WARN rejected client connection: handshake error
+02:56:38 wms-app-1 WARN outbound queue backlog 356 messages held locally
+02:56:51 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:57:01 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+02:57:06 wms-app-1 WARN retrying connection to broker-1, attempt 221
+02:57:12 monitor INFO heartbeat ok broker-1 up
+02:57:23 wms-app-2 WARN retrying connection to broker-1, attempt 395
+02:57:32 wms-app-2 WARN outbound queue backlog 56 messages held locally
+02:57:36 wms-app-2 WARN outbound queue backlog 231 messages held locally
+02:57:47 monitor INFO heartbeat ok broker-1 up
+02:57:50 wms-app-1 WARN retrying connection to broker-1, attempt 216
+02:57:57 broker-1 WARN rejected client connection: handshake error
+02:58:09 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:58:14 wms-app-2 WARN retrying connection to broker-1, attempt 39
+02:58:20 wms-app-2 WARN retrying connection to broker-1, attempt 270
+02:58:27 wms-app-1 WARN retrying connection to broker-1, attempt 204
+02:58:33 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:58:42 monitor INFO heartbeat ok broker-1 up
+02:58:54 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+02:59:06 wms-app-2 WARN retrying connection to broker-1, attempt 450
+02:59:12 wms-app-3 ERROR publish failed for batch B70334: TLS handshake failed
+02:59:15 wms-app-4 WARN retrying connection to broker-1, attempt 115
+02:59:28 monitor INFO heartbeat ok broker-1 up
+02:59:32 wms-app-3 ERROR publish failed for batch B31472: TLS handshake failed
+02:59:39 wms-app-4 WARN retrying connection to broker-1, attempt 144
+02:59:47 wms-app-2 ERROR publish failed for batch B93094: TLS handshake failed
+02:59:53 wms-app-3 WARN outbound queue backlog 103 messages held locally
+03:00:06 wms-app-2 WARN retrying connection to broker-1, attempt 323
+03:00:13 monitor INFO heartbeat ok broker-1 up
+03:00:22 wms-app-4 ERROR publish failed for batch B86569: TLS handshake failed
+03:00:27 wms-app-3 WARN retrying connection to broker-1, attempt 255
+03:00:34 wms-app-3 WARN outbound queue backlog 194 messages held locally
+03:00:44 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:00:52 wms-app-4 WARN retrying connection to broker-1, attempt 337
+03:01:02 broker-1 WARN rejected client connection: handshake error
+03:01:13 broker-1 WARN rejected client connection: handshake error
+03:01:26 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:01:30 wms-app-4 WARN retrying connection to broker-1, attempt 211
+03:01:37 monitor INFO heartbeat ok broker-1 up
+03:01:40 wms-app-4 WARN retrying connection to broker-1, attempt 78
+03:01:50 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:02:03 wms-app-4 ERROR publish failed for batch B20290: TLS handshake failed
+03:02:12 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:02:22 wms-app-4 WARN outbound queue backlog 347 messages held locally
+03:02:26 wms-app-1 WARN retrying connection to broker-1, attempt 386
+03:02:29 wms-app-4 ERROR publish failed for batch B83167: TLS handshake failed
+03:02:33 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:02:42 monitor INFO heartbeat ok broker-1 up
+03:02:50 wms-app-2 ERROR publish failed for batch B67292: TLS handshake failed
+03:02:59 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:03:10 wms-app-4 ERROR publish failed for batch B17345: TLS handshake failed
+03:03:21 wms-app-1 WARN retrying connection to broker-1, attempt 81
+03:03:24 wms-app-1 ERROR publish failed for batch B70360: TLS handshake failed
+03:03:29 wms-app-1 WARN outbound queue backlog 59 messages held locally
+03:03:39 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:03:52 wms-app-4 ERROR publish failed for batch B74083: TLS handshake failed
+03:04:01 wms-app-1 WARN outbound queue backlog 31 messages held locally
+03:04:09 wms-app-2 WARN retrying connection to broker-1, attempt 348
+03:04:12 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:04:23 monitor INFO heartbeat ok broker-1 up
+03:04:35 monitor INFO heartbeat ok broker-1 up
+03:04:47 wms-app-2 WARN outbound queue backlog 234 messages held locally
+03:04:52 wms-app-2 ERROR publish failed for batch B49690: TLS handshake failed
+03:05:04 broker-1 WARN rejected client connection: handshake error
+03:05:08 broker-1 WARN rejected client connection: handshake error
+03:05:14 wms-app-2 WARN outbound queue backlog 66 messages held locally
+03:05:27 monitor INFO heartbeat ok broker-1 up
+03:05:33 wms-app-1 WARN retrying connection to broker-1, attempt 142
+03:05:44 wms-app-4 WARN retrying connection to broker-1, attempt 357
+03:05:54 broker-1 WARN rejected client connection: handshake error
+03:06:03 broker-1 WARN rejected client connection: handshake error
+03:06:09 monitor INFO heartbeat ok broker-1 up
+03:06:13 wms-app-2 WARN outbound queue backlog 113 messages held locally
+03:06:20 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:06:23 wms-app-1 WARN outbound queue backlog 218 messages held locally
+03:06:34 wms-app-4 WARN outbound queue backlog 234 messages held locally
+03:06:38 monitor INFO heartbeat ok broker-1 up
+03:06:50 monitor INFO heartbeat ok broker-1 up
+03:06:55 wms-app-4 WARN outbound queue backlog 480 messages held locally
+03:06:58 wms-app-3 ERROR publish failed for batch B40069: TLS handshake failed
+03:07:09 wms-app-4 WARN retrying connection to broker-1, attempt 212
+03:07:14 wms-app-4 ERROR publish failed for batch B17104: TLS handshake failed
+03:07:27 monitor INFO heartbeat ok broker-1 up
+03:07:35 monitor INFO heartbeat ok broker-1 up
+03:07:42 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:07:52 monitor INFO heartbeat ok broker-1 up
+03:07:58 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:08:01 broker-1 WARN rejected client connection: handshake error
+03:08:09 broker-1 WARN rejected client connection: handshake error
+03:08:12 wms-app-3 WARN retrying connection to broker-1, attempt 280
+03:08:22 monitor INFO heartbeat ok broker-1 up
+03:08:26 wms-app-1 WARN retrying connection to broker-1, attempt 54
+03:08:32 wms-app-4 WARN outbound queue backlog 82 messages held locally
+03:08:44 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:08:57 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:09:10 monitor INFO heartbeat ok broker-1 up
+03:09:17 monitor INFO heartbeat ok broker-1 up
+03:09:27 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:09:33 wms-app-1 ERROR publish failed for batch B25953: TLS handshake failed
+03:09:42 monitor INFO heartbeat ok broker-1 up
+03:09:53 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:10:02 broker-1 WARN rejected client connection: handshake error
+03:10:05 wms-app-3 WARN outbound queue backlog 138 messages held locally
+03:10:17 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:10:24 wms-app-2 WARN outbound queue backlog 344 messages held locally
+03:10:27 broker-1 WARN rejected client connection: handshake error
+03:10:32 wms-app-3 WARN outbound queue backlog 394 messages held locally
+03:10:35 monitor INFO heartbeat ok broker-1 up
+03:10:38 monitor INFO heartbeat ok broker-1 up
+03:10:46 wms-app-3 ERROR publish failed for batch B44326: TLS handshake failed
+03:10:51 broker-1 WARN rejected client connection: handshake error
+03:10:56 broker-1 WARN rejected client connection: handshake error
+03:11:00 wms-app-3 ERROR publish failed for batch B22563: TLS handshake failed
+03:11:12 monitor INFO heartbeat ok broker-1 up
+03:11:17 monitor INFO heartbeat ok broker-1 up
+03:11:25 wms-app-2 WARN outbound queue backlog 186 messages held locally
+03:11:33 broker-1 WARN rejected client connection: handshake error
+03:11:44 broker-1 WARN rejected client connection: handshake error
+03:11:51 wms-app-4 WARN outbound queue backlog 93 messages held locally
+03:11:54 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:12:02 wms-app-3 WARN outbound queue backlog 49 messages held locally
+03:12:07 broker-1 WARN rejected client connection: handshake error
+03:12:13 wms-app-3 WARN outbound queue backlog 202 messages held locally
+03:12:24 monitor INFO heartbeat ok broker-1 up
+03:12:33 wms-app-2 WARN outbound queue backlog 202 messages held locally
+03:12:36 wms-app-2 ERROR publish failed for batch B50281: TLS handshake failed
+03:12:46 monitor INFO heartbeat ok broker-1 up
+03:12:52 wms-app-2 ERROR publish failed for batch B64235: TLS handshake failed
+03:13:03 wms-app-1 WARN outbound queue backlog 280 messages held locally
+03:13:08 wms-app-4 WARN retrying connection to broker-1, attempt 271
+03:13:19 broker-1 WARN rejected client connection: handshake error
+03:13:29 broker-1 WARN rejected client connection: handshake error
+03:13:38 monitor INFO heartbeat ok broker-1 up
+03:13:42 wms-app-1 ERROR publish failed for batch B29585: TLS handshake failed
+03:13:50 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:14:01 wms-app-4 WARN outbound queue backlog 287 messages held locally
+03:14:08 wms-app-1 ERROR publish failed for batch B91439: TLS handshake failed
+03:14:13 broker-1 WARN rejected client connection: handshake error
+03:14:20 wms-app-4 WARN retrying connection to broker-1, attempt 150
+03:14:29 wms-app-1 WARN retrying connection to broker-1, attempt 278
+03:14:40 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:14:49 monitor INFO heartbeat ok broker-1 up
+03:14:54 wms-app-2 WARN retrying connection to broker-1, attempt 365
+03:15:00 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:15:12 wms-app-3 WARN outbound queue backlog 165 messages held locally
+03:15:17 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:15:29 wms-app-4 ERROR publish failed for batch B37229: TLS handshake failed
+03:15:38 wms-app-1 WARN outbound queue backlog 327 messages held locally
+03:15:42 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:15:51 broker-1 WARN rejected client connection: handshake error
+03:15:56 wms-app-4 WARN retrying connection to broker-1, attempt 168
+03:16:00 wms-app-4 WARN retrying connection to broker-1, attempt 355
+03:16:11 broker-1 WARN rejected client connection: handshake error
+03:16:22 wms-app-3 WARN retrying connection to broker-1, attempt 460
+03:16:32 wms-app-2 WARN retrying connection to broker-1, attempt 109
+03:16:42 wms-app-3 ERROR publish failed for batch B29701: TLS handshake failed
+03:16:50 broker-1 WARN rejected client connection: handshake error
+03:16:56 broker-1 WARN rejected client connection: handshake error
+03:17:01 monitor INFO heartbeat ok broker-1 up
+03:17:08 wms-app-4 WARN retrying connection to broker-1, attempt 421
+03:17:17 wms-app-3 ERROR publish failed for batch B77215: TLS handshake failed
+03:17:29 monitor INFO heartbeat ok broker-1 up
+03:17:35 monitor INFO heartbeat ok broker-1 up
+03:17:45 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:17:52 wms-app-1 WARN retrying connection to broker-1, attempt 457
+03:17:57 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:18:08 monitor INFO heartbeat ok broker-1 up
+03:18:14 broker-1 WARN rejected client connection: handshake error
+03:18:26 monitor INFO heartbeat ok broker-1 up
+03:18:31 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:18:38 wms-app-1 ERROR publish failed for batch B30884: TLS handshake failed
+03:18:43 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:18:51 wms-app-3 WARN retrying connection to broker-1, attempt 192
+03:19:03 wms-app-2 ERROR publish failed for batch B83796: TLS handshake failed
+03:19:13 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:19:18 wms-app-3 WARN outbound queue backlog 59 messages held locally
+03:19:21 wms-app-3 WARN outbound queue backlog 194 messages held locally
+03:19:28 wms-app-2 WARN retrying connection to broker-1, attempt 344
+03:19:41 broker-1 WARN rejected client connection: handshake error
+03:19:47 wms-app-1 WARN retrying connection to broker-1, attempt 293
+03:19:52 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:20:00 wms-app-4 ERROR publish failed for batch B49874: TLS handshake failed
+03:20:09 broker-1 WARN rejected client connection: handshake error
+03:20:18 wms-app-4 WARN retrying connection to broker-1, attempt 74
+03:20:23 wms-app-3 ERROR publish failed for batch B77428: TLS handshake failed
+03:20:36 wms-app-1 ERROR publish failed for batch B96622: TLS handshake failed
+03:20:40 monitor INFO heartbeat ok broker-1 up
+03:20:43 wms-app-4 WARN outbound queue backlog 124 messages held locally
+03:20:55 monitor INFO heartbeat ok broker-1 up
+03:21:03 broker-1 WARN rejected client connection: handshake error
+03:21:08 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:21:13 monitor INFO heartbeat ok broker-1 up
+03:21:19 broker-1 WARN rejected client connection: handshake error
+03:21:25 wms-app-3 ERROR publish failed for batch B12185: TLS handshake failed
+03:21:37 broker-1 WARN rejected client connection: handshake error
+03:21:47 monitor INFO heartbeat ok broker-1 up
+03:21:52 broker-1 WARN rejected client connection: handshake error
+03:21:56 wms-app-1 WARN outbound queue backlog 253 messages held locally
+03:22:01 monitor INFO heartbeat ok broker-1 up
+03:22:07 wms-app-1 WARN outbound queue backlog 436 messages held locally
+03:22:10 wms-app-1 WARN outbound queue backlog 361 messages held locally
+03:22:15 wms-app-4 WARN outbound queue backlog 454 messages held locally
+03:22:19 monitor INFO heartbeat ok broker-1 up
+03:22:25 monitor INFO heartbeat ok broker-1 up
+03:22:33 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:22:41 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:22:49 wms-app-4 WARN outbound queue backlog 29 messages held locally
+03:22:52 monitor INFO heartbeat ok broker-1 up
+03:23:00 wms-app-1 ERROR publish failed for batch B39835: TLS handshake failed
+03:23:03 broker-1 WARN rejected client connection: handshake error
+03:23:09 wms-app-3 ERROR publish failed for batch B60184: TLS handshake failed
+03:23:14 wms-app-2 WARN retrying connection to broker-1, attempt 139
+03:23:27 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:23:30 wms-app-2 WARN outbound queue backlog 423 messages held locally
+03:23:38 wms-app-1 WARN outbound queue backlog 59 messages held locally
+03:23:48 broker-1 WARN rejected client connection: handshake error
+03:23:55 wms-app-4 WARN outbound queue backlog 167 messages held locally
+03:24:01 wms-app-3 WARN outbound queue backlog 356 messages held locally
+03:24:06 wms-app-1 WARN outbound queue backlog 126 messages held locally
+03:24:16 wms-app-3 WARN retrying connection to broker-1, attempt 48
+03:24:22 wms-app-4 WARN outbound queue backlog 360 messages held locally
+03:24:28 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:24:38 broker-1 WARN rejected client connection: handshake error
+03:24:46 wms-app-3 WARN retrying connection to broker-1, attempt 149
+03:24:55 broker-1 WARN rejected client connection: handshake error
+03:25:00 wms-app-3 WARN outbound queue backlog 156 messages held locally
+03:25:12 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:25:25 wms-app-3 WARN outbound queue backlog 251 messages held locally
+03:25:33 wms-app-1 ERROR publish failed for batch B72293: TLS handshake failed
+03:25:36 wms-app-1 WARN outbound queue backlog 28 messages held locally
+03:25:41 monitor INFO heartbeat ok broker-1 up
+03:25:54 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:26:03 broker-1 WARN rejected client connection: handshake error
+03:26:16 wms-app-2 WARN outbound queue backlog 423 messages held locally
+03:26:19 broker-1 WARN rejected client connection: handshake error
+03:26:26 wms-app-4 ERROR publish failed for batch B76161: TLS handshake failed
+03:26:30 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:26:36 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:26:42 wms-app-2 ERROR publish failed for batch B43777: TLS handshake failed
+03:26:55 monitor INFO heartbeat ok broker-1 up
+03:27:03 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:27:06 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:27:18 broker-1 WARN rejected client connection: handshake error
+03:27:25 monitor INFO heartbeat ok broker-1 up
+03:27:32 wms-app-3 ERROR publish failed for batch B81871: TLS handshake failed
+03:27:45 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:27:50 wms-app-4 WARN retrying connection to broker-1, attempt 275
+03:28:01 wms-app-4 ERROR publish failed for batch B42070: TLS handshake failed
+03:28:04 broker-1 WARN rejected client connection: handshake error
+03:28:11 wms-app-3 ERROR publish failed for batch B64728: TLS handshake failed
+03:28:20 wms-app-4 WARN retrying connection to broker-1, attempt 399
+03:28:26 wms-app-2 ERROR publish failed for batch B57989: TLS handshake failed
+03:28:31 monitor INFO heartbeat ok broker-1 up
+03:28:44 monitor INFO heartbeat ok broker-1 up
+03:28:54 monitor INFO heartbeat ok broker-1 up
+03:29:00 wms-app-4 WARN outbound queue backlog 297 messages held locally
+03:29:06 wms-app-1 WARN outbound queue backlog 53 messages held locally
+03:29:17 wms-app-2 WARN retrying connection to broker-1, attempt 318
+03:29:21 wms-app-3 WARN outbound queue backlog 472 messages held locally
+03:29:31 wms-app-3 WARN outbound queue backlog 366 messages held locally
+03:29:41 wms-app-1 WARN outbound queue backlog 440 messages held locally
+03:29:46 wms-app-1 WARN outbound queue backlog 285 messages held locally
+03:29:53 wms-app-1 ERROR publish failed for batch B77350: TLS handshake failed
+03:30:05 broker-1 WARN rejected client connection: handshake error
+03:30:11 wms-app-3 ERROR publish failed for batch B73994: TLS handshake failed
+03:30:14 monitor INFO heartbeat ok broker-1 up
+03:30:17 monitor INFO heartbeat ok broker-1 up
+03:30:22 wms-app-1 WARN outbound queue backlog 57 messages held locally
+03:30:33 broker-1 WARN rejected client connection: handshake error
+03:30:40 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:30:50 broker-1 WARN rejected client connection: handshake error
+03:30:58 wms-app-4 WARN outbound queue backlog 376 messages held locally
+03:31:04 monitor INFO heartbeat ok broker-1 up
+03:31:09 wms-app-3 WARN outbound queue backlog 111 messages held locally
+03:31:21 wms-app-2 WARN outbound queue backlog 138 messages held locally
+03:31:33 monitor INFO heartbeat ok broker-1 up
+03:31:44 wms-app-2 WARN retrying connection to broker-1, attempt 91
+03:31:49 wms-app-2 WARN retrying connection to broker-1, attempt 158
+03:32:02 broker-1 WARN rejected client connection: handshake error
+03:32:10 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:32:15 broker-1 WARN rejected client connection: handshake error
+03:32:23 monitor INFO heartbeat ok broker-1 up
+03:32:26 wms-app-3 WARN outbound queue backlog 292 messages held locally
+03:32:33 wms-app-2 WARN outbound queue backlog 119 messages held locally
+03:32:38 broker-1 WARN rejected client connection: handshake error
+03:32:46 wms-app-1 WARN retrying connection to broker-1, attempt 311
+03:32:57 monitor INFO heartbeat ok broker-1 up
+03:33:07 wms-app-3 ERROR publish failed for batch B29518: TLS handshake failed
+03:33:17 wms-app-2 WARN retrying connection to broker-1, attempt 454
+03:33:30 broker-1 WARN rejected client connection: handshake error
+03:33:39 broker-1 WARN rejected client connection: handshake error
+03:33:47 wms-app-2 ERROR publish failed for batch B82153: TLS handshake failed
+03:33:53 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:33:59 wms-app-3 WARN retrying connection to broker-1, attempt 78
+03:34:08 wms-app-4 ERROR publish failed for batch B71298: TLS handshake failed
+03:34:18 monitor INFO heartbeat ok broker-1 up
+03:34:30 monitor INFO heartbeat ok broker-1 up
+03:34:34 wms-app-2 WARN outbound queue backlog 180 messages held locally
+03:34:38 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:34:43 broker-1 WARN rejected client connection: handshake error
+03:34:46 broker-1 WARN rejected client connection: handshake error
+03:34:59 wms-app-3 ERROR publish failed for batch B32641: TLS handshake failed
+03:35:11 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:35:16 wms-app-1 WARN outbound queue backlog 45 messages held locally
+03:35:21 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:35:25 broker-1 WARN rejected client connection: handshake error
+03:35:28 broker-1 WARN rejected client connection: handshake error
+03:35:40 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:35:50 wms-app-2 ERROR publish failed for batch B67402: TLS handshake failed
+03:36:03 broker-1 WARN rejected client connection: handshake error
+03:36:16 wms-app-2 ERROR publish failed for batch B28026: TLS handshake failed
+03:36:23 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:36:29 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:36:37 monitor INFO heartbeat ok broker-1 up
+03:36:40 monitor INFO heartbeat ok broker-1 up
+03:36:48 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:36:53 wms-app-4 WARN retrying connection to broker-1, attempt 381
+03:37:03 wms-app-2 WARN outbound queue backlog 280 messages held locally
+03:37:11 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:37:20 broker-1 WARN rejected client connection: handshake error
+03:37:31 monitor INFO heartbeat ok broker-1 up
+03:37:41 broker-1 WARN rejected client connection: handshake error
+03:37:46 monitor INFO heartbeat ok broker-1 up
+03:37:59 wms-app-1 WARN outbound queue backlog 124 messages held locally
+03:38:07 broker-1 WARN rejected client connection: handshake error
+03:38:15 monitor INFO heartbeat ok broker-1 up
+03:38:23 wms-app-4 WARN retrying connection to broker-1, attempt 351
+03:38:31 monitor INFO heartbeat ok broker-1 up
+03:38:41 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:38:52 wms-app-2 WARN outbound queue backlog 59 messages held locally
+03:38:56 wms-app-3 WARN outbound queue backlog 91 messages held locally
+03:39:02 wms-app-3 WARN retrying connection to broker-1, attempt 48
+03:39:11 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:39:17 wms-app-4 ERROR publish failed for batch B36687: TLS handshake failed
+03:39:30 broker-1 WARN rejected client connection: handshake error
+03:39:43 broker-1 WARN rejected client connection: handshake error
+03:39:53 monitor INFO heartbeat ok broker-1 up
+03:40:02 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:40:06 wms-app-3 WARN outbound queue backlog 375 messages held locally
+03:40:12 broker-1 WARN rejected client connection: handshake error
+03:40:25 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:40:34 wms-app-4 ERROR publish failed for batch B10952: TLS handshake failed
+03:40:46 broker-1 WARN rejected client connection: handshake error
+03:40:54 wms-app-2 WARN retrying connection to broker-1, attempt 244
+03:40:58 broker-1 WARN rejected client connection: handshake error
+03:41:09 monitor INFO heartbeat ok broker-1 up
+03:41:14 monitor INFO heartbeat ok broker-1 up
+03:41:20 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:41:30 wms-app-1 WARN retrying connection to broker-1, attempt 411
+03:41:37 wms-app-1 ERROR publish failed for batch B25292: TLS handshake failed
+03:41:46 monitor INFO heartbeat ok broker-1 up
+03:41:54 wms-app-3 WARN retrying connection to broker-1, attempt 104
+03:41:57 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:42:03 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:42:11 monitor INFO heartbeat ok broker-1 up
+03:42:15 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:42:19 wms-app-2 WARN retrying connection to broker-1, attempt 222
+03:42:28 wms-app-4 ERROR publish failed for batch B42101: TLS handshake failed
+03:42:33 broker-1 WARN rejected client connection: handshake error
+03:42:46 wms-app-2 ERROR publish failed for batch B75800: TLS handshake failed
+03:42:54 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:43:07 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:43:20 broker-1 WARN rejected client connection: handshake error
+03:43:24 broker-1 WARN rejected client connection: handshake error
+03:43:28 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:43:41 monitor INFO heartbeat ok broker-1 up
+03:43:47 wms-app-2 ERROR publish failed for batch B34020: TLS handshake failed
+03:44:00 wms-app-1 WARN outbound queue backlog 427 messages held locally
+03:44:08 wms-app-2 WARN outbound queue backlog 353 messages held locally
+03:44:17 wms-app-4 WARN outbound queue backlog 233 messages held locally
+03:44:22 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:44:34 monitor INFO heartbeat ok broker-1 up
+03:44:39 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:44:44 broker-1 WARN rejected client connection: handshake error
+03:44:52 wms-app-2 WARN outbound queue backlog 339 messages held locally
+03:45:02 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:45:06 wms-app-4 ERROR publish failed for batch B24671: TLS handshake failed
+03:45:10 monitor INFO heartbeat ok broker-1 up
+03:45:16 broker-1 WARN rejected client connection: handshake error
+03:45:26 monitor INFO heartbeat ok broker-1 up
+03:45:35 wms-app-2 WARN retrying connection to broker-1, attempt 252
+03:45:48 broker-1 WARN rejected client connection: handshake error
+03:45:57 wms-app-2 WARN retrying connection to broker-1, attempt 148
+03:46:07 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:46:20 broker-1 WARN rejected client connection: handshake error
+03:46:31 monitor INFO heartbeat ok broker-1 up
+03:46:40 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:46:43 broker-1 WARN rejected client connection: handshake error
+03:46:54 broker-1 WARN rejected client connection: handshake error
+03:47:07 monitor INFO heartbeat ok broker-1 up
+03:47:12 monitor INFO heartbeat ok broker-1 up
+03:47:21 broker-1 WARN rejected client connection: handshake error
+03:47:29 wms-app-3 WARN retrying connection to broker-1, attempt 200
+03:47:40 monitor INFO heartbeat ok broker-1 up
+03:47:47 wms-app-1 ERROR publish failed for batch B52352: TLS handshake failed
+03:47:53 wms-app-2 ERROR publish failed for batch B39555: TLS handshake failed
+03:48:03 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:48:10 monitor INFO heartbeat ok broker-1 up
+03:48:20 wms-app-3 WARN outbound queue backlog 431 messages held locally
+03:48:31 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:48:43 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:48:54 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:49:02 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:49:10 wms-app-1 ERROR publish failed for batch B70810: TLS handshake failed
+03:49:13 wms-app-2 ERROR publish failed for batch B60155: TLS handshake failed
+03:49:20 wms-app-3 WARN retrying connection to broker-1, attempt 30
+03:49:27 wms-app-3 WARN outbound queue backlog 246 messages held locally
+03:49:40 broker-1 WARN rejected client connection: handshake error
+03:49:43 wms-app-1 WARN retrying connection to broker-1, attempt 456
+03:49:46 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:49:55 broker-1 WARN rejected client connection: handshake error
+03:50:06 wms-app-2 ERROR publish failed for batch B64570: TLS handshake failed
+03:50:09 broker-1 WARN rejected client connection: handshake error
+03:50:14 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:50:20 wms-app-2 WARN retrying connection to broker-1, attempt 116
+03:50:25 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:50:28 wms-app-3 ERROR publish failed for batch B73712: TLS handshake failed
+03:50:40 wms-app-4 WARN outbound queue backlog 272 messages held locally
+03:50:49 wms-app-1 WARN retrying connection to broker-1, attempt 387
+03:51:00 monitor INFO heartbeat ok broker-1 up
+03:51:07 wms-app-2 WARN outbound queue backlog 152 messages held locally
+03:51:13 wms-app-1 ERROR publish failed for batch B22285: TLS handshake failed
+03:51:21 monitor INFO heartbeat ok broker-1 up
+03:51:24 monitor INFO heartbeat ok broker-1 up
+03:51:27 wms-app-1 WARN outbound queue backlog 4 messages held locally
+03:51:37 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:51:44 wms-app-1 ERROR publish failed for batch B58372: TLS handshake failed
+03:51:55 monitor INFO heartbeat ok broker-1 up
+03:52:04 wms-app-4 WARN retrying connection to broker-1, attempt 282
+03:52:07 monitor INFO heartbeat ok broker-1 up
+03:52:19 wms-app-1 ERROR publish failed for batch B28716: TLS handshake failed
+03:52:30 wms-app-2 WARN retrying connection to broker-1, attempt 40
+03:52:39 wms-app-2 WARN retrying connection to broker-1, attempt 309
+03:52:51 wms-app-4 ERROR publish failed for batch B30317: TLS handshake failed
+03:52:54 wms-app-3 WARN retrying connection to broker-1, attempt 18
+03:53:02 broker-1 WARN rejected client connection: handshake error
+03:53:11 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:53:21 wms-app-3 WARN outbound queue backlog 226 messages held locally
+03:53:25 broker-1 WARN rejected client connection: handshake error
+03:53:36 wms-app-1 ERROR publish failed for batch B26015: TLS handshake failed
+03:53:44 wms-app-1 ERROR publish failed for batch B75593: TLS handshake failed
+03:53:56 broker-1 WARN rejected client connection: handshake error
+03:54:05 broker-1 WARN rejected client connection: handshake error
+03:54:18 wms-app-3 WARN retrying connection to broker-1, attempt 282
+03:54:29 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:54:38 wms-app-1 ERROR publish failed for batch B82983: TLS handshake failed
+03:54:48 wms-app-4 ERROR publish failed for batch B77155: TLS handshake failed
+03:55:01 broker-1 WARN rejected client connection: handshake error
+03:55:11 wms-app-3 WARN outbound queue backlog 301 messages held locally
+03:55:14 monitor INFO heartbeat ok broker-1 up
+03:55:17 wms-app-2 WARN outbound queue backlog 22 messages held locally
+03:55:30 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:55:34 wms-app-1 WARN outbound queue backlog 466 messages held locally
+03:55:43 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:55:48 wms-app-3 WARN outbound queue backlog 9 messages held locally
+03:55:55 monitor INFO heartbeat ok broker-1 up
+03:56:03 monitor INFO heartbeat ok broker-1 up
+03:56:12 wms-app-3 WARN retrying connection to broker-1, attempt 166
+03:56:22 monitor INFO heartbeat ok broker-1 up
+03:56:34 wms-app-1 ERROR publish failed for batch B81344: TLS handshake failed
+03:56:42 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:56:46 broker-1 WARN rejected client connection: handshake error
+03:56:56 monitor INFO heartbeat ok broker-1 up
+03:57:00 wms-app-1 WARN retrying connection to broker-1, attempt 50
+03:57:08 wms-app-3 WARN outbound queue backlog 74 messages held locally
+03:57:19 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:57:28 wms-app-2 WARN outbound queue backlog 384 messages held locally
+03:57:40 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+03:57:43 wms-app-1 ERROR publish failed for batch B76253: TLS handshake failed
+03:57:50 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+03:57:59 wms-app-1 ERROR publish failed for batch B37744: TLS handshake failed
+03:58:06 wms-app-3 WARN retrying connection to broker-1, attempt 51
+03:58:11 wms-app-1 WARN outbound queue backlog 408 messages held locally
+03:58:17 wms-app-1 WARN retrying connection to broker-1, attempt 359
+03:58:26 wms-app-3 WARN retrying connection to broker-1, attempt 101
+03:58:37 wms-app-3 WARN outbound queue backlog 180 messages held locally
+03:58:46 monitor INFO heartbeat ok broker-1 up
+03:58:51 wms-app-2 ERROR publish failed for batch B22263: TLS handshake failed
+03:58:58 broker-1 WARN rejected client connection: handshake error
+03:59:07 wms-app-3 WARN retrying connection to broker-1, attempt 60
+03:59:13 wms-app-1 WARN retrying connection to broker-1, attempt 437
+03:59:21 monitor INFO heartbeat ok broker-1 up
+03:59:29 wms-app-2 ERROR publish failed for batch B63378: TLS handshake failed
+03:59:37 broker-1 WARN rejected client connection: handshake error
+03:59:43 wms-app-2 WARN outbound queue backlog 269 messages held locally
+03:59:46 wms-app-1 WARN outbound queue backlog 215 messages held locally
+03:59:52 wms-app-2 WARN outbound queue backlog 32 messages held locally
+04:00:00 wms-app-1 ERROR publish failed for batch B26392: TLS handshake failed
+04:00:08 wms-app-2 ERROR publish failed for batch B96514: TLS handshake failed
+04:00:16 broker-1 WARN rejected client connection: handshake error
+04:00:21 wms-app-2 WARN retrying connection to broker-1, attempt 54
+04:00:32 broker-1 WARN rejected client connection: handshake error
+04:00:35 wms-app-1 ERROR publish failed for batch B33957: TLS handshake failed
+04:00:46 wms-app-4 WARN outbound queue backlog 307 messages held locally
+04:00:55 monitor INFO heartbeat ok broker-1 up
+04:01:03 wms-app-3 ERROR publish failed for batch B71369: TLS handshake failed
+04:01:11 monitor INFO heartbeat ok broker-1 up
+04:01:18 wms-app-4 WARN retrying connection to broker-1, attempt 23
+04:01:21 wms-app-2 WARN retrying connection to broker-1, attempt 339
+04:01:24 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+04:01:36 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+04:01:39 wms-app-4 WARN outbound queue backlog 149 messages held locally
+04:01:51 wms-app-2 WARN outbound queue backlog 430 messages held locally
+04:02:02 monitor INFO heartbeat ok broker-1 up
+04:02:05 wms-app-2 WARN retrying connection to broker-1, attempt 342
+04:02:17 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+04:02:21 carrier-gw-2 ERROR cannot connect to broker-1: certificate verify failed
+04:02:30 wms-app-1 WARN outbound queue backlog 183 messages held locally
+04:02:41 wms-app-1 ERROR publish failed for batch B97414: TLS handshake failed
+04:02:53 monitor INFO heartbeat ok broker-1 up
+04:03:05 wms-app-3 WARN retrying connection to broker-1, attempt 304
+04:03:16 wms-app-1 ERROR publish failed for batch B14123: TLS handshake failed
+04:03:23 wms-app-1 WARN outbound queue backlog 81 messages held locally
+04:03:30 broker-1 WARN rejected client connection: handshake error
+04:03:43 wms-app-4 ERROR publish failed for batch B39884: TLS handshake failed
+04:03:55 monitor INFO heartbeat ok broker-1 up
+04:04:06 carrier-gw-1 ERROR cannot connect to broker-1: certificate verify failed
+04:04:10 broker-1 WARN rejected client connection: handshake error
+04:04:15 wms-app-3 WARN retrying connection to broker-1, attempt 347
+04:04:18 monitor INFO heartbeat ok broker-1 up
+04:04:30 wms-app-3 WARN outbound queue backlog 107 messages held locally
+04:04:37 wms-app-4 WARN retrying connection to broker-1, attempt 47
+04:04:41 broker-1 WARN rejected client connection: handshake error
+04:04:48 wms-app-1 WARN retrying connection to broker-1, attempt 374
+04:05:00 broker-1 INFO new server certificate loaded serial 7B:03:D4:58 notAfter=2027-07-14T04:01:12+08:00
+04:05:00 carrier-gw-2 INFO manifest B89785 acknowledged
+04:05:13 broker-1 INFO queue depth orders.outbound=190
+04:05:17 carrier-gw-2 INFO label request B11802 sent to carrier
+04:05:20 broker-1 INFO queue depth orders.outbound=183
+04:05:32 broker-1 INFO queue depth orders.outbound=181
+04:05:38 broker-1 INFO queue depth orders.outbound=469
+04:05:45 wms-app-2 INFO order batch B76188 accepted, 334 lines
+04:05:53 broker-1 INFO queue depth orders.outbound=5
+04:05:59 broker-1 INFO queue depth orders.outbound=50
+04:06:11 wms-app-4 INFO order batch B60032 accepted, 126 lines
+04:06:14 carrier-gw-1 INFO label request B42114 sent to carrier
+04:06:24 broker-1 INFO queue depth orders.outbound=310
+04:06:29 carrier-gw-1 INFO label request B42295 sent to carrier
+04:06:34 wms-app-4 INFO pick list B63331 released to floor
+04:06:47 monitor INFO heartbeat ok broker-1 up
+04:06:53 broker-1 INFO queue depth orders.outbound=272
+04:07:01 broker-1 INFO queue depth orders.outbound=96
+04:07:08 broker-1 INFO queue depth orders.outbound=14
+04:07:16 carrier-gw-2 INFO label request B77829 sent to carrier
+04:07:25 monitor INFO heartbeat ok broker-1 up
+04:07:30 wms-app-4 INFO pick list B47951 released to floor
+04:07:33 wms-app-1 INFO order batch B61781 accepted, 209 lines
+04:07:38 wms-app-3 INFO order batch B33777 accepted, 416 lines
+04:07:49 carrier-gw-2 INFO manifest B43766 acknowledged
+04:08:00 carrier-gw-2 INFO label request B73651 sent to carrier
+04:08:10 monitor INFO heartbeat ok broker-1 up
+04:08:14 carrier-gw-2 INFO label request B57448 sent to carrier
+04:08:27 wms-app-3 INFO order batch B39168 accepted, 224 lines
+04:08:30 carrier-gw-1 INFO manifest B79595 acknowledged
+04:08:33 carrier-gw-1 INFO manifest B85985 acknowledged
+04:08:45 broker-1 INFO queue depth orders.outbound=187
+04:08:54 wms-app-4 INFO order batch B13622 accepted, 205 lines
+04:09:03 carrier-gw-2 INFO manifest B46701 acknowledged
+04:09:09 wms-app-1 INFO pick list B98064 released to floor
+04:09:16 monitor INFO heartbeat ok broker-1 up
+04:09:22 carrier-gw-2 INFO label request B75047 sent to carrier
+04:09:32 wms-app-3 INFO pick list B69370 released to floor
+04:09:43 wms-app-4 INFO order batch B38189 accepted, 316 lines
+04:09:48 carrier-gw-2 INFO manifest B36976 acknowledged
+04:09:58 monitor INFO heartbeat ok broker-1 up
+04:10:08 carrier-gw-2 INFO label request B65236 sent to carrier
+04:10:12 carrier-gw-1 INFO label request B70053 sent to carrier
+04:10:22 broker-1 INFO queue depth orders.outbound=203
+04:10:25 carrier-gw-1 INFO label request B49908 sent to carrier
+04:10:29 broker-1 INFO queue depth orders.outbound=15
+04:10:39 wms-app-2 INFO pick list B34670 released to floor
+04:10:44 carrier-gw-1 INFO manifest B81694 acknowledged
+04:10:47 wms-app-3 INFO order batch B72891 accepted, 245 lines
+04:10:50 wms-app-4 INFO pick list B60856 released to floor
+04:10:56 wms-app-2 INFO pick list B52304 released to floor
+04:11:03 broker-1 INFO queue depth orders.outbound=439
+04:11:07 wms-app-3 INFO order batch B45636 accepted, 273 lines
+04:11:16 broker-1 INFO queue depth orders.outbound=18
+04:11:29 wms-app-3 INFO pick list B28430 released to floor
+04:11:38 carrier-gw-2 INFO label request B84034 sent to carrier
+04:11:41 wms-app-4 INFO order batch B99728 accepted, 415 lines
+04:11:52 carrier-gw-2 INFO label request B46868 sent to carrier
+04:12:03 carrier-gw-1 INFO manifest B71106 acknowledged
+04:12:15 carrier-gw-1 INFO label request B16440 sent to carrier
+04:12:22 broker-1 INFO queue depth orders.outbound=467
+04:12:33 broker-1 INFO queue depth orders.outbound=475
+04:12:37 monitor INFO heartbeat ok broker-1 up
+04:12:44 wms-app-4 INFO order batch B67798 accepted, 432 lines
+04:12:49 wms-app-4 INFO order batch B34632 accepted, 320 lines
+04:12:53 carrier-gw-1 INFO manifest B39379 acknowledged
+04:13:06 carrier-gw-2 INFO label request B71919 sent to carrier
+04:13:17 carrier-gw-2 INFO label request B37480 sent to carrier
+04:13:24 carrier-gw-2 INFO label request B80024 sent to carrier
+04:13:28 wms-app-4 INFO pick list B90726 released to floor
+04:13:36 wms-app-4 INFO pick list B49478 released to floor
+04:13:40 wms-app-1 INFO order batch B57939 accepted, 122 lines
+04:13:50 wms-app-3 INFO order batch B23377 accepted, 441 lines
+04:14:02 carrier-gw-2 INFO manifest B10268 acknowledged
+04:14:10 carrier-gw-2 INFO manifest B99884 acknowledged
+04:14:22 carrier-gw-2 INFO manifest B91904 acknowledged
+04:14:32 carrier-gw-1 INFO manifest B65857 acknowledged
+04:14:38 carrier-gw-1 INFO manifest B85049 acknowledged
+04:14:51 monitor INFO heartbeat ok broker-1 up
+04:14:55 carrier-gw-2 INFO label request B94313 sent to carrier
+04:15:02 monitor INFO heartbeat ok broker-1 up
+04:15:05 monitor INFO heartbeat ok broker-1 up
+04:15:14 broker-1 INFO queue depth orders.outbound=26
+04:15:19 wms-app-3 INFO pick list B32853 released to floor
+04:15:26 monitor INFO heartbeat ok broker-1 up
+04:15:29 broker-1 INFO queue depth orders.outbound=236
+04:15:34 carrier-gw-2 INFO label request B97989 sent to carrier
+04:15:43 monitor INFO heartbeat ok broker-1 up
+04:15:52 wms-app-3 INFO order batch B87240 accepted, 412 lines
+04:16:04 wms-app-4 INFO order batch B68238 accepted, 303 lines
+04:16:14 wms-app-3 INFO order batch B38134 accepted, 433 lines
+04:16:23 monitor INFO heartbeat ok broker-1 up
+04:16:26 broker-1 INFO queue depth orders.outbound=405
+04:16:30 wms-app-1 INFO pick list B99729 released to floor
+04:16:39 monitor INFO heartbeat ok broker-1 up
+04:16:43 wms-app-4 INFO order batch B40137 accepted, 270 lines
+04:16:52 carrier-gw-1 INFO label request B21818 sent to carrier
+04:16:57 wms-app-4 INFO pick list B20830 released to floor
+04:17:09 wms-app-3 INFO order batch B39040 accepted, 381 lines
+04:17:14 carrier-gw-2 INFO label request B74136 sent to carrier
+04:17:19 carrier-gw-1 INFO label request B96629 sent to carrier
+04:17:30 broker-1 INFO queue depth orders.outbound=450
+04:17:33 broker-1 INFO queue depth orders.outbound=9
+04:17:43 monitor INFO heartbeat ok broker-1 up
+04:17:52 carrier-gw-1 INFO label request B77171 sent to carrier
+04:18:02 carrier-gw-2 INFO manifest B66133 acknowledged
+04:18:15 carrier-gw-2 INFO label request B62285 sent to carrier
+04:18:28 carrier-gw-1 INFO label request B85655 sent to carrier
+04:18:36 wms-app-2 INFO order batch B10894 accepted, 361 lines
+04:18:45 wms-app-4 INFO pick list B39266 released to floor
+04:18:56 carrier-gw-1 INFO manifest B91861 acknowledged
+04:19:09 wms-app-2 INFO order batch B25717 accepted, 154 lines
+04:19:19 wms-app-2 INFO order batch B81754 accepted, 100 lines
+04:19:23 carrier-gw-1 INFO label request B73414 sent to carrier
+04:19:32 monitor INFO heartbeat ok broker-1 up
+04:19:45 carrier-gw-1 INFO label request B59128 sent to carrier
+04:19:57 carrier-gw-1 INFO manifest B66539 acknowledged
+04:20:06 wms-app-2 INFO pick list B60279 released to floor
+04:20:14 wms-app-2 INFO order batch B25258 accepted, 370 lines
+04:20:27 carrier-gw-2 INFO label request B15112 sent to carrier
+04:20:35 carrier-gw-1 INFO manifest B79050 acknowledged
+04:20:41 carrier-gw-2 INFO manifest B94798 acknowledged
+04:20:50 carrier-gw-1 INFO label request B12814 sent to carrier
+04:21:01 monitor INFO heartbeat ok broker-1 up
+04:21:09 wms-app-3 INFO pick list B38509 released to floor
+04:21:19 wms-app-3 INFO pick list B39362 released to floor
+04:21:31 broker-1 INFO queue depth orders.outbound=182
+04:21:35 wms-app-1 INFO order batch B56126 accepted, 2 lines
+04:21:46 carrier-gw-2 INFO manifest B92149 acknowledged
+04:21:53 wms-app-4 INFO order batch B87799 accepted, 376 lines
+04:21:57 carrier-gw-1 INFO label request B77305 sent to carrier
+04:22:01 wms-app-4 INFO order batch B35588 accepted, 313 lines
+04:22:11 carrier-gw-1 INFO manifest B37240 acknowledged
+04:22:24 wms-app-4 INFO order batch B19561 accepted, 396 lines
+04:22:34 broker-1 INFO queue depth orders.outbound=15
+04:22:40 monitor INFO heartbeat ok broker-1 up
+04:22:53 wms-app-2 INFO pick list B12789 released to floor
+04:22:57 broker-1 INFO queue depth orders.outbound=392
+04:23:02 broker-1 INFO queue depth orders.outbound=86
+04:23:08 monitor INFO heartbeat ok broker-1 up
+04:23:15 broker-1 INFO queue depth orders.outbound=243
+04:23:23 monitor INFO heartbeat ok broker-1 up
+04:23:27 monitor INFO heartbeat ok broker-1 up
+04:23:39 carrier-gw-2 INFO manifest B15167 acknowledged
+04:23:49 carrier-gw-2 INFO manifest B12071 acknowledged
+04:23:58 monitor INFO heartbeat ok broker-1 up
+04:24:02 wms-app-3 INFO pick list B88627 released to floor
+04:24:13 carrier-gw-2 INFO manifest B84836 acknowledged
+04:24:16 wms-app-2 INFO order batch B31989 accepted, 60 lines
+04:24:24 carrier-gw-1 INFO manifest B77089 acknowledged
+04:24:36 carrier-gw-1 INFO label request B92361 sent to carrier
+04:24:44 carrier-gw-1 INFO manifest B12325 acknowledged
+04:24:57 monitor INFO heartbeat ok broker-1 up
+04:25:01 monitor INFO heartbeat ok broker-1 up
+04:25:07 broker-1 INFO queue depth orders.outbound=252
+04:25:11 wms-app-3 INFO pick list B57457 released to floor
+04:25:18 wms-app-1 INFO order batch B25252 accepted, 329 lines
+04:25:21 carrier-gw-1 INFO manifest B40199 acknowledged
+04:25:33 wms-app-4 INFO pick list B50459 released to floor
+04:25:37 monitor INFO heartbeat ok broker-1 up
+04:25:44 broker-1 INFO queue depth orders.outbound=37
+04:25:49 monitor INFO heartbeat ok broker-1 up
+04:25:55 monitor INFO heartbeat ok broker-1 up
+04:26:07 carrier-gw-2 INFO label request B68795 sent to carrier
+04:26:20 monitor INFO heartbeat ok broker-1 up
+04:26:33 wms-app-2 INFO order batch B19062 accepted, 358 lines
+04:26:45 broker-1 INFO queue depth orders.outbound=194
+04:26:50 monitor INFO heartbeat ok broker-1 up
+04:26:53 carrier-gw-2 INFO manifest B98497 acknowledged
+04:26:56 carrier-gw-1 INFO label request B16865 sent to carrier
+04:27:00 carrier-gw-2 INFO label request B12766 sent to carrier
+04:27:03 carrier-gw-1 INFO label request B93325 sent to carrier
+04:27:15 carrier-gw-1 INFO manifest B50532 acknowledged
+04:27:23 monitor INFO heartbeat ok broker-1 up
+04:27:34 wms-app-4 INFO pick list B75718 released to floor
+04:27:45 monitor INFO heartbeat ok broker-1 up
+04:27:58 carrier-gw-1 INFO label request B54366 sent to carrier
+04:28:09 monitor INFO heartbeat ok broker-1 up
+04:28:20 wms-app-2 INFO order batch B85740 accepted, 15 lines
+04:28:31 carrier-gw-2 INFO label request B34099 sent to carrier
+04:28:36 carrier-gw-2 INFO label request B34251 sent to carrier
+04:28:43 carrier-gw-2 INFO label request B90353 sent to carrier
+04:28:52 carrier-gw-1 INFO label request B95511 sent to carrier
+04:29:02 carrier-gw-2 INFO label request B18771 sent to carrier
+04:29:14 monitor INFO heartbeat ok broker-1 up
+04:29:27 broker-1 INFO queue depth orders.outbound=224
+04:29:40 wms-app-3 INFO order batch B11236 accepted, 452 lines
+04:29:45 carrier-gw-2 INFO manifest B57744 acknowledged
+04:29:56 wms-app-2 INFO pick list B98195 released to floor
+04:30:06 carrier-gw-1 INFO manifest B32833 acknowledged
+04:30:17 broker-1 INFO queue depth orders.outbound=195
+04:30:27 carrier-gw-2 INFO manifest B46179 acknowledged
+04:30:30 carrier-gw-1 INFO manifest B16098 acknowledged
+04:30:37 wms-app-4 INFO pick list B13372 released to floor
+04:30:49 wms-app-2 INFO order batch B80087 accepted, 214 lines
+04:30:59 carrier-gw-2 INFO label request B33660 sent to carrier
+04:31:12 carrier-gw-2 INFO label request B53651 sent to carrier
+04:31:15 carrier-gw-2 INFO label request B32129 sent to carrier
+04:31:24 carrier-gw-2 INFO label request B93387 sent to carrier
+04:31:30 wms-app-3 INFO pick list B32791 released to floor
+04:31:40 carrier-gw-1 INFO label request B98309 sent to carrier
+04:31:46 monitor INFO heartbeat ok broker-1 up
+04:31:54 monitor INFO heartbeat ok broker-1 up
+04:32:03 broker-1 INFO queue depth orders.outbound=166
+04:32:11 broker-1 INFO queue depth orders.outbound=357
+04:32:22 wms-app-1 INFO pick list B24797 released to floor
+04:32:30 wms-app-2 INFO pick list B67872 released to floor
+04:32:40 carrier-gw-2 INFO label request B25640 sent to carrier
+04:32:43 carrier-gw-1 INFO label request B28560 sent to carrier
+04:32:52 broker-1 INFO queue depth orders.outbound=353
+04:32:58 wms-app-1 INFO pick list B63756 released to floor
+04:33:08 carrier-gw-2 INFO manifest B17776 acknowledged
+04:33:20 carrier-gw-2 INFO manifest B80071 acknowledged
+04:33:25 monitor INFO heartbeat ok broker-1 up
+04:33:34 monitor INFO heartbeat ok broker-1 up
+04:33:38 carrier-gw-1 INFO label request B59534 sent to carrier
+04:33:41 carrier-gw-1 INFO label request B49571 sent to carrier
+04:33:45 wms-app-2 INFO order batch B61915 accepted, 46 lines
+04:33:58 carrier-gw-2 INFO manifest B59655 acknowledged
+04:34:07 carrier-gw-2 INFO manifest B20227 acknowledged
+04:34:19 wms-app-4 INFO pick list B93744 released to floor
+04:34:22 wms-app-1 INFO pick list B20965 released to floor
+04:34:30 carrier-gw-2 INFO label request B13445 sent to carrier
+04:34:33 monitor INFO heartbeat ok broker-1 up
+04:34:45 broker-1 INFO queue depth orders.outbound=257
+04:34:58 carrier-gw-2 INFO label request B94340 sent to carrier

@@ -1,0 +1,625 @@
+Harbourline Freight Depot Operations Manual. This manual describes every depot in the Harbourline Freight network. Each depot has its own section, identified by a depot code, which names the depot manager and sets out the canteen hours, staff shuttle, parking, fire assembly point, dock doors, same-day dispatch cut-off, cold storage range and security desk extension for that depot. This edition covers 48 depots.
+
+
+1. Silver Creek depot (HD-00001)
+
+The Silver Creek depot (HD-00001) in Jakarta, Indonesia is managed by Lena Wong, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00001 is open from 06:15 to 21:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:15 for the early shift and again eight hours later for the late shift.
+
+There are 363 parking spaces at HD-00001, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 19 dock doors and 14 forklift trucks. The same-day dispatch cut-off at HD-00001 is 15:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00001 can be reached on extension 7578 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+2. Southern Field depot (HD-00002)
+
+The Southern Field depot (HD-00002) in Singapore, Singapore is managed by Priya Santos, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00002 is open from 06:45 to 18:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:15 for the early shift and again eight hours later for the late shift.
+
+There are 298 parking spaces at HD-00002, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the visitor car park.
+
+The depot has 15 dock doors and 18 forklift trucks. The same-day dispatch cut-off at HD-00002 is 18:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00002 can be reached on extension 3312 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+3. Amber Lake depot (HD-00003)
+
+The Amber Lake depot (HD-00003) in Phnom Penh, Cambodia is managed by Aisha Novak, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00003 is open from 06:00 to 18:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 357 parking spaces at HD-00003, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the grass area beside the main gate.
+
+The depot has 18 dock doors and 41 forklift trucks. The same-day dispatch cut-off at HD-00003 is 14:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00003 can be reached on extension 5979 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+4. Rustic Reach depot (HD-00004)
+
+The Rustic Reach depot (HD-00004) in Surabaya, Indonesia is managed by Priya Aziz, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00004 is open from 06:45 to 19:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:15 for the early shift and again eight hours later for the late shift.
+
+There are 250 parking spaces at HD-00004, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the staff car park.
+
+The depot has 45 dock doors and 16 forklift trucks. The same-day dispatch cut-off at HD-00004 is 18:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00004 can be reached on extension 4392 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+5. Eastern Glen depot (HD-00005)
+
+The Eastern Glen depot (HD-00005) in Penang, Malaysia is managed by Rosa Mensah, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00005 is open from 06:30 to 19:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:45 for the early shift and again eight hours later for the late shift.
+
+There are 57 parking spaces at HD-00005, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the field behind Warehouse 2.
+
+The depot has 59 dock doors and 21 forklift trucks. The same-day dispatch cut-off at HD-00005 is 14:15; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00005 can be reached on extension 4456 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+6. Amber Vale depot (HD-00006)
+
+The Amber Vale depot (HD-00006) in Da Nang, Vietnam is managed by Farid Kumar, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00006 is open from 06:45 to 21:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:45 for the early shift and again eight hours later for the late shift.
+
+There are 285 parking spaces at HD-00006, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the lorry holding bay.
+
+The depot has 5 dock doors and 4 forklift trucks. The same-day dispatch cut-off at HD-00006 is 15:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00006 can be reached on extension 3652 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+7. Onyx Ford depot (HD-00007)
+
+The Onyx Ford depot (HD-00007) in Penang, Malaysia is managed by Dev Wong, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00007 is open from 05:30 to 18:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:15 for the early shift and again eight hours later for the late shift.
+
+There are 343 parking spaces at HD-00007, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the container yard entrance.
+
+The depot has 7 dock doors and 25 forklift trucks. The same-day dispatch cut-off at HD-00007 is 14:15; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00007 can be reached on extension 6842 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+8. Sunny Hill depot (HD-00008)
+
+The Sunny Hill depot (HD-00008) in Laem Chabang, Thailand is managed by Hiro Chen, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00008 is open from 06:00 to 21:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:15 for the early shift and again eight hours later for the late shift.
+
+There are 332 parking spaces at HD-00008, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the container yard entrance.
+
+The depot has 37 dock doors and 16 forklift trucks. The same-day dispatch cut-off at HD-00008 is 17:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00008 can be reached on extension 5914 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+9. Upper Pass depot (HD-00009)
+
+The Upper Pass depot (HD-00009) in Laem Chabang, Thailand is managed by Aisha Lim, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00009 is open from 06:00 to 20:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 387 parking spaces at HD-00009, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the visitor car park.
+
+The depot has 44 dock doors and 29 forklift trucks. The same-day dispatch cut-off at HD-00009 is 14:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00009 can be reached on extension 2863 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+10. Onyx Grove depot (HD-00010)
+
+The Onyx Grove depot (HD-00010) in Surabaya, Indonesia is managed by Hiro Ng, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00010 is open from 05:15 to 17:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:15 for the early shift and again eight hours later for the late shift.
+
+There are 352 parking spaces at HD-00010, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the lorry holding bay.
+
+The depot has 43 dock doors and 29 forklift trucks. The same-day dispatch cut-off at HD-00010 is 14:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00010 can be reached on extension 3606 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+11. Crimson Heights depot (HD-00011)
+
+The Crimson Heights depot (HD-00011) in Surabaya, Indonesia is managed by Marco Mensah, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00011 is open from 06:45 to 21:15 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:15 for the early shift and again eight hours later for the late shift.
+
+There are 168 parking spaces at HD-00011, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the visitor car park.
+
+The depot has 51 dock doors and 20 forklift trucks. The same-day dispatch cut-off at HD-00011 is 18:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00011 can be reached on extension 3021 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+12. Slate Park depot (HD-00012)
+
+The Slate Park depot (HD-00012) in Penang, Malaysia is managed by Priya Tanaka, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00012 is open from 06:30 to 21:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:00 for the early shift and again eight hours later for the late shift.
+
+There are 108 parking spaces at HD-00012, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the container yard entrance.
+
+The depot has 13 dock doors and 30 forklift trucks. The same-day dispatch cut-off at HD-00012 is 18:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00012 can be reached on extension 7731 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+13. Eastern Pier depot (HD-00013)
+
+The Eastern Pier depot (HD-00013) in Jakarta, Indonesia is managed by Aisha Singh, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00013 is open from 07:00 to 17:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:45 for the early shift and again eight hours later for the late shift.
+
+There are 211 parking spaces at HD-00013, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the staff car park.
+
+The depot has 28 dock doors and 31 forklift trucks. The same-day dispatch cut-off at HD-00013 is 17:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at minus 20 to minus 15 degrees Celsius. The security desk at HD-00013 can be reached on extension 7703 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+14. Misty Point depot (HD-00014)
+
+The Misty Point depot (HD-00014) in Batam, Indonesia is managed by Grace Tanaka, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00014 is open from 05:00 to 17:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:00 for the early shift and again eight hours later for the late shift.
+
+There are 36 parking spaces at HD-00014, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the lorry holding bay.
+
+The depot has 52 dock doors and 43 forklift trucks. The same-day dispatch cut-off at HD-00014 is 14:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at minus 20 to minus 15 degrees Celsius. The security desk at HD-00014 can be reached on extension 6100 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+15. Misty Junction depot (HD-00015)
+
+The Misty Junction depot (HD-00015) in Klang, Malaysia is managed by Chloe Reyes, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00015 is open from 07:45 to 19:15 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:00 for the early shift and again eight hours later for the late shift.
+
+There are 126 parking spaces at HD-00015, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 16 dock doors and 28 forklift trucks. The same-day dispatch cut-off at HD-00015 is 16:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00015 can be reached on extension 2358 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+16. Iron Ford depot (HD-00016)
+
+The Iron Ford depot (HD-00016) in Surabaya, Indonesia is managed by Dev Goh, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00016 is open from 05:45 to 21:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:15 for the early shift and again eight hours later for the late shift.
+
+There are 206 parking spaces at HD-00016, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the container yard entrance.
+
+The depot has 44 dock doors and 31 forklift trucks. The same-day dispatch cut-off at HD-00016 is 13:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00016 can be reached on extension 3595 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+17. Coral Bay depot (HD-00017)
+
+The Coral Bay depot (HD-00017) in Cebu, Philippines is managed by Kofi Reyes, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00017 is open from 07:00 to 19:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:15 for the early shift and again eight hours later for the late shift.
+
+There are 361 parking spaces at HD-00017, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the container yard entrance.
+
+The depot has 28 dock doors and 13 forklift trucks. The same-day dispatch cut-off at HD-00017 is 16:15; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00017 can be reached on extension 6228 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+18. Quiet Meadow depot (HD-00018)
+
+The Quiet Meadow depot (HD-00018) in Haiphong, Vietnam is managed by Dev Shah, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00018 is open from 07:30 to 19:15 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:45 for the early shift and again eight hours later for the late shift.
+
+There are 307 parking spaces at HD-00018, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 51 dock doors and 34 forklift trucks. The same-day dispatch cut-off at HD-00018 is 16:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00018 can be reached on extension 6897 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+19. Rustic Dale depot (HD-00019)
+
+The Rustic Dale depot (HD-00019) in Singapore, Singapore is managed by Wei Santos, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00019 is open from 06:15 to 17:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 129 parking spaces at HD-00019, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 45 dock doors and 43 forklift trucks. The same-day dispatch cut-off at HD-00019 is 18:15; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00019 can be reached on extension 7182 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+20. Stony Springs depot (HD-00020)
+
+The Stony Springs depot (HD-00020) in Singapore, Singapore is managed by Kofi Ibrahim, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00020 is open from 05:15 to 19:15 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:15 for the early shift and again eight hours later for the late shift.
+
+There are 241 parking spaces at HD-00020, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 18 dock doors and 40 forklift trucks. The same-day dispatch cut-off at HD-00020 is 17:15; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00020 can be reached on extension 4300 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+21. Windy Glen depot (HD-00021)
+
+The Windy Glen depot (HD-00021) in Da Nang, Vietnam is managed by Marco Wong, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00021 is open from 07:30 to 19:15 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 324 parking spaces at HD-00021, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 37 dock doors and 39 forklift trucks. The same-day dispatch cut-off at HD-00021 is 14:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at minus 20 to minus 15 degrees Celsius. The security desk at HD-00021 can be reached on extension 3433 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+22. Northern Shore depot (HD-00022)
+
+The Northern Shore depot (HD-00022) in Johor Bahru, Malaysia is managed by Wei Kumar, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00022 is open from 07:30 to 18:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:45 for the early shift and again eight hours later for the late shift.
+
+There are 110 parking spaces at HD-00022, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the container yard entrance.
+
+The depot has 34 dock doors and 14 forklift trucks. The same-day dispatch cut-off at HD-00022 is 17:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00022 can be reached on extension 4409 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+23. Northern Ford depot (HD-00023)
+
+The Northern Ford depot (HD-00023) in Johor Bahru, Malaysia is managed by Kofi Kumar, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00023 is open from 07:15 to 18:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 31 parking spaces at HD-00023, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the grass area beside the main gate.
+
+The depot has 6 dock doors and 36 forklift trucks. The same-day dispatch cut-off at HD-00023 is 16:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00023 can be reached on extension 7612 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+24. Indigo Bridge depot (HD-00024)
+
+The Indigo Bridge depot (HD-00024) in Haiphong, Vietnam is managed by Nadia Ibrahim, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00024 is open from 05:45 to 17:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:45 for the early shift and again eight hours later for the late shift.
+
+There are 394 parking spaces at HD-00024, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 36 dock doors and 16 forklift trucks. The same-day dispatch cut-off at HD-00024 is 15:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00024 can be reached on extension 4721 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+25. Birch Reach depot (HD-00025)
+
+The Birch Reach depot (HD-00025) in Manila, Philippines is managed by Aisha Rossi, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00025 is open from 06:45 to 19:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:45 for the early shift and again eight hours later for the late shift.
+
+There are 121 parking spaces at HD-00025, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the lorry holding bay.
+
+The depot has 48 dock doors and 11 forklift trucks. The same-day dispatch cut-off at HD-00025 is 14:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00025 can be reached on extension 6389 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+26. Sunny Falls depot (HD-00026)
+
+The Sunny Falls depot (HD-00026) in Singapore, Singapore is managed by Nadia Hassan, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00026 is open from 05:45 to 19:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:15 for the early shift and again eight hours later for the late shift.
+
+There are 311 parking spaces at HD-00026, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the field behind Warehouse 2.
+
+The depot has 17 dock doors and 16 forklift trucks. The same-day dispatch cut-off at HD-00026 is 18:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00026 can be reached on extension 3072 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+27. Northern Dale depot (HD-00027)
+
+The Northern Dale depot (HD-00027) in Klang, Malaysia is managed by Tara Novak, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00027 is open from 07:00 to 20:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 246 parking spaces at HD-00027, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the grass area beside the main gate.
+
+The depot has 46 dock doors and 29 forklift trucks. The same-day dispatch cut-off at HD-00027 is 14:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at minus 20 to minus 15 degrees Celsius. The security desk at HD-00027 can be reached on extension 5788 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+28. Cedar Creek depot (HD-00028)
+
+The Cedar Creek depot (HD-00028) in Singapore, Singapore is managed by Ben Goh, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00028 is open from 05:00 to 17:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:15 for the early shift and again eight hours later for the late shift.
+
+There are 62 parking spaces at HD-00028, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 33 dock doors and 2 forklift trucks. The same-day dispatch cut-off at HD-00028 is 18:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00028 can be reached on extension 7078 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+29. Granite Rise depot (HD-00029)
+
+The Granite Rise depot (HD-00029) in Jakarta, Indonesia is managed by Jia Goh, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00029 is open from 05:00 to 19:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 248 parking spaces at HD-00029, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the staff car park.
+
+The depot has 26 dock doors and 34 forklift trucks. The same-day dispatch cut-off at HD-00029 is 13:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at minus 20 to minus 15 degrees Celsius. The security desk at HD-00029 can be reached on extension 4256 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+30. Emerald Heights depot (HD-00030)
+
+The Emerald Heights depot (HD-00030) in Batam, Indonesia is managed by Hiro Rossi, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00030 is open from 05:00 to 18:15 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 171 parking spaces at HD-00030, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 5 dock doors and 9 forklift trucks. The same-day dispatch cut-off at HD-00030 is 13:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00030 can be reached on extension 5272 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+31. Birch Pass depot (HD-00031)
+
+The Birch Pass depot (HD-00031) in Bangkok, Thailand is managed by Priya Park, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00031 is open from 06:30 to 21:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:30 for the early shift and again eight hours later for the late shift.
+
+There are 80 parking spaces at HD-00031, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the container yard entrance.
+
+The depot has 48 dock doors and 34 forklift trucks. The same-day dispatch cut-off at HD-00031 is 13:15; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at minus 20 to minus 15 degrees Celsius. The security desk at HD-00031 can be reached on extension 6497 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+32. Lower Shore depot (HD-00032)
+
+The Lower Shore depot (HD-00032) in Da Nang, Vietnam is managed by Marco Lee, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00032 is open from 07:00 to 17:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:00 for the early shift and again eight hours later for the late shift.
+
+There are 137 parking spaces at HD-00032, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the staff car park.
+
+The depot has 15 dock doors and 16 forklift trucks. The same-day dispatch cut-off at HD-00032 is 17:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00032 can be reached on extension 7093 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+33. Upper Vale depot (HD-00033)
+
+The Upper Vale depot (HD-00033) in Laem Chabang, Thailand is managed by Rosa Park, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00033 is open from 07:15 to 21:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:45 for the early shift and again eight hours later for the late shift.
+
+There are 266 parking spaces at HD-00033, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the visitor car park.
+
+The depot has 6 dock doors and 4 forklift trucks. The same-day dispatch cut-off at HD-00033 is 15:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00033 can be reached on extension 5865 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+34. Kingfisher Quay depot (HD-00034)
+
+The Kingfisher Quay depot (HD-00034) in Phnom Penh, Cambodia is managed by Hiro Fischer, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00034 is open from 05:15 to 17:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 188 parking spaces at HD-00034, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the staff car park.
+
+The depot has 42 dock doors and 7 forklift trucks. The same-day dispatch cut-off at HD-00034 is 15:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00034 can be reached on extension 8258 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+35. Windy Meadow depot (HD-00035)
+
+The Windy Meadow depot (HD-00035) in Surabaya, Indonesia is managed by Kofi Singh, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00035 is open from 05:45 to 20:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:30 for the early shift and again eight hours later for the late shift.
+
+There are 240 parking spaces at HD-00035, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the staff car park.
+
+The depot has 55 dock doors and 29 forklift trucks. The same-day dispatch cut-off at HD-00035 is 16:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00035 can be reached on extension 4514 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+36. Birch Junction depot (HD-00036)
+
+The Birch Junction depot (HD-00036) in Klang, Malaysia is managed by Farid Novak, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00036 is open from 06:00 to 19:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:15 for the early shift and again eight hours later for the late shift.
+
+There are 85 parking spaces at HD-00036, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 11 dock doors and 13 forklift trucks. The same-day dispatch cut-off at HD-00036 is 14:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00036 can be reached on extension 8022 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+37. Upper Creek depot (HD-00037)
+
+The Upper Creek depot (HD-00037) in Phnom Penh, Cambodia is managed by Omar Novak, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00037 is open from 06:45 to 21:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:30 for the early shift and again eight hours later for the late shift.
+
+There are 296 parking spaces at HD-00037, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the visitor car park.
+
+The depot has 58 dock doors and 19 forklift trucks. The same-day dispatch cut-off at HD-00037 is 18:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00037 can be reached on extension 4773 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+38. Iron Pier depot (HD-00038)
+
+The Iron Pier depot (HD-00038) in Manila, Philippines is managed by Grace Goh, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00038 is open from 06:30 to 19:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:45 for the early shift and again eight hours later for the late shift.
+
+There are 113 parking spaces at HD-00038, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the container yard entrance.
+
+The depot has 59 dock doors and 31 forklift trucks. The same-day dispatch cut-off at HD-00038 is 15:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00038 can be reached on extension 6408 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+39. Hazel Heights depot (HD-00039)
+
+The Hazel Heights depot (HD-00039) in Johor Bahru, Malaysia is managed by Ben Ibrahim, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00039 is open from 06:45 to 21:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:45 for the early shift and again eight hours later for the late shift.
+
+There are 352 parking spaces at HD-00039, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the lorry holding bay.
+
+The depot has 49 dock doors and 42 forklift trucks. The same-day dispatch cut-off at HD-00039 is 13:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00039 can be reached on extension 3649 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+40. Teal Springs depot (HD-00040)
+
+The Teal Springs depot (HD-00040) in Manila, Philippines is managed by Farid Lim, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00040 is open from 07:45 to 20:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:00 for the early shift and again eight hours later for the late shift.
+
+There are 199 parking spaces at HD-00040, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the staff car park.
+
+The depot has 29 dock doors and 16 forklift trucks. The same-day dispatch cut-off at HD-00040 is 14:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 15 to 25 degrees Celsius. The security desk at HD-00040 can be reached on extension 5662 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+41. Misty Crossing depot (HD-00041)
+
+The Misty Crossing depot (HD-00041) in Laem Chabang, Thailand is managed by Aisha Reyes, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00041 is open from 05:15 to 20:00 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:00 for the early shift and again eight hours later for the late shift.
+
+There are 393 parking spaces at HD-00041, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the container yard entrance.
+
+The depot has 25 dock doors and 40 forklift trucks. The same-day dispatch cut-off at HD-00041 is 13:30; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00041 can be reached on extension 5966 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+42. Teal Bay depot (HD-00042)
+
+The Teal Bay depot (HD-00042) in Da Nang, Vietnam is managed by Aisha Tanaka, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00042 is open from 06:30 to 21:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:00 for the early shift and again eight hours later for the late shift.
+
+There are 172 parking spaces at HD-00042, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the north car park by Gate 3.
+
+The depot has 41 dock doors and 3 forklift trucks. The same-day dispatch cut-off at HD-00042 is 16:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00042 can be reached on extension 6808 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+43. Ivory Grove depot (HD-00043)
+
+The Ivory Grove depot (HD-00043) in Manila, Philippines is managed by Farid Kumar, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00043 is open from 05:30 to 21:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:45 for the early shift and again eight hours later for the late shift.
+
+There are 330 parking spaces at HD-00043, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the visitor car park.
+
+The depot has 8 dock doors and 18 forklift trucks. The same-day dispatch cut-off at HD-00043 is 16:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at minus 20 to minus 15 degrees Celsius. The security desk at HD-00043 can be reached on extension 3396 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+44. Eastern Wharf depot (HD-00044)
+
+The Eastern Wharf depot (HD-00044) in Jakarta, Indonesia is managed by Chloe Tanaka, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00044 is open from 07:45 to 20:15 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:30 for the early shift and again eight hours later for the late shift.
+
+There are 29 parking spaces at HD-00044, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the north car park by Gate 3.
+
+The depot has 17 dock doors and 37 forklift trucks. The same-day dispatch cut-off at HD-00044 is 16:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00044 can be reached on extension 7353 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+45. Cedar Hill depot (HD-00045)
+
+The Cedar Hill depot (HD-00045) in Manila, Philippines is managed by Nadia Lim, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00045 is open from 07:00 to 17:15 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 06:45 for the early shift and again eight hours later for the late shift.
+
+There are 76 parking spaces at HD-00045, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the field behind Warehouse 2.
+
+The depot has 60 dock doors and 25 forklift trucks. The same-day dispatch cut-off at HD-00045 is 15:00; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00045 can be reached on extension 5751 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+46. Amber Ridge depot (HD-00046)
+
+The Amber Ridge depot (HD-00046) in Penang, Malaysia is managed by Elena Chen, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00046 is open from 07:15 to 17:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:45 for the early shift and again eight hours later for the late shift.
+
+There are 73 parking spaces at HD-00046, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the visitor car park.
+
+The depot has 47 dock doors and 6 forklift trucks. The same-day dispatch cut-off at HD-00046 is 16:45; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 2 to 8 degrees Celsius. The security desk at HD-00046 can be reached on extension 3704 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+47. Winter Pass depot (HD-00047)
+
+The Winter Pass depot (HD-00047) in Batam, Indonesia is managed by Nadia Chen, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00047 is open from 05:30 to 21:30 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:30 for the early shift and again eight hours later for the late shift.
+
+There are 202 parking spaces at HD-00047, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the grass area beside the main gate.
+
+The depot has 60 dock doors and 22 forklift trucks. The same-day dispatch cut-off at HD-00047 is 17:15; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00047 can be reached on extension 2550 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.
+
+
+48. Jade Cove depot (HD-00048)
+
+The Jade Cove depot (HD-00048) in Laem Chabang, Thailand is managed by Ben Fischer, who is the first point of contact for access passes, building issues and local safety arrangements. New joiners receive a site induction on their first morning, before they are allowed onto the warehouse floor.
+
+The canteen at HD-00048 is open from 05:30 to 21:45 on working days and accepts the staff meal card. A free shuttle bus leaves the nearest station at 05:30 for the early shift and again eight hours later for the late shift.
+
+There are 391 parking spaces at HD-00048, allocated on a first-come basis; those nearest the entrance are reserved for visitors and for colleagues with reduced mobility. If the fire alarm sounds, leave by the nearest exit and go to the assembly point, which is the forecourt of loading bay 12.
+
+The depot has 25 dock doors and 25 forklift trucks. The same-day dispatch cut-off at HD-00048 is 16:15; orders released to the floor after that time are dispatched on the next working day.
+
+Cold storage is held at 0 to 4 degrees Celsius. The security desk at HD-00048 can be reached on extension 6104 at any hour, and safety shoes and a high-visibility vest must be worn at all times in the warehouse.

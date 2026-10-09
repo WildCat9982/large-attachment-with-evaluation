@@ -1,0 +1,503 @@
+{
+  "note": "Sample test set. Replace or extend with your own documents and questions; see README.",
+  "documents": [
+    {
+      "file": "handbook.pdf",
+      "summary_points": [
+        "Employees get 18 days of annual leave",
+        "Remote work is allowed up to three days per week",
+        "Expense claims must be submitted within 30 days",
+        "Laptops are replaced every three years",
+        "There is an annual learning budget of $1,500",
+        "The handbook includes site guides for individual sites"
+      ],
+      "cases": [
+        {
+          "id": "handbook-01",
+          "type": "answerable",
+          "question": "How many days of annual leave do employees get?",
+          "expected": "18 days per year, rising to 21 days after five years of service.",
+          "evidence": "18 days of paid annual leave"
+        },
+        {
+          "id": "handbook-02",
+          "type": "answerable",
+          "question": "If I don't use all my holiday, how much of it can I move into next year?",
+          "expected": "Up to 5 days can be carried over, and they must be taken by 31 March.",
+          "evidence": "carry over up to 5 days"
+        },
+        {
+          "id": "handbook-03",
+          "type": "answerable",
+          "question": "How often are laptops replaced?",
+          "expected": "Every three years.",
+          "evidence": "Laptops are replaced every three years"
+        },
+        {
+          "id": "handbook-04",
+          "type": "answerable",
+          "question": "What is the deadline for submitting an expense claim?",
+          "expected": "Within 30 days of the cost being incurred.",
+          "evidence": "submitted within 30 days"
+        },
+        {
+          "id": "handbook-05",
+          "type": "answerable",
+          "question": "My work computer was stolen. How quickly do I need to tell IT?",
+          "expected": "Within 24 hours, by reporting it to the IT Service Desk.",
+          "evidence": "IT Service Desk within 24 hours"
+        },
+        {
+          "id": "handbook-06",
+          "type": "answerable",
+          "question": "How much can I spend on training each year?",
+          "expected": "$1,500 per employee per year.",
+          "evidence": "annual learning budget of $1,500"
+        },
+        {
+          "id": "handbook-07",
+          "type": "answerable",
+          "question": "What time does the canteen at the Johor site close?",
+          "expected": "19:30 (it is open from 06:30 to 19:30).",
+          "evidence": "06:30 to 19:30"
+        },
+        {
+          "id": "handbook-08",
+          "type": "answerable",
+          "question": "Who manages the Penang site?",
+          "expected": "Kelvin Ooi.",
+          "evidence": "managed by Kelvin Ooi"
+        },
+        {
+          "id": "handbook-09",
+          "type": "followup",
+          "previous": {
+            "question": "How many days a week can I work remotely?",
+            "answer": "Up to three days per week, if your role allows it."
+          },
+          "question": "Does that need anyone's approval?",
+          "expected": "Yes, it needs the agreement of your manager.",
+          "evidence": "with the agreement of their manager"
+        },
+        {
+          "id": "handbook-10",
+          "type": "unanswerable",
+          "question": "What is the policy on bringing pets into the office?"
+        },
+        {
+          "id": "handbook-11",
+          "type": "unanswerable",
+          "question": "How much is the annual bonus?"
+        }
+      ]
+    },
+    {
+      "file": "services_agreement.docx",
+      "summary_points": [
+        "The agreement is between Harbourline Freight and Kestrel Analytics",
+        "The initial term is 24 months",
+        "The monthly fee is SGD 42,000",
+        "The platform must be available 99.5% of the time",
+        "Liability is capped at the fees paid in the preceding 12 months",
+        "The agreement is governed by Singapore law"
+      ],
+      "cases": [
+        {
+          "id": "agreement-01",
+          "type": "answerable",
+          "question": "How long is the initial term of the agreement?",
+          "expected": "24 months, starting on 1 March 2026.",
+          "evidence": "initial term of 24 months"
+        },
+        {
+          "id": "agreement-02",
+          "type": "answerable",
+          "question": "What are the payment terms?",
+          "expected": "Invoices are issued monthly in arrears and are payable within 45 days of the invoice date.",
+          "evidence": "within 45 days of the invoice date"
+        },
+        {
+          "id": "agreement-03",
+          "type": "answerable",
+          "question": "How much does the support component cost each month?",
+          "expected": "SGD 9,000 per month.",
+          "evidence": "Support | 9,000"
+        },
+        {
+          "id": "agreement-04",
+          "type": "answerable",
+          "question": "What happens if the platform's uptime falls short of the target?",
+          "expected": "The customer gets a service credit of 5% of the monthly fee for each full 0.5% below the 99.5% target, capped at 20% of the monthly fee.",
+          "evidence": "service credit of 5%"
+        },
+        {
+          "id": "agreement-05",
+          "type": "answerable",
+          "question": "How quickly does the supplier have to report a data breach?",
+          "expected": "Within 48 hours of becoming aware of the incident.",
+          "evidence": "within 48 hours"
+        },
+        {
+          "id": "agreement-06",
+          "type": "answerable",
+          "question": "Which country's law governs the agreement?",
+          "expected": "Singapore.",
+          "evidence": "governed by the laws of Singapore"
+        },
+        {
+          "id": "agreement-07",
+          "type": "followup",
+          "previous": {
+            "question": "Can either party end the agreement early without a breach?",
+            "answer": "Yes. After the first 12 months either party may terminate for convenience."
+          },
+          "question": "How much notice is needed for that?",
+          "expected": "60 days' written notice.",
+          "evidence": "60 days' written notice"
+        },
+        {
+          "id": "agreement-08",
+          "type": "unanswerable",
+          "question": "Who signed the agreement on behalf of Kestrel Analytics?"
+        }
+      ]
+    },
+    {
+      "file": "incident_review.txt",
+      "summary_points": [
+        "The warehouse management system had an outage on 14 July 2026",
+        "The root cause was an expired TLS certificate on the message broker",
+        "The outage lasted 1 hour 55 minutes",
+        "1,240 shipments were delayed",
+        "Three distribution centres were affected",
+        "Actions include automating certificate renewal and adding expiry monitoring"
+      ],
+      "cases": [
+        {
+          "id": "incident-01",
+          "type": "answerable",
+          "question": "What caused the outage?",
+          "expected": "An expired TLS certificate on the internal message broker.",
+          "evidence": "expired TLS certificate on the internal message broker"
+        },
+        {
+          "id": "incident-02",
+          "type": "answerable",
+          "question": "How long did the outage last?",
+          "expected": "1 hour 55 minutes.",
+          "evidence": "1 hour 55 minutes"
+        },
+        {
+          "id": "incident-03",
+          "type": "answerable",
+          "question": "How many shipments were delayed?",
+          "expected": "1,240 shipments.",
+          "evidence": "1,240 shipments"
+        },
+        {
+          "id": "incident-04",
+          "type": "answerable",
+          "question": "Which sites were affected?",
+          "expected": "The Tuas, Johor and Batam distribution centres.",
+          "evidence": "Tuas, Johor and Batam"
+        },
+        {
+          "id": "incident-05",
+          "type": "answerable",
+          "question": "Why wasn't the problem spotted before it caused a failure?",
+          "expected": "The renewal reminder went to the mailbox of an employee who had left, and monitoring did not check certificate expiry dates.",
+          "evidence": "mailbox of an employee who left"
+        },
+        {
+          "id": "incident-06",
+          "type": "answerable",
+          "question": "How much was paid out to customers in credits?",
+          "expected": "SGD 18,500.",
+          "evidence": "SGD 18,500"
+        },
+        {
+          "id": "incident-07",
+          "type": "answerable",
+          "question": "At exactly what time did the broker's certificate expire?",
+          "expected": "At 02:07:31 Singapore time on 14 July 2026.",
+          "evidence": "notAfter=2026-07-14T02:07:31"
+        },
+        {
+          "id": "incident-08",
+          "type": "followup",
+          "previous": {
+            "question": "Who was the on-call engineer?",
+            "answer": "Priya Raman."
+          },
+          "question": "What time was she paged?",
+          "expected": "02:25.",
+          "evidence": "Priya Raman, was paged"
+        },
+        {
+          "id": "incident-09",
+          "type": "unanswerable",
+          "question": "Which certificate authority issued the certificate?"
+        }
+      ]
+    },
+    {
+      "file": "product_faq.html",
+      "summary_points": [
+        "Harbourline Track is a shipment tracking service",
+        "Tracking is updated every 15 minutes",
+        "There are three plans: Starter, Growth and Enterprise",
+        "The API is limited to 600 requests per minute",
+        "There is a 14-day free trial"
+      ],
+      "cases": [
+        {
+          "id": "faq-01",
+          "type": "answerable",
+          "question": "How often is tracking information refreshed?",
+          "expected": "Every 15 minutes.",
+          "evidence": "every 15 minutes"
+        },
+        {
+          "id": "faq-02",
+          "type": "answerable",
+          "question": "What does the Growth plan cost and what does it include?",
+          "expected": "$199 per month, covering up to 5,000 shipments a month.",
+          "evidence": "Growth costs $199 per month"
+        },
+        {
+          "id": "faq-03",
+          "type": "answerable",
+          "question": "Is single sign-on available?",
+          "expected": "Only on the Enterprise plan.",
+          "evidence": "Enterprise plan only"
+        },
+        {
+          "id": "faq-04",
+          "type": "answerable",
+          "question": "How many API calls am I allowed to make?",
+          "expected": "600 requests per minute per account.",
+          "evidence": "600 requests per minute"
+        },
+        {
+          "id": "faq-05",
+          "type": "followup",
+          "previous": {
+            "question": "Is there a free trial?",
+            "answer": "Yes, every new account gets a 14-day free trial of the Growth plan."
+          },
+          "question": "Do I have to enter payment details to start it?",
+          "expected": "No, no credit card is required.",
+          "evidence": "No credit card is required"
+        },
+        {
+          "id": "faq-06",
+          "type": "unanswerable",
+          "question": "Does it integrate with SAP?"
+        }
+      ]
+    },
+    {
+      "file": "orders.csv",
+      "summary_points": [
+        "The file contains about 4,000 orders",
+        "The orders are dated in 2025",
+        "There are four regions",
+        "There are five products",
+        "Each order has a status such as delivered, returned or cancelled"
+      ],
+      "cases": [
+        {
+          "id": "orders-01",
+          "type": "answerable",
+          "question": "How many orders are in the file?",
+          "expected": "The total number of orders.",
+          "gold_sql": "SELECT COUNT(*) FROM data"
+        },
+        {
+          "id": "orders-02",
+          "type": "answerable",
+          "question": "Which region has the most orders?",
+          "expected": "The region with the highest order count.",
+          "gold_sql": "SELECT region FROM data GROUP BY region ORDER BY COUNT(*) DESC LIMIT 1"
+        },
+        {
+          "id": "orders-03",
+          "type": "answerable",
+          "question": "What is the total revenue, counting revenue as units times unit price?",
+          "expected": "Total revenue across all orders.",
+          "gold_sql": "SELECT ROUND(SUM(units * unit_price), 2) FROM data"
+        },
+        {
+          "id": "orders-04",
+          "type": "answerable",
+          "question": "How many orders were returned?",
+          "expected": "The number of orders with status Returned.",
+          "gold_sql": "SELECT COUNT(*) FROM data WHERE status = 'Returned'"
+        },
+        {
+          "id": "orders-05",
+          "type": "answerable",
+          "question": "Which product sold the most units?",
+          "expected": "The product with the highest total units.",
+          "gold_sql": "SELECT product FROM data GROUP BY product ORDER BY SUM(units) DESC LIMIT 1"
+        },
+        {
+          "id": "orders-06",
+          "type": "answerable",
+          "question": "What was the average order value in December 2025?",
+          "expected": "The mean of units times unit price for December 2025 orders.",
+          "gold_sql": "SELECT ROUND(AVG(units * unit_price), 2) FROM data WHERE order_date LIKE '2025-12-%'"
+        },
+        {
+          "id": "orders-07",
+          "type": "followup",
+          "previous": {
+            "question": "Is Reseller one of the sales channels?",
+            "answer": "Yes. The channels are Online, Reseller and Direct."
+          },
+          "question": "How many orders came through it?",
+          "expected": "The number of orders in the Reseller channel.",
+          "gold_sql": "SELECT COUNT(*) FROM data WHERE channel = 'Reseller'"
+        },
+        {
+          "id": "orders-08",
+          "type": "unanswerable",
+          "question": "What was the profit margin on Carton Box?"
+        }
+      ]
+    },
+    {
+      "file": "staff.xlsx",
+      "summary_points": [
+        "The workbook lists 300 employees",
+        "It has two sheets: employees and departments",
+        "It includes salary information",
+        "There are six departments",
+        "Each department has a budget and a head"
+      ],
+      "cases": [
+        {
+          "id": "staff-01",
+          "type": "answerable",
+          "question": "How many employees are there?",
+          "expected": "The total number of employees.",
+          "gold_sql": "SELECT COUNT(*) FROM employees"
+        },
+        {
+          "id": "staff-02",
+          "type": "answerable",
+          "question": "Which department has the most employees?",
+          "expected": "The department with the highest headcount.",
+          "gold_sql": "SELECT department FROM employees GROUP BY department ORDER BY COUNT(*) DESC LIMIT 1"
+        },
+        {
+          "id": "staff-03",
+          "type": "answerable",
+          "question": "What is the average salary in Engineering?",
+          "expected": "The mean salary of Engineering employees.",
+          "gold_sql": "SELECT ROUND(AVG(salary), 2) FROM employees WHERE department = 'Engineering'"
+        },
+        {
+          "id": "staff-04",
+          "type": "answerable",
+          "question": "Who heads the Finance department?",
+          "expected": "The head of Finance.",
+          "gold_sql": "SELECT head FROM departments WHERE department = 'Finance'"
+        },
+        {
+          "id": "staff-05",
+          "type": "answerable",
+          "question": "Which department has the largest budget?",
+          "expected": "The department with the highest budget.",
+          "gold_sql": "SELECT department FROM departments ORDER BY budget DESC LIMIT 1"
+        },
+        {
+          "id": "staff-06",
+          "type": "answerable",
+          "question": "What is the combined salary of everyone in departments whose budget is above 2 million?",
+          "expected": "Total salary for employees in departments with a budget over 2,000,000.",
+          "gold_sql": "SELECT SUM(e.salary) FROM employees e JOIN departments d ON d.department = e.department WHERE d.budget > 2000000"
+        },
+        {
+          "id": "staff-07",
+          "type": "followup",
+          "previous": {
+            "question": "How many people work in Johor?",
+            "answer": "The number of employees located in Johor."
+          },
+          "question": "And how many of those are in Operations?",
+          "expected": "The number of Operations employees located in Johor.",
+          "gold_sql": "SELECT COUNT(*) FROM employees WHERE location = 'Johor' AND department = 'Operations'"
+        },
+        {
+          "id": "staff-08",
+          "type": "unanswerable",
+          "question": "What is the gender split of employees?"
+        }
+      ]
+    },
+    {
+      "file": "tickets.json",
+      "summary_points": [
+        "The file contains 600 support tickets",
+        "Tickets have a category such as billing or delivery delay",
+        "Tickets have a priority level",
+        "Resolution time in hours is recorded",
+        "Customers have a tier such as Bronze, Silver or Gold"
+      ],
+      "cases": [
+        {
+          "id": "tickets-01",
+          "type": "answerable",
+          "question": "How many tickets are there?",
+          "expected": "The total number of tickets.",
+          "gold_sql": "SELECT COUNT(*) FROM data"
+        },
+        {
+          "id": "tickets-02",
+          "type": "answerable",
+          "question": "What is the most common ticket category?",
+          "expected": "The category with the most tickets.",
+          "gold_sql": "SELECT category FROM data GROUP BY category ORDER BY COUNT(*) DESC LIMIT 1"
+        },
+        {
+          "id": "tickets-03",
+          "type": "answerable",
+          "question": "What is the average resolution time for high-priority tickets?",
+          "expected": "Mean resolution hours for High priority tickets.",
+          "gold_sql": "SELECT ROUND(AVG(resolution_hours), 2) FROM data WHERE priority = 'High'"
+        },
+        {
+          "id": "tickets-04",
+          "type": "answerable",
+          "question": "How many tickets came from Gold-tier customers?",
+          "expected": "The number of tickets from Gold tier customers.",
+          "gold_sql": "SELECT COUNT(*) FROM data WHERE customer_tier = 'Gold'"
+        },
+        {
+          "id": "tickets-05",
+          "type": "answerable",
+          "question": "How many tickets ended with a satisfied customer?",
+          "expected": "The number of tickets where satisfied is true.",
+          "gold_sql": "SELECT COUNT(*) FROM data WHERE satisfied = 1"
+        },
+        {
+          "id": "tickets-06",
+          "type": "followup",
+          "previous": {
+            "question": "Which ticket categories are there?",
+            "answer": "Billing, Delivery delay, Damaged goods, Account access and API."
+          },
+          "question": "Which of those takes longest to resolve on average?",
+          "expected": "The category with the highest mean resolution hours.",
+          "gold_sql": "SELECT category FROM data GROUP BY category ORDER BY AVG(resolution_hours) DESC LIMIT 1"
+        },
+        {
+          "id": "tickets-07",
+          "type": "unanswerable",
+          "question": "Which support agent closed the most tickets?"
+        }
+      ]
+    }
+  ]
+}
